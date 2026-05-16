@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+                      Bus Terminator / PET BOARD
+------------------------------------------------------------------------
+   
+La carte Bus Terminator permet la visualisation sur le PANEL.
+
+1.1	De la position cabine.
+         	
+1.2	De la présence Tension + 5 vdc.
+
+1.3	De la santé du µProcesseur (CPU).
+
+1.4	De la chaîne des sécurités (SAFETY CHAIN).
+
+1.5	Du fonctionnement sur (SAFETO).
+
+1.6	Du contrôle de la Température (OTP).
+
+1.7	Du Mode de fonctionnement Normal .
+
+1.8	Du signal READY (Prêt à fonctionner).
+
+1.9	D'un déplacement en montée (RUN UP).
+
+1.10	D'un déplacement en descente (RUN DOWN).
+
+1.11	D'une commande d'ouverture de Porte.
+
+1.12	De la fermeture des portes (DFC).
+
+1.13	De la présence cabine dans les 0DZ.
+
+1.14	De la présence cabine dans les IDZ.
+
+La carte PET BOARD autorise :
+
+2.1	La visualisation sur le PANEL des signaux 
+	précédents.
+
+2.2	Une extension de la mémoire ROM (1000 à 2FFE).
+
+2.3	Une extension de la mémoire RAM (E000 à E7FF).
+
+Cette carte permet donc l'augmentation des capacités de 
+la carte µP quand un ELEVONIC 401 doit être connecté à
+un EMS (en remplacement de la carte Bus Terminator).
+	

@@ -1,0 +1,83 @@
+----------------
+Symptômes
+----------------
+
+1.0	L'appareil referme automatiquement ses portes en Mode 
+	Pompier (EFS) ou Indépendant (ISC).
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	L'OMT est en Test 220 (envois).
+
+2.0	Un bouton poussoir dans le COP en cabine est coincé.	
+
+3.0	La carte GP I/O est défectueuse.
+
+4.0	Une platine gérant 9 boutons cabine est défectueuse.
+
+5.0	La carte COP est défectueuse.
+
+6.0	Sur un appel pompier, lors du retour au niveau pompier,
+	le relais CES n'a pas collé quand la porte s'est trouvée
+	en pleine ouverture.	 
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Sortir du Test 220.
+
+2.0	Vérifier: 
+
+	2.1	Que les boutons DCB (Commande de fermeture 
+		des portes) ne sont pas actionnés en permanence.
+		
+3.0	Vérifier:
+
+	3.1.1	Test 400-2: La Led 4 (DCB) doit être éteinte.
+
+	3.1.2	Si le signal DCB reste actif, remplacer la carte GP I/O.
+
+4.0	Le signal COPS5R change d'état si on agit sur les boutons
+	d'envois cabine.	
+	
+	4.1	Vérifier:
+
+		4.1.1	Que le signal COPS5R ne reste pas à 1 en
+			permanence.
+
+			Test 40 :  COPS5R  (@ EEC0) à 0.
+		
+	4.2	Débrancher un à un les cordons qui partent de la 
+		carte COP vers les platines qui gèrent chacune 9
+		envois cabine (COP principal et auxiliaire).
+
+		Nota:	Même si le bouton n'est pas utilisé lors du
+			fonctionnement de l'appareil, la carte COP
+			interprète tous les signaux en arrivée sur 
+			ses connecteurs.
+	
+	4.3	Déterminer et remplacer la platine responsable de 
+		l'anomalie. 
+
+	Nota:	Si le bouton poussoir n'est pas utilisé lors du 
+		fonctionnement de l'appareil, il suffit de le 
+		supprimer avec une pince coupante. 
+
+		S'il est utilisé, essayer d'en trouver un libre pour 
+		réaliser le remplacement (Une Pompe à dessouder 
+		et un Fer à souder sont nécessaires à l'opération).
+
+5.0 	Remplacer la carte COP.
+
+6.0	Vérifier la présence et l'état du relais CES (pompier) qui
+	possède deux bobines : collage et effacement.
+
+	6.1	Vérifier l'ordre de collage du relais.
+
+		Test 40 :	PCES (commande collage) @ F012 à 1.
+			RCES (commande effacement) @ F02C à 0.
+
+	6.2	Remplacer la carte RELAY I/O.

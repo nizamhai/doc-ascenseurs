@@ -1,0 +1,60 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.
+
+2.0	La Led RUN est allumée en permanence.    
+
+3.0	La Led READY est allumée en permanence. 
+
+4.0	Les contacteurs 1M et 2M ne veulent pas coller.
+
+5.0	Après plusieurs essais infructueux, l'OMT indique un défaut
+	EMLS4 ou EMLS89 (suivant les générations de programme).
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le contact "Safety Interlock" n'est pas donné.
+
+2.0	Le relais 1CR ne colle pas.
+
+3.0	L'alimentation électrique des bobines 1M / 2M n'est pas
+	correcte.
+
+4.0	Un ou les deux contacteurs 1M / 2M sont hors service.
+
+5.0 	Carte ECPCB (2PC) défectueuse.
+
+-------------
+Remèdes
+-------------
+
+1.0	Le contact "Safety Interlock" entre les bornes 6TB3 et 6TB4
+	est réalisé par un contact de H en parallèle avec un contact
+	de BPS.
+
+	Vérifier d'abord le contact de H car pour que BPS colle, il faut
+	que 1M et 2M (avec 2CR et 3CR si ils existent) soient collés.
+		
+2.0	Vérifier que la bobine de 1CR est bien alimentée en 24 vdc 
+	entre les bornes 4TB5 (+) et 4TB6 (-). Dans le cas contraire,
+	remplacer la carte ECPCB (2PC).
+				
+3.0	Vérifier :
+
+	3.1	La tension 220 vac aux bornes 6TB1 et 6TB2.
+
+	3.2	Les Fusibles 6F et 7F (6 ampères).
+
+	3.3 	Le pont de diode situé au dessus des contacteurs.
+
+	3.4 	Le contact du relais 1CR (fils n° 16 et 17).
+
+	3.5	Les bobines de 1M et 2M.
+
+4.0	Vérifier qu'il n'existe aucun dur mécanique venant entraver le
+	collage des palettes de 1M et 2M.
+	

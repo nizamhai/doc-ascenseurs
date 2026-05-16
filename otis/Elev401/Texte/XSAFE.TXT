@@ -1,0 +1,28 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 32 (XSAFE) est allumée et l'appareil est stationné
+	au niveau principal portes ouvertes.
+
+2.0	Une autre Led de défaut doit être allumée (voir Test 200-4).
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté des anomalies de fonctionnement
+	et décide de faire stationner l'appareil au niveau principal
+	portes ouvertes
+
+2.0	Une manoeuvre spéciale est en cours.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Rechercher le défaut responsable grâce aux autres Leds
+	qui peuvent être allumées dans le Test 200-2 ou 200-4.
+
+2.0	Une manoeuvre spéciale est peut être en cours (détection
+	palette de cable déclenchée ...).

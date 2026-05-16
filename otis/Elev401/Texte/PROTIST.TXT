@@ -1,0 +1,107 @@
+----------------
+Symptômes
+----------------
+
+1.0	Les Protistors AC / DC sont régulièrement hors service.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Mauvaises(s) connexion(s).
+
+2.0	Thyristor(s) défectueux.
+
+3.0	Carte 12 SCR (1PC) défectueuse.	 
+
+4.0	Carte 12 Channel Gate Firing défectueuse.
+
+5.0	Vis 50/60 hz non enlevée de la carte 12 SCR (1PC).
+
+6.0	Carte ECPCB (2PC) défectueuse.
+
+7.0	Carte Voltage Divider défectueuse.
+
+8.0	Transformateur(s) de courant défectueux.
+
+9.0	Mauvaise excitation machine.
+
+10.0	Masse en sortie du convertisseur.
+ 
+-------------
+Remèdes
+-------------
+
+1.0	Vérifier les connections:
+
+	1.1	Des thyristors vers la carte 12 Channel Gate Firing.
+
+		1.1.1	Les fils doivent être torsadés par paires et
+			le plus court possible.
+
+	1.2	Vers les cartes:
+
+		1.2.1	Voltage Divider / ECPCB  / 12 SCR.
+
+	1.3	Des sondes (Transformateur) de courant.
+
+	1.4	En entrée et sortie du convertisseur.
+
+		1.4.1	Transformateur de puissance.
+
+		1.4.2	Moteur et inductance de lissage.
+
+2.0	Vérifier les Thyristors.
+
+	2.1	Se reporter au menu " Rack de Thyristors ".
+
+3.0	Remplacer la carte 12 SCR (1PC).
+
+	3.1	Enlever la vis de configuration pour un réseau 60 hz.
+
+	3.2	Remettre en place le connecteur 6 CONN.
+
+4.0	Remplacer la carte 12 Channel Gate Firing.
+
+5.0	Si la vis 60 Hz est restée en place, il peut y avoir par 
+	intermittence destruction des protistors AC.
+
+	5.1	Remplacer la carte 12 SCR (1PC).
+
+6.0	Remplacer la carte ECPCB (2PC) qui fournie les alimentations
+	+15 vdc, -15 vdc, +24 vdc et des signaux de commande à la
+	carte 12 SCR (1PC).
+	  
+7.0	Vérifier la carte Voltage Divider qui est entièrement composée
+	de résistances (les valeurs, dépendantes des caractéristiques de
+	l'appareil (DUTY) peuvent être retrouvées dans la documentation
+	Louis ALLIS).
+
+8.0	Tester les Transformateur(s) de courant (mesure du courant dans
+	chaque phase).
+
+	8.1	Leur valeur est proche de 55 ohms.
+
+9.0	Vérifier l'excitation machine (MF).
+
+	9.1	Au départ / arrivée à niveau : plein champs moteur.
+
+	9.2	A la vitesse nominale : réduction de champs.
+
+		9.2.1	Régler le potentiomètre R146 (FW) de la 
+			carte PA I/O pour obtenir le bon courant.
+
+	Machine		Repos	GV	PV	charge & vitesse
+	--------------------------------------------------------
+	131 HT		5 	10 	14 
+	139 HT		7 	15.8 	25 
+	155 HT		5 	10 	18 
+	155 HT		5 	14 	18 	2250kg & 2.5m/s
+	219 HT		8 	17 	30 
+	269 HT		9 	23 	35 
+	269 HT		9 	18.3 	35 	1800kg & 7m/s
+
+10.0	Vérifier si une masse est présente en sortie du convertisseur.
+	
+	10.1	Tester l'isolation du moteur par rapport à la terre.
+

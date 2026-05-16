@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <linearGradient id="ag" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#00838f"/>
+      <stop offset="100%" stop-color="#0d3b66"/>
+    </linearGradient>
+  </defs>
+  <!-- Gear -->
+  <g transform="translate(80,62)">
+    <!-- Gear teeth -->
+    <path d="M0,-32 L5,-30 L6,-24 L12,-22 L16,-27 L22,-22 L18,-16 L22,-10 L28,-10 L30,-3 L24,0 L24,6 L30,10 L28,17 L22,15 L17,20 L19,27 L13,30 L9,24 L3,25 L0,32 L-3,25 L-9,24 L-13,30 L-19,27 L-17,20 L-22,15 L-28,17 L-30,10 L-24,6 L-24,0 L-30,-3 L-28,-10 L-22,-10 L-18,-16 L-22,-22 L-16,-27 L-12,-22 L-6,-24 L-5,-30 Z" fill="url(#ag)"/>
+    <!-- Inner circle -->
+    <circle cx="0" cy="0" r="14" fill="white"/>
+    <circle cx="0" cy="0" r="11" fill="url(#ag)"/>
+    <!-- Lightning bolt -->
+    <path d="M-3,-8 L2,-1 L-1,-1 L3,8 L-2,1 L1,1 Z" fill="white"/>
+  </g>
+  <!-- Lightning extending right -->
+  <line x1="100" y1="58" x2="120" y2="52" stroke="url(#ag)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- AUTINOR text -->
+  <text x="80" y="118" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="24" fill="#0d3b66" letter-spacing="2">AUTINOR</text>
+</svg>

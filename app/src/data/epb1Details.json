@@ -1,0 +1,1396 @@
+{
+  "=A": [
+    {
+      "type": "text",
+      "text": "Signifie que l'ordre d'ouverture de la porte cabine a été donne et que 15 secondes après, la porte n'a pas atteint son fin de course ouverture (si le fin course existe)"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Les leds L8 et L10 sont allumées, la carte PB donne la sortie (M2 ou M3)"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler au niveau des connecteurs :"
+    },
+    {
+      "type": "text",
+      "text": "- D8 (85:0G) si porte complètement ouverte =0V"
+    },
+    {
+      "type": "text",
+      "text": "-( double accès) D7 (2eme 85:OG) si porte complément ouverte =OV"
+    },
+    {
+      "type": "text",
+      "text": "-D8 si porte partiellement ouverte = +24V"
+    }
+  ],
+  "=b": [
+    {
+      "type": "text",
+      "text": "Signifie que le frein reste levé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSESPOSSIBLE"
+    },
+    {
+      "type": "text",
+      "text": "les porte cabines resteront fermées tant que le contact frein ne vas pas revenu normal"
+    },
+    {
+      "type": "text",
+      "text": "- dur mécanique sur le frein"
+    },
+    {
+      "type": "text",
+      "text": "- problème sur le frein"
+    },
+    {
+      "type": "text",
+      "text": "- problème sur contact (contact ou filerie)"
+    },
+    {
+      "type": "text",
+      "text": "- le shunt p6 est mal position"
+    }
+  ],
+  "=9": [
+    {
+      "type": "text",
+      "text": "Signifie que le frein ne s'est pas levé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Blocage mécanique du frein - Bobine non alimentée ou grillée"
+    },
+    {
+      "type": "text",
+      "text": "- Contact contrôle frein défectueux"
+    },
+    {
+      "type": "text",
+      "text": "- le shunt P6 est mal positionne"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "(P6 en position B) - Connecteur D11"
+    },
+    {
+      "type": "text",
+      "text": "- Frein au repos : 0V"
+    },
+    {
+      "type": "text",
+      "text": "- Frein levé : + 60V"
+    }
+  ],
+  "=C": [
+    {
+      "type": "text",
+      "text": "Signifie que le contrôle fermeture porte cabine (gâte) ou que le contrôle verrouillage porte paliers n'est pas obtenu après 15 secondes"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "Après 5 tentatives, l'ordre s'efface, un nouvel ordre est nécessaire"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Problème mécanique porte cabine ou porte paliere - contact porte cabine ou verrouillage palier défectueux"
+    },
+    {
+      "type": "text",
+      "text": "- Moteur d'opérateur HS ou fusibles sautes"
+    },
+    {
+      "type": "text",
+      "text": "-Relais 542 défectueux (542 = 211:S en porte automatique)"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- La led L7 (542) indique bien la commande de fermeture de porte Connecteurs :"
+    },
+    {
+      "type": "text",
+      "text": "-E10 portes fermées ligne secu + porte cab : 220V AC"
+    },
+    {
+      "type": "text",
+      "text": "-E8 portes fermées ligne secu + porte cab + verrouillage: 220V AC"
+    },
+    {
+      "type": "text",
+      "text": "-E10 portes ouvertes : 0V"
+    },
+    {
+      "type": "text",
+      "text": "-E8 porte ouvertes : 0V"
+    }
+  ],
+  "=CH": [
+    {
+      "type": "text",
+      "text": "Signifie qu'en porte automatique un contact de réouverture est reste ferme (bouton coince) (s'affiche a chaque utilisation du bouton réouverture)"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "La porte reste ouverte"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Problème de cellule ou de contact choc Mauvaise position de SW2:2"
+    }
+  ],
+  "=d": [
+    {
+      "type": "text",
+      "text": "Signifie que le temps de course entre deux tops d'information niveau a niveau est supérieur au temps programme ou que le recalage ne s'effectue pas (après 4 tentatives) Antipatinage"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- L'appareil se met a l'arrêt porte ouverte"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Oscillateur ou impulseur défectueux - La cabine ne peut atteindre les extrêmes"
+    },
+    {
+      "type": "text",
+      "text": "- Défaut dans les contacts fin de gaine"
+    },
+    {
+      "type": "text",
+      "text": "- Le shunt P7 est sur la position test"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- La led L13 doit s'allumer lors du passage devant un drapeau ou un aimant - La led L6 doit toujours être allumée"
+    }
+  ],
+  "=E": [
+    {
+      "type": "text",
+      "text": "Signifie que les relais 521:U et 521:N se trouve alimentée en même temps"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- La cabine stoppe - L'appel est efface"
+    },
+    {
+      "type": "text",
+      "text": "LED L5 (521:U) Allumée indique la commande du relais"
+    },
+    {
+      "type": "text",
+      "text": "LED L5 (521:N) Allumée indique la commande du relais"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Problème de parasite ou composants défectueux sur la carte"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Couper le courant force, remettre sous tension ; si le défaut persiste, problèmes de carte"
+    }
+  ],
+  "=F": [
+    {
+      "type": "text",
+      "text": "Signifie que 10 secondes après le début de ralentissement, la cabine n'a pas rencontre son top d'arrêt (identique pour appareil a 1 ou 2 vit)"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt immédiat de la cabine, tentative d'ouverture de porte, si dans la zone, ou course de recalage - Sauf en TAC-M si SW2 et SW4 sur ON pas de recalage"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Oscillateur, impulseur défectueux ou dérègles - Aimants ou draperaus dérègles"
+    },
+    {
+      "type": "text",
+      "text": "- PV ne fonctionne pas"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier les capteurs en gaine - Vérifier la PV, le frein"
+    }
+  ],
+  "=HH": [
+    {
+      "type": "text",
+      "text": "Signifie avant un enregistrement qu'un contacteur est reste au collage"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- L'enregistrement est annule, les portes s'ouvrent"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Le contacteur 201:U ou 201:N est défectueux - Le relais 521:U ou 521:N est défectueux"
+    }
+  ],
+  "=Hin": [
+    {
+      "type": "text",
+      "text": "Signifie qu'en phase de départ le contacteur 201:U ou 201:N ne va pas au collage"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- L'enregistrement est annule, les portes s'ouvrent"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Contacteur 201:U ou 201:N défectueux - Relais 521:U ou 521:N défectueux"
+    },
+    {
+      "type": "text",
+      "text": "- Fils déconnectes"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Connecteurs D7 (201:U) contacteur repos = +60V - Connecteurs D9 (201:N) contacteur repos = +60V"
+    },
+    {
+      "type": "text",
+      "text": "- Connecteurs D7 (201:U) contacteur alimente = 0V"
+    },
+    {
+      "type": "text",
+      "text": "- Connecteurs D9 (201:N) contacteur alimente = 0V"
+    }
+  ],
+  "=h": [
+    {
+      "type": "text",
+      "text": "Signifie que la sélection est décale, si deux lignes d'impulsion"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- La cabine s'arrête au 1er niveau rencontre et attend un nouvel ordre"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Problème d'information de la gaine"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Contrôle 62:U et 62:N (oscillateurs ou aimants) - Contrôler les contacts fin de gaine"
+    }
+  ],
+  "=L": [
+    {
+      "type": "text",
+      "text": "Signifie que les deux contact de ralentissement 136:N et 136:U sont ouverts ensembles"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "La cabine reste au niveau ouvertes"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Contact fin de gaine défectueux ou problème de connections"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Contrôler circuit et contacts"
+    }
+  ],
+  "=L̲": [
+    {
+      "type": "text",
+      "text": "Signifie qu'un ordre montée ou descente est enregistre alors que la cabine est déjà sur un contact fin de gaine"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- L'appel est efface ; les portes se réouvrent et l'appareil attend un nouvel ordre"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Problèmes sur sélection"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Cabine hors zone - connecteur D10(136:N) +24V - Cabine hors zone - connecteur D8 (136:N) +24V"
+    },
+    {
+      "type": "text",
+      "text": "- Cabine hors zone - connecteur D10 (136:N) +0V"
+    },
+    {
+      "type": "text",
+      "text": "- Cabine hors zone - connecteur D8 ((136:N) +0V"
+    }
+  ],
+  "=o.": [
+    {
+      "type": "text",
+      "text": "Signifie dans configuration deux lignes d'oscillateurs ou impulseur pendant le fonctionnement montée ou descente, la sélection ne lit pas une ou plusieurs informations de ralentissement"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- La cabine finie sa course et analyse au prochain voyage"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Impulseurs 62:U ou 62:N sont défectueux - Manque des drapeaux ou des aimants"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier en gaine drapeaux ou des aimants"
+    }
+  ],
+  "=o̅": [
+    {
+      "type": "text",
+      "text": "Signifie que dans la configuration deux lignes d'oscillateurs ou impulseur pendant le fonctionnement une info d'arrêt 62:U ou 62:N n'est pas donnée"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "-La course de l'appareil continu et la cabine s'arrêtera au plus tard aux extrêmes"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Impulseur 62:U ou 62:N sont défectueux - Manque drapeaux ou aimants"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Contrôler les impulseurs oscillateurs et la position des drapeaux ou aimants"
+    }
+  ],
+  "=P": [
+    {
+      "type": "text",
+      "text": "Signifie qu'un ordre de montée ou descente est donnée mais que la cabine ne quitte pas son étages"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Les contacteurs retombent - Les portes se réouvrent jusqu'au prochain ordre"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Frein ne s'ouvre pas - Manque d'alimentation au moteur"
+    },
+    {
+      "type": "text",
+      "text": "- Défaut sur capteurs d'étages"
+    },
+    {
+      "type": "text",
+      "text": "- En hydraulique, passage étoile triangle défectueux"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier capteur en gaine - Vérifier frein moteur"
+    }
+  ],
+  "=S": [
+    {
+      "type": "text",
+      "text": "Signifie que pendant la course, la chaîne de sécurité s'ouvre"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt immédiat de la cabine"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Un ou plusieurs contacts dans la cabine de sécurité ouverts"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Led L14 éteinte, contact ouvert entre début des sécurités porte - Led L15 éteinte, contact ouvert sur la porte"
+    },
+    {
+      "type": "text",
+      "text": "- Connecteurs"
+    },
+    {
+      "type": "text",
+      "text": "- E12 chaîne fermée 220V env a c avec terre"
+    },
+    {
+      "type": "text",
+      "text": "- E10 chaîne fermée 220V et porte fermée"
+    },
+    {
+      "type": "text",
+      "text": "- E8 chaîne fermée 220V et porte fermée et verrouillage"
+    }
+  ],
+  "=t": [
+    {
+      "type": "text",
+      "text": "Signifie que le contact du thermique a déclenché"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt de la cabine a un niveau - Ouverture des portes si dans la zone"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Contact défectueux - Frein bloque ou non alimente"
+    },
+    {
+      "type": "text",
+      "text": "- Blocage treuil"
+    },
+    {
+      "type": "text",
+      "text": "- Surcharge du moteur"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Connecteur D12: Thermique ouvert 0V"
+    },
+    {
+      "type": "text",
+      "text": "Thermique ferme +24V"
+    }
+  ],
+  "=u.": [
+    {
+      "type": "text",
+      "text": "Signifie que pendant une course au passage d'un top oscillateur ou impulseur, le signal reste donne"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Soit que la cabine peut s'arrêter au niveau sélectionne, soit arrêt aux extrêmes"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Problème d'impulseur ou oscillateurs - Problème de drapeaux ou aimants"
+    },
+    {
+      "type": "text",
+      "text": "- Problème de connections"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Led L13 reste allumée - Vérifier fonctionnement oscillateurs"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier drapeaux ou aimants"
+    }
+  ],
+  "=rin": [
+    {
+      "type": "text",
+      "text": "Signifie que la cabine effectue une course de synchronisation (recalage)"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Soit après remise sous tension, soit décalage sélection"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Si le signe reste affiche et que l'appareil ne démarre pas, contrôler la ligne de sécurité"
+    }
+  ],
+  "=o̅-": [
+    {
+      "type": "text",
+      "text": "Signifie erreur de programmation des switchs"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- SW1 1 a 3 type de traction - SW1 1 a 4 type manuvre"
+    },
+    {
+      "type": "text",
+      "text": "- SW3 7 a 8 nombre de niveaux"
+    }
+  ],
+  "=LHB": [
+    {
+      "type": "text",
+      "text": "Signifie que l'appareil est en inspection"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Inter toit de cabine sur inspection ou mauvais câblage"
+    }
+  ],
+  "==.": [
+    {
+      "type": "text",
+      "text": "Signifie que l'appareil est hors service"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCE"
+    },
+    {
+      "type": "text",
+      "text": "- Appareil a l'arrêt"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier les entrée de la carte"
+    }
+  ],
+  "=4̲": [
+    {
+      "type": "text",
+      "text": "Mauvaise fonction de la RAM du micro (RAM = Memoire vive)"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCE"
+    },
+    {
+      "type": "text",
+      "text": "- Appareil a l'arrêt"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Changer la carte"
+    }
+  ],
+  "=2=": [
+    {
+      "type": "text",
+      "text": "Qu'il n'y a pas de communication entre les deux micros"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCE"
+    },
+    {
+      "type": "text",
+      "text": "- Appareil a l'arrêt"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Changer la carte"
+    }
+  ],
+  "=2̲": [
+    {
+      "type": "text",
+      "text": "Une mauvaise fonction de la mémoire ROM de (l'esclave)"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCE"
+    },
+    {
+      "type": "text",
+      "text": "- Appareil a l'arrêt"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Changer la carte"
+    }
+  ],
+  "=n̅": [
+    {
+      "type": "text",
+      "text": "Que pendant une période le micro principal n'a pu communiquer avec le secondaire"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCE"
+    },
+    {
+      "type": "text",
+      "text": "- Appareil a l'arrêt"
+    },
+    {
+      "type": "text",
+      "text": "C O N T R O L E"
+    },
+    {
+      "type": "text",
+      "text": "- Couper le courant force - Si le défaut persiste, changer la carte"
+    }
+  ],
+  "=n.": [
+    {
+      "type": "text",
+      "text": "Signifie que le micro stoppe sa transmission (défaut de carte)"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Couper, puis remettre le courant - Si cela persiste changer la carte"
+    }
+  ],
+  "=c.": [
+    {
+      "type": "text",
+      "text": "Signifie qu'au moment du démarrages, les contacts 523 et 203:H ont été trouves fermes"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- L'enregistrement est efface et les portes restent ouvertes"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "- Relais 523 ou 203:H défectueux"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier relais et circuit"
+    }
+  ],
+  "=C̲": [
+    {
+      "type": "text",
+      "text": "Signifie que le contacteur 203:H n'a pas coupe 2 secondes après l'information"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt immédiat de l'appareil et tentative d'ouverture de porte"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier contacteur 203:H et son circuit d'asservissement"
+    }
+  ],
+  "=F̲A": [
+    {
+      "type": "text",
+      "text": "Signifie que le 523 est retombe avant l'arrêt de l'appareil"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt immédiat de la cabine, tentative d'ouverture des portes"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier fonctionnement du relais 523 et son circuit d'alimentation"
+    }
+  ],
+  "=F̲": [
+    {
+      "type": "text",
+      "text": "Signifie que le 523 n'est pas retombe après l'arrêt de la cabine"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt automatique après 2 ou 3 secondes du top oscillateur - Ouverture des portes si dans la zone"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier relais 523 et circuit d'arrêt"
+    }
+  ],
+  "=U": [
+    {
+      "type": "text",
+      "text": "Signifie que lors du ralentissement la cabine ne trouve pas son top d'arrêt"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- La cabine est stoppée, tentative d'ouverture des portes ou retour de synchronisation"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier présence des plaques en cabine et fonctionnement de l'oscillateur"
+    }
+  ],
+  "=n": [
+    {
+      "type": "text",
+      "text": "Signifie un défaut au démarrage étoile triangle"
+    },
+    {
+      "type": "header",
+      "text": "CONSEQUENCES"
+    },
+    {
+      "type": "text",
+      "text": "- Arrêt immédiat du départ réouverture de porte"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "- Vérifier circuit démarrage et moteur de pompe"
+    }
+  ],
+  "=r̲": [
+    {
+      "type": "text",
+      "text": "Marche en renivelage"
+    }
+  ],
+  "L1": [
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Cette led s'allume lorsque le relais de grande vitesse (580:H) est alimente, c'est a dire lors d'un départ de l'appareil"
+    }
+  ],
+  "L2": [
+    {
+      "type": "text",
+      "text": "allumée"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique l'état du relais de petit vitesse (524)"
+    },
+    {
+      "type": "text",
+      "text": "Elle doit s'éteindre au cours de la séquence de démarrage"
+    }
+  ],
+  "L3": [
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique le relais de sens montée (521:U)"
+    },
+    {
+      "type": "text",
+      "text": "Elle s'allume lors d'un enregistrement"
+    }
+  ],
+  "L4": [
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Cette led s'allume lorsque l'on passe en inspection (action sur 42:DS)"
+    }
+  ],
+  "L5": [
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique l'état du relais de sens descente (521:N)"
+    },
+    {
+      "type": "text",
+      "text": "S'allume lors d'un enregistrement"
+    }
+  ],
+  "L6": [
+    {
+      "type": "text",
+      "text": "allumée"
+    },
+    {
+      "type": "text",
+      "text": "Cette led doit toujours être allumée"
+    },
+    {
+      "type": "text",
+      "text": "Elle est éteinte si les 2 contacts gaines 136:U et 136:N sont ouverts simultanément (dans ce cas, vérifier les contact ou le câblage)"
+    }
+  ],
+  "L7": [
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique l'état du contacteur de fermeture de porte (211:S)"
+    }
+  ],
+  "L8": [
+    {
+      "type": "text",
+      "text": "Led L8 et L10"
+    },
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique l'état des contacteurs d'ouverture de porte (211:S)"
+    },
+    {
+      "type": "text",
+      "text": "211:0"
+    },
+    {
+      "type": "text",
+      "text": "ouverture principal"
+    },
+    {
+      "type": "text",
+      "text": "221:0"
+    },
+    {
+      "type": "text",
+      "text": "accès oppose"
+    }
+  ],
+  "L9": [
+    {
+      "type": "text",
+      "text": "clignote"
+    },
+    {
+      "type": "text",
+      "text": "Cette led nommée OK doit clignoter (a condition que la carte soit alimentée, L11 et L12 allumées)"
+    },
+    {
+      "type": "text",
+      "text": "Si elle est toujours éteinte ou allumée, il y a anomalie au niveau de la carte"
+    },
+    {
+      "type": "header",
+      "text": "CHANGERLACARTE"
+    }
+  ],
+  "L10": [
+    {
+      "type": "text",
+      "text": "Led L8 et L10"
+    },
+    {
+      "type": "text",
+      "text": "éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Elle indique l'état des contacteurs d'ouverture de porte (211:S)"
+    },
+    {
+      "type": "text",
+      "text": "211:0"
+    },
+    {
+      "type": "text",
+      "text": "ouverture principal"
+    },
+    {
+      "type": "text",
+      "text": "221:0"
+    },
+    {
+      "type": "text",
+      "text": "accès oppose"
+    }
+  ],
+  "L11": [
+    {
+      "type": "text",
+      "text": "Allumée"
+    },
+    {
+      "type": "text",
+      "text": "+24V"
+    },
+    {
+      "type": "text",
+      "text": "Les deux leds sont éteintes - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "L'alimentation alternative"
+    },
+    {
+      "type": "text",
+      "text": "Connecteur M"
+    },
+    {
+      "type": "text",
+      "text": "Bornes 11 et 12"
+    },
+    {
+      "type": "text",
+      "text": "Bornes 9 et 10"
+    },
+    {
+      "type": "text",
+      "text": "9 à 10V"
+    },
+    {
+      "type": "text",
+      "text": "Si pas d'alimentation, vérifier les fusibles 286:1 et ceux de la carte"
+    },
+    {
+      "type": "text",
+      "text": "Led L11 éteinte et L12 allumée - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "Le fusible VA1 sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "La tension 24V continu sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "Led L12 éteinte et L11 allumée - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "Le fusible VA2 sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "La tension +5V continu sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "NOTE"
+    },
+    {
+      "type": "text",
+      "text": "Si les tension d'entrées sur le connecteur M (12,11,10,9) sont bonnes, ainsi que les fusibles de la carte, mais les tensions continu =24V et ou +5V sont manquantes"
+    },
+    {
+      "type": "text",
+      "text": "Si un fusible a grille, enlever le connecteur A, changer le fusible, remettre sous tension et seulement après remettre A"
+    },
+    {
+      "type": "header",
+      "text": "CHANGERLACARTE"
+    },
+    {
+      "type": "text",
+      "text": "ATTENTION"
+    },
+    {
+      "type": "text",
+      "text": "lors d'un échange de la carte, vous referez au schéma de l'affaire pour repositionner les micro-interrupteurs et les shunts"
+    }
+  ],
+  "L12": [
+    {
+      "type": "text",
+      "text": "Allumée"
+    },
+    {
+      "type": "text",
+      "text": "+24V"
+    },
+    {
+      "type": "text",
+      "text": "Les deux leds sont éteintes - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "L'alimentation alternative"
+    },
+    {
+      "type": "text",
+      "text": "Connecteur M"
+    },
+    {
+      "type": "text",
+      "text": "Bornes 11 et 12"
+    },
+    {
+      "type": "text",
+      "text": "Bornes 9 et 10"
+    },
+    {
+      "type": "text",
+      "text": "9 à 10V"
+    },
+    {
+      "type": "text",
+      "text": "Si pas d'alimentation, vérifier les fusibles 286:1 et ceux de la carte"
+    },
+    {
+      "type": "text",
+      "text": "Led L11 éteinte et L12 allumée - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "Le fusible VA1 sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "La tension 24V continu sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "Led L12 éteinte et L11 allumée - vérifier"
+    },
+    {
+      "type": "text",
+      "text": "Le fusible VA2 sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "La tension +5V continu sur la carte"
+    },
+    {
+      "type": "text",
+      "text": "NOTE"
+    },
+    {
+      "type": "text",
+      "text": "Si les tension d'entrées sur le connecteur M (12,11,10,9) sont bonnes, ainsi que les fusibles de la carte, mais les tensions continu =24V et ou +5V sont manquantes"
+    },
+    {
+      "type": "text",
+      "text": "Si un fusible a grille, enlever le connecteur A, changer le fusible, remettre sous tension et seulement après remettre A"
+    },
+    {
+      "type": "header",
+      "text": "CHANGERLACARTE"
+    },
+    {
+      "type": "text",
+      "text": "ATTENTION"
+    },
+    {
+      "type": "text",
+      "text": "lors d'un échange de la carte, vous referez au schéma de l'affaire pour repositionner les micro-interrupteurs et les shunts"
+    }
+  ],
+  "L13": [
+    {
+      "type": "text",
+      "text": "Cette led est allumée a chaque fois que l'oscillateur rencontre une plaque gaine (en 1 ligne ou l'oscillateur montée en 2 lignes)"
+    },
+    {
+      "type": "text",
+      "text": "Elle permet de vérifier, lorsque l'ascenseur se déplace, le bon fonctionnement de l'oscillateur"
+    },
+    {
+      "type": "text",
+      "text": "Si cette led est toujours éteinte , ou allumée , vérifier l'oscillateur"
+    }
+  ],
+  "L14": [
+    {
+      "type": "text",
+      "text": "allumée"
+    },
+    {
+      "type": "text",
+      "text": "Elle donne l'état de la ligne de sécurité et des préliminaire de porte"
+    },
+    {
+      "type": "text",
+      "text": "Si la ligne de sécurité est fermée ainsi que les préliminaires de porte, la led L14 est allumée"
+    },
+    {
+      "type": "text",
+      "text": "Si éteinte"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler la ligne de sécurité et les préliminaire de porte"
+    }
+  ],
+  "L15": [
+    {
+      "type": "text",
+      "text": "Elle donne l'état de la ligne de sécurité + les préliminaire + les verrouillages"
+    },
+    {
+      "type": "text",
+      "text": "Elle est allumée lorsque tous les circuits ci-dessus sont fermes"
+    },
+    {
+      "type": "text",
+      "text": "EXEMPLE"
+    },
+    {
+      "type": "text",
+      "text": "Appareil a l'arrêt sous tension, si les verrouillages sont établis lorsque la porte est fermée, la led L15 est allumée (porte automatiques)"
+    },
+    {
+      "type": "text",
+      "text": "La led L15 est éteinte, si les verrouillages sont ouverts a l'arrêt (portes battantes)"
+    }
+  ],
+  "L16": [
+    {
+      "type": "text",
+      "text": "Témoin oscillateur descente en 2 lignes"
+    }
+  ]
+}

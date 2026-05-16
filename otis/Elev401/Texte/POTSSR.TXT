@@ -1,0 +1,51 @@
+----------------
+Symptômes
+----------------
+
+1.0	Défaut POT à l'OMT.
+
+--------------------------
+Causes Probables
+--------------------------
+
+Nota:	La tension de manoeuvre peut être la cause du défaut
+	si elle descend sous les 100 vdc aux bornes des 
+	contacteurs (chute de tension dans les serrures ...)
+
+1.0	Vibration du relais SSR (surtout les relais SIEMENS) 
+	transmise au relais CX entraînant la perte du signal
+	RUN vers le Convertisseur statique.
+
+2.0	Fils de cordon souple défectueux.
+
+3.0	Le bras de la boite de Stopping ne revient pas dans
+	sa position initiale.
+
+4.0	Contact de Stopping SS1 ou SS2 mal réglé.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Doubler le contact de CX autorisant RUN vers le Convertisseur
+	Statique et isoler mécaniquement le relais SSR pour annuler 
+	ses vibrations.
+
+2.0	Pour déterminer lequel des 3 Fils de cordon souple est 
+	défectueux.
+
+	2.1.1	Défaut en montée   : Fils A8 TB1-23 / KJ1-140 (SS2).
+
+	2.2.1	Défaut en descente : Fils A8 TB1-53 / KJ1-136 (SS1).
+	
+	2.3.1	Dans les 2 sens : Fils A8 TB1-25 / KJ1-138 (SS1/SS2).
+
+3.0	Lubrifier l'axe du bras de la boite de Stopping.
+
+4.0	Régler la cote de SS1 / SS2 dans la boite de Stopping. Cette 
+	valeur est fonction de la vitesse de l'appareil car le relais SSR 
+	retombe à plus de 90% de la vitesse contrat pour mettre en 
+	service le contrôle du ralentissement aux extrêmes. Le relais 
+	SSR recolle au-dessous de 90% de la vitesse contrat.
+
+	

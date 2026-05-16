@@ -1,0 +1,20 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est clignotante.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La lecture de la charge cabine est au delà de la limite 
+	maximale.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Augmenter le nombre de tampon sous la cabine pour être
+	en dessous de la tension maximale en sortie sur les pèse
+	charge.

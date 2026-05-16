@@ -1,0 +1,36 @@
+------------------------------------------------------------------------
+                                Procédure
+------------------------------------------------------------------------
+   
+1.0	Mettre l'ascenseur hors tension.
+
+2.0	Si le Rack est encore monté dans le contrôleur, enlever
+	dans l'ordre suivant.
+
+	2.2.1	Le cache plastique de protection du Rack.
+	2.2.2	Les cordons des connecteurs 1 / 2 / 3 CONN.
+	2.2.3	Les connections vers la carte 12 Channel Gate
+		Firing.
+	2.2.4	La carte 12 Channel Gate Firing.
+	2.2.5	Les connections vers la carte Voltage Divider.
+	2.2.6	Les connections vers les Transformateurs
+		de courant (CT).
+	2.2.7	Les connections de la sonde Thermique.
+	2.2.8	Les 5 fils de puissance (3 phases + 2 fils
+		repérés 31 et 34).
+	2.2.9	Les fils du protistor 4F vers 5F.
+	2.2.9	Les 4 écrous de fixation du Rack sur les 
+		tampons isolateurs rouge.
+	2.2.10	La carte Voltage Divider.
+
+3.0	Chaque Colonne (Phase) peut être enlevée individuellement.
+	Il est à noter qu'il est plus facile de remplacer les colonnes
+	une à une car de cette façon, la distance entre les deux 
+	barres est toujours égale et lors du remontage il n'y aura 
+	pas de problème pour positionner le Rack sur ses tampons 
+	isolateurs.
+
+4.0	Desserrer les quatre vis de fixations qui maintiennent la 
+	colonne sur les deux barres.
+		
+5.0	Faire coulisser la colonne vers le haut.

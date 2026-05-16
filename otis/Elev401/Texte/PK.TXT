@@ -1,0 +1,25 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le Message PK (PARK) est affiché sur le CPI en cabine.
+
+2.0	Défaut CMF en Test 200-2 dans le contrôleur de manoeuvre.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Apparition de l'Erreur E5.
+
+2.0	La charge par défaut sélectionnée bloque la cabine porte 
+	ouverte (PK) au niveau bas.
+
+3.0	Apparition d'une erreur supplémentaire entraînant la sélection
+	de la charge par défaut (si la charge par défaut est PK).
+	
+-------------
+Remèdes
+-------------
+	  
+1.0	Corriger l'erreur en se reportant aux actions décrites (E0 à E7).

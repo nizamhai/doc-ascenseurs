@@ -1,0 +1,40 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.	
+
+2.0	La Led OVER CURR TRIP est allumée en permanence.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système n'a pas été Reseté.
+
+2.0	La carte ECPCB (2PC) est défectueuse.     
+
+3.0	La sortie directe du convertisseur est en court circuit.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Presser momentanément sur le bouton Reset de la carte
+	ECPCB, la Led correspondante doit alors être allumée.
+
+	Le signal de Reset est normalement envoyé par la carte 
+	µP du contrôleur de manoeuvre via la carte Relay I/O,
+	à la suite d'un défaut (DDSTAT) ou d'une remise sous
+	tension de l'installation.	
+	Ce signal de 2 à 3 vdc, 10ma maximum pendant 1.75ms 
+	arrive de la carte Relay I/O sur les bornes 3TB23 & 3TB24
+	de la carte ECPCB (signal DDRST).
+ 
+2.0	Si sur la carte 12SCR, la Led Overcurrent Trip est éteinte
+	et que la Led Overcurrent Trip est allumée sur l'ECPCB,
+	changer cette dernière.
+
+
+3.0	Vérifier que le Rack de thyristor ne soit pas en court circuit.
+	Pour cela, se reporter au menu " Rack de Thyristor ".

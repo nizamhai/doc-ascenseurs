@@ -1,0 +1,46 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 8 (DSF) est allumée.
+
+2.0	La Led 32 (XSAFE) est allumée.
+
+3.0	L'appareil est portes ouvertes au niveau principal.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le relais LVC1 / LVC2 / LVC3 est défectueux.
+
+2.0	L'interface qui contrôle la retombée de ces 3 relais est 
+	hors service (cartes CF I/O).
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le signal DSF est nécessaire pour contrôler que les portes
+	ne restent pas shunter en permanence par les relais LVC. 
+
+	Si le système détecte lors de 3 départs consécutifs que 
+	l'un des relais LVC reste collés, l'appareil effectue un retour
+	au niveau principal où il stationne portes ouvertes (XSAFE).
+	
+1.0	Vérifier:
+
+	1.1	L'état des relais LVC1 / LVC2 / LVC3.
+
+	1.2	Que la tension en A6 TB1-52 est à 0 vdc lorsque les
+		LVC retombent.
+
+		1.2.1	Vérifier les 3 contacts en série vers la borne
+			A6 TB1-52 (LVC123).
+
+			LVC123 = / LVC1 . / LVC2 . / LVC3
+
+		1.2.3	Remplacer le relais défectueux.
+
+2.0	Remplacer la carte CF I/O.
+

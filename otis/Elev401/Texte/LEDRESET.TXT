@@ -1,0 +1,75 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.
+
+2.0	La Led RESET est allumée en permanence.     
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Un Reset permanent est envoyé à partir de la carte 
+	Relay I/O vers les bornes 3TB23 et 3TB24 de la carte
+	ECPCB.
+
+2.0	Carte ECPCB (2PC) défectueuse.
+
+3.0	Carte Relay I/O du contrôleur de manoeuvre défectueuse.
+
+4.0 	Mauvaise(s) liaison(s) entre les cartes Relay I/O et ECPCB.
+
+-------------
+Remèdes
+-------------
+
+1.0	Le signal de Reset est normalement envoyé par la carte µP
+	du contrôleur de manoeuvre via la carte Relay I/O, à la suite
+	d'un défaut (DDSTAT) ou d'une remise sous tension.
+	
+	Cependant, sur une remise sous tension de l'installation, si le 
+	Microprocesseur détecte une vitesse alors qu'aucun ordre de
+	marche n'est donné (MLS 0), le système envoie un Reset
+	permanent vers le convertisseur.
+	
+	Pour déterminer d'où vient cette " Vitesse " 
+	
+	1.1	Regarder les signaux en TEST 40 :
+		
+		1.1.1	REST:	@ F5A6 à 1 si aucune vitesse
+				n'est détectée.
+
+			REST = /CMU . /CMD . /MMU . /MMD
+
+		1.1.2	CMU:	@ F2EC à 0 si aucun déplacement
+				en montée de la cabine (PPT) n'est
+				détectée.
+
+		1.1.3	CMD:	@ F2EA à 0 si aucun déplacement 
+				en descente de la cabine (PPT) n'est
+				détectée.
+
+		1.1.4	MMU:	@ F408 à 0 si aucune rotation en
+				montée de la machine (PVT) n'est
+				détectée.
+
+		1.1.5	MMD:	@ F406 à 0 si aucune rotation en
+				descente de la machine (PVT) n'est
+				détectée.
+
+	1.2	Remplacer en premier la carte Transducer qui gère
+		la lecture des vitesses cabine et machine puis le
+		composant qui indique une vitesse erronée.
+
+2.0	Débrancher momentanément les 2 fils arrivant sur les
+	bornes 3TB23 et 3TB24 de la carte ECPCB, la Led 
+	RESET doit alors s'éteindre. Dans le cas contraire,
+	remplacer la carte ECPCB (2PC).
+
+3.0	Remplacer la Carte Relay I/O du contrôleur de manoeuvre
+	si le signal DDRST (@ F308) change bien d'état.
+
+4.0 	Courant coupé, vérifier les liaisons entre les cartes Relay I/O 
+	et ECPCB.
+

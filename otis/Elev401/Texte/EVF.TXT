@@ -1,0 +1,68 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 17 (EVF) est allumée ou clignote.
+
+2.0	La Led 20 (IMOD13) peut être allumée.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	L'appareil a effectué un arrêt d'urgence, entraînant
+	un glissement de cable sur la poulie machine.
+
+2.0	Les connections du PVT / PPT sont défectueuses.
+
+3.0	L'accouplement du PVT est incorrect.
+
+4.0	Le fonctionnement du PVT est incorrect.
+
+5.0	Le PVT, PPT ou la carte Transducer est défectueux 
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la différence entre la vitesse machine 
+	(VM1) du PVT et la vitesse dictée (DVM111) à la machine
+	en fonction de la position de la cabine (PPT).
+
+	Si la valeur VE dépasse 1,2 m/s, le défaut EVF passe à 1 
+	entraînant un arrêt d'urgence, SAFE passant à 0.
+
+		VE = Valeur Absolue de | DVM111 - VM1 |
+
+	L'ascenseur effectue un 2ème essais qui en cas d'erreur 
+	provoque un nouvel arrêt d'urgence puis une interdiction 
+	du Mode de fonctionnement Normal (IMOD13).
+
+	Seul un Reset du système (POR) permet alors de corriger
+	ce défaut qui est crée dans la routine de contrôle des 
+	sécurités SFTYCK.
+
+1.0	Lors d'un arrêt d'urgence, un glissement de cable peut
+	apparaître sur la poulie machine. Dans ce cas, la Led 
+	EVF peut être allumée sans qu'elle soit la cause réelle de
+	l'anomalie.
+	Rechercher la cause du défaut à l'aide des autres Leds
+	de défauts (POT, IMODE13 ...)
+
+2.0	Vérifier les connections des PVT et PPT.
+
+3.0	Vérifier l'accouplement du PVT.
+
+4.0	Vérifier la compression du galet frotteur sur la bande de 
+	roulement de la poulie machine pour les PVT à friction.
+
+5.0	Remplacer:
+
+	5.1	Le PVT (Primary Velocity Transducer).
+
+	5.2	Le PPT (Primary Position Transducer).
+
+	5.3	La carte Transducer.
+
+	
+	

@@ -1,0 +1,53 @@
+L'Alimentation Electronique CEPS fournie les tensions,
+fréquence et signaux nécessaires au fonctionnement 
+des Cartes du Rack, du PVT, du PPT et de l'Ampli 
+MF/BK.
+
+1.0  Tensions: 
+
+	1.1	+ 8 vdc
+	1.2	- 8 vdc
+	1.3	  8  vret
+
+	1.4	+ 5 vdc *
+
+	1.5	+ 18 vdc
+	1.6	   18 vret
+
+	1.7	+ 15 vdc
+	1.8	- 15 vdc
+
+	1.9	+ 12 vdc
+	1.10	- 12 vdc
+
+	* Nota: 
+		Avec les alimentations à Leds, le
+		+5 vdc est présent quand la carte
+		µP est en place.	
+
+2.0  Fréquence:
+ 
+	2.1	100 Khz.
+
+3.0  Signaux:
+
+	3.1	+ LAC, - LAC.
+	3.2	/LI.
+	3.3	/ZCO.
+	3.4	/270.
+	3.5	/POR.
+
+Si le fonctionnement est correct, un relais PSO
+110 vdc est commandé et un contact inséré
+juste après la chaîne de sécurité autorise le
+fonctionnement de l'appareil.
+
+Le contrôle de la tension du réseau y est aussi
+assuré (signaux: +LAC / -LAC) et sur certaines 
+alimentations, un réglage par un potentiomètre
+peut être effectué.
+
+Test 40 à l'OMT: LACF adresse @ F3dE à régler 
+à la valeur 03b6 pour une tension de 380 vac
+sur le réseau.
+

@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+                               Transducer
+------------------------------------------------------------------------
+ 
+Cette carte assure la communication avec le:
+
+1.0	PPT	Primary Position Transducer. 
+	        
+	1.1	Position et Vitesse de la cabine à partir
+		de la poulie du ruban.
+
+2.0	PVT	Primary Velocity Transducer.
+	        
+	2.1	Vitesse du moteur par l'Encodeur monté
+		sur la machine.
+
+3.0	COP	Car Operational Panel.
+	        
+	3.1	Carte µP de la Boite à bouton cabine.
+
+4.0	Contrôleur de GROUP. 
+
+	4.1	Carte Comm I/O du GROUP.
+
+------------------------------------------------------------------------
+                               Maintenance
+------------------------------------------------------------------------
+   
+Cette carte peut être à l'origine des défauts de :
+
+5.0	Vitesse de la machine (erreur PVT).
+	
+6.0	Vitesse de la cabine (erreur PPT)
+	
+7.0	Position de la cabine (erreur PPT).
+	
+	7.1	Test 200.2 : PCF / PCIF.
+	
+8.0	Communication avec le GROUP.
+	
+	8.1	Test 200.2 : GCF (Manoeuvre sauvage).
+			
+9.0	Communication avec le COP.
+	
+	9.1	Test 200.2 : CMF (Retour au niveau
+		bas avec les portes ouvertes).
+   

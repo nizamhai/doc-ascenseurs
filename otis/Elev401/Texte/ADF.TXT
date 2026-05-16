@@ -1,0 +1,41 @@
+----------------
+Symptômes
+----------------
+
+1.0	Les Leds 2 (ADF) et 20 (IMODE13) sont allumées.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté des anomalies de fonctionnement de
+	la carte PA I/O (Conversion Analogique / Digitale) et a
+	décidé d'interdire le Mode de fonctionnement Normal (13).
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système vérifie la précision et la vitesse de la 
+	conversion Analogique / Digitale par un canal réservé 
+	sur la carte PA I/O.
+
+	Une tension de référence (TRV) est appliquée en permanence
+	sur ce canal.
+
+	Lors du Test, le système teste la sortie numérique du canal
+	et détermine:
+
+		- Si elle se trouve dans les limites de tolérance.
+
+		- Si le temps de conversion est acceptable.
+
+	Il faut 3 défaillances consécutives pour provoquer un défaut 
+	ADF et inhiber le Mode de fonctionnement Normal (IMOD13).
+
+	Le défaut ADF est crée dans la routine d'auto contrôle SHELTH.
+
+1.0	Remplacer la carte PA I/O.
+
+
+ 

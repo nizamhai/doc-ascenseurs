@@ -1,0 +1,13 @@
+HT201781-1	CEPS blanche 1ère génération
+HT203193-3  	Hyperion
+HT203193-60 	Hyperion (module A)
+HT203193-65 	Hyperion (module B)
+HT203193-50 	Hyperion (module Input)
+HT203193-55 	Hyperion (module Logic)
+205410-3    	A Leds
+
+HT204329-1 	Remplacée par AAA21000C2     * voir Nota *
+
+Nota :	L'alimentation HT204329-1 est utilisée quand
+	le rack du GROUP se situe dans le contrôleur
+	de la 1ère cabine.  

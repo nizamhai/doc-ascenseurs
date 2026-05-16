@@ -1,0 +1,9 @@
+HT200710-2     	PPT à Vis		* Voir Nota *
+6104CG1    	PPT à Broche
+2700CBL1       	Paquet remplacement PPT à Vis
+174GL1          Câble seul (PPT à Broche)
+
+Nota:	Le PPT à vis est remplacé par le PPT à Broche.
+	En cas de remplacement, il faut commander le 
+	paquet 27OOCBL1 qui comprend un PPT à Broche
+	6140CG1 et le cable 174GL1.

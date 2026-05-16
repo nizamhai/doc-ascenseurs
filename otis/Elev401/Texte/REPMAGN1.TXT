@@ -1,0 +1,36 @@
+LA46S2439-0010	Carte 12SCR (1PC)
+LA46S2440-0010	Carte ECPCB (2PC)
+LA46S2441-0010	Carte GATE FIRING (4PC)
+LA5P205-0026	Relais 1CR
+630F1	      	Relais 2CR/3CR/4CR
+618AE1		Socket Relais 2CR/3CR/4CR
+613CA1		Contacteur 3M/4M
+LA5P90-0059	Circuit RC (3M/4M)
+LA5P20-0271	Diode 1RT/2RT
+LA5P218-0016	Sonde Thermique
+LA5P218-0019	Sonde Thermique
+LA5P218-0020	Sonde Thermique
+LA5P68-0068	Transformateur de courant
+LA5P58-0685	Transformateur 2PT
+LA5P41-0438	Resistance 1R/2R/3R
+LA5P224-0058	Condensateur 1C/2C/3C
+FAA5393A12	Kit de 12 Thyristors FAA607A1 pour E401/E411
+RBA50P250	Protistor 250A 
+RBA50P350	Protistor 350A 
+A70P400        	Protistor 400A
+LA5P17-0223	Protistor 5F type TI 600
+LA5P17-0237	Protistor 5F type TI 1500 (G0375AX2)
+LA5P17-0196	Fusible (6F/7F) 6A 250V
+LA5P17-0019	Fusible (8F/9F) 30A 600V
+7151AP3		Bloc complet 1M/2M
+177CY2		Micro contact 1M/2M
+GAA90BY1	Ressort Interieur Bobine 1M/2M
+GAA94AY1	Ressort de retenue d'Armature 1M/2M
+GAA245E1	Armature (Palette) 1M/2M
+G0156CG1	Doigt (Kit complet) 1M/2M
+-		Pare flamme 1M/2M
+230BR1		Pont redresseur 1M/2M
+LA5P16-0028	Ventilateur Rack (1/2MTR)
+LA5P15-0022	Filtre (porte)
+
+

@@ -1,0 +1,71 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas .
+
+2.0	La Led LOW LINE TRIP est allumée et ne peut être 
+	Resetée.
+
+3.0	Les 3 Protistors AC  1F / 2F / 3F sont bons.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Carte ECPCB (2PC) défectueuse.
+
+2.0	Carte Voltage Divider défectueuse.      
+
+3.0	Carte 12SCR (1PC) défectueuse.
+
+4.0	Mauvaise(s) Connexion(s) 
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Si la Led LINE LOSS de la carte 12SCR n'est pas allumée, 
+	remplacer la carte ECPCB.
+
+2.0	Si la Led LINE LOSS de la carte 12SCR est allumée, prendre
+	la tension entre les points Test de la carte 12SCR :
+
+	2.1	La Tension entre A0 et B0 doit être égale à 12 vac.
+
+	2.2	La Tension entre B0 et C0 doit être égale à 12 vac.
+
+	2.3	La Tension entre A0 et C0 doit être égale à 12 vac.
+
+	Si une des 3 tensions est nulle ou incorrecte, remplacer la 
+	carte Voltage Divider.              
+
+3.0	Prendre la tension entre les points Test de la carte 12SCR 
+	et le Commun (2TP):
+
+	3.1	La Tension entre LAB & Commun 2TP doit être 
+		égale à 6 vac.
+
+	3.2	La Tension entre LBC & Commun 2TP doit être 
+		égale à 6 vac.
+
+	3.3	La Tension entre LCA & Commun 2TP doit être 
+		égale à 6 vac.
+
+	Si une des 3 tensions est nulle ou incorrecte, remplacer la
+	carte 12SCR (1PC).                
+
+4.0	Vérifier les connections entre :
+	
+	4.1	Les protistors:
+		
+		4.1.1	L1, L2, L3 & A, B, C vers la carte Voltage
+			Divider.
+	
+	4.2	Les cartes:
+
+		4.2.1	Voltage Divider et 12SCR par le Connecteur
+			3 CONN.
+
+		4.2.2	12SCR et ECPCB par le Connecteur 5 CONN.
+

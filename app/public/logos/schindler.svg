@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 200" fill="none">
+  <!-- Outer circle -->
+  <circle cx="90" cy="80" r="68" fill="#d4d4d4" stroke="#b0b0b0" stroke-width="2"/>
+  <!-- Inner circle cutout -->
+  <circle cx="90" cy="80" r="48" fill="#e8e8e8"/>
+  <!-- Spiral/swirl opening -->
+  <path d="M90 12 A68 68 0 0 1 158 80 L138 80 A48 48 0 0 0 90 32 Z" fill="#c0c0c0"/>
+  <!-- Upward triangle/arrow -->
+  <polygon points="90,42 116,88 64,88" fill="#a0a0a0" stroke="#909090" stroke-width="1"/>
+  <polygon points="90,50 110,84 70,84" fill="#b8b8b8"/>
+  <!-- Schindler text -->
+  <text x="90" y="185" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="32" fill="#cc0000">Schindler</text>
+</svg>

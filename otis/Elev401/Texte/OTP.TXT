@@ -1,0 +1,82 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 13 (OTP) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Une des deux sondes thermiques du contrôleur a détecté
+	une température excessive:
+	
+	1.1	Panne de climatisation.
+
+	1.2	Défaut de fonctionnement.
+
+2.0	Si l'information de température est ramenée du convertisseur
+	Louis ALLIS, les sondes thermiques dans le Rack ou dans le
+	transformateur de puissance ont détecté une température
+	excessive:
+
+	2.1	Panne de climatisation.
+
+	2.2	Défaut de fonctionnement.
+
+3.0	La carte CF I/O qui gère l'entrée de l'information OTP en 
+	A6 TB1-43 est défectueuse. 
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la température ambiante car les 
+	composants électroniques sont certifiés pour fonctionner
+	dans une certaine gamme de température. Au-delà, leur 
+	fonctionnement peut être aléatoire. 
+	
+	Le contrôle est réalisé dans:
+
+	- Le contrôleur à l'aide d'une sonde placée sous le Rack
+	  de carte.
+
+	- L'alimentation Electronique CEPS grâce à une sonde.
+
+	- Le convertisseur de puissance (Rack et transformateur)
+	  si l'information de température est ramenée vers le 
+	  contrôleur.
+
+	- Dans le cas contraire, une température anormale est 
+	  traitée par le convertisseur comme un défaut interne et
+	  entraîne un arrêt d'urgence (Led OVERTEMP allumée,
+	  défaut DDSTAT en Test 200-2).
+
+	En cas de détection, la cabine est ramenée au niveau principal,
+	portes ouvertes jusqu'à disparition du défaut.
+	
+	Le défaut OTP est crée dans la routine d'Auto contrôle SHELTH.
+
+1.0	Si le défaut est dû à une panne de climatisation, ouvrir les 
+	portes des contrôleurs (manoeuvre et puissance) pour permettre
+	une remise en service plus rapide de l'appareil.
+
+	1.1	Vérifier le bon fonctionnement des ventilateurs dans
+		le contrôleur de manoeuvre (blocage mécanique).
+
+2.0	Vérifier que la borne en A6 TB1-43 ne soit pas reliée au HL1 
+	par :
+	
+	2.1	La sonde Thermique sous le Rack de carte.
+
+	2.2	La sonde Thermique dans l'Alimentation Electronique
+		CEPS.
+
+	2.3	L'information pouvant venir du convertisseur.
+
+3.0	Remplacer:
+
+	3.1	La sonde défectueuse.
+
+	3.2	La carte CF I/O si l'information OTP en A6 TB1-43 
+		n'est pas reliée par une sonde défectueuse à HL1.

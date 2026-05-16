@@ -1,0 +1,25 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+2.0	Une sortie en défaut a été rendue inopérante.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Une sortie de la carte est en court circuit.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Procéder:
+	
+	1.1	Au test en Mode 3 (Test automatique).
+
+	1.2	Au Test en Mode 1 pour obtenir le recalibrage
+		en courant des sorties.
+

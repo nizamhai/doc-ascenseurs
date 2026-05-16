@@ -1,0 +1,7 @@
+HT204411-2	Ampli MF/BK type1
+HT206020-2	Ampli MF/BK type2
+
+Nota:	Le type1, de génération plus ancienne, ne 
+	possède pas en interne, les résistances 
+	MFSR et BSR pour la mesure des courants
+	MF (excitation) et BK (frein).

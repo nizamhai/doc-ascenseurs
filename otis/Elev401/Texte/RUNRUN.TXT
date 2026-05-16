@@ -1,0 +1,48 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.
+
+2.0	La Led RUN est allumée en permanence.    
+
+3.0	La Led READY est allumée en permanence. 
+
+4.0	Les contacteurs 1M et 2M sont collés.
+
+5.0	Il n'y a pas de circulation de courant dans le moteur.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La commande DV (Dictation Voltage) venant de la carte 
+	PA I/O du contrôleur de manoeuvre est nulle.
+
+2.0 	Carte ECPCB (2PC) défectueuse.
+
+3.0 	Carte 12SCR (1PC) défectueuse.
+
+4.0 	Connexion(s) défectueuse(s).
+
+-------------
+Remèdes
+-------------
+
+1.0	Vérifier d'abord que le contacteur BPS soit collé:
+	
+	1.1	BPS (@F38A) doit être à 1 (sinon EMLS4 ou EMLS89).
+
+2.0	Vérifier que la tension du signal DV est présente entre les bornes
+	3TB19 et 3TB18. Dans le cas contraire, remplacer la carte PA I/O
+	si les liaisons entre les cartes PA I/O et ECPCB sont correctes.
+					
+3.0	Vérifier que la tension matérialisant le courant de référence est
+	présente sur le point test 19TP de la carte ECPCB. Dans le cas
+	contraire, remplacer la carte ECPCB (2PC).
+	
+4.0	Vérifier que la tension matérialisant le courant de référence est
+	présente sur le point test 34TP de la carte 12SCR. Dans le cas
+	contraire, vérifier la continuité du connecteur 5 CONN puis
+	remplacer la carte 12SCR (1PC).
+	

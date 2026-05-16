@@ -1,0 +1,83 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 19 (GCF) est allumée.
+
+2.0	L'appareil ne répond plus aux appels paliers mais dessert 
+	des envois cabine qui sont crées automatiquement. 
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Il n'y a plus de communication en provenance du GROUP.	
+
+2.0	Le GROUP est hors service.
+
+3.0	La carte Transducer ou COMM I/O est défectueuse.
+
+-------------
+Remèdes
+-------------
+
+Nota:	GCF (Group Communication Failure) est un défaut de 
+	communication entre le GROUP et le contrôleur d'une
+	cabine.
+	  
+1.0	Vérifier:
+
+	1.1	Que les connections entre le GROUP et le Contrôleur
+		sont correctes. 
+
+	1.2	Que l'alimentation GEPS du GROUP fonctionne.
+
+2.0	Deux Leds permettent de surveiller le bon déroulement du 
+	programme sur la carte microprocesseur du GROUP:     
+
+	2.1	Led rouge clignotante (Watchdog).
+
+	2.2	Led verte fixe (Alimentation).
+	
+	2.3	Dans le cas contraire suivre les étapes suivantes 
+		en procédant chaque fois à un essai:
+
+		2.3.1	Faire un Reset de la carte.
+
+		2.3.2	Remplacer le TMS9901.
+
+		2.3.3	Remplacer les TMS9900 / 9902 / 9904.
+
+		2.3.4	Remplacer les circuits mémoire RAM si ils
+			sont montés sur socket.
+
+		2.3.5	Laisser uniquement dans le Rack la carte 
+			avec l'OMT débranché (avec la carte PET
+			BOARD si il y a un EMS).
+
+		2.3.6	Remplacer provisoirement la carte µP par celle 
+			d'une cabine en prenant soins de changer les 
+			Eproms et les interrupteurs.
+
+		Nota:	Lors d'un fonctionnement prolongé en manoeuvre
+			sauvage, le risque principal est l'élévation de
+			la température en machinerie du fait du trafic
+			intense.
+			C'est alors toute la batterie d'ascenseur qui 
+			va se retrouver à l'arrêt.
+
+		Nota:	Il se peut que les cartes µP Contrôleur et GROUP 
+			ne possède pas le même type d'Eprom (2732 ou
+			2716).
+
+			Certaines cartes microprocesseur ne sont pas 
+			capables d'adresser des cartes Pet Board (pour
+			EMS et Analyse de Trafic)
+
+3.0	Si l'anomalie persiste, remplacer:
+	
+	3.1	La carte Transducer dans le Rack du contrôleur cabine.
+
+	3.2	La carte COMM I/O dans le Rack du GROUP.
+
+				

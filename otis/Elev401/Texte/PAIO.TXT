@@ -1,0 +1,57 @@
+------------------------------------------------------------------------
+                               PA I/O
+------------------------------------------------------------------------
+         
+Cette carte assure les asservissements en tension et
+courant avec:
+
+1.0	Le Convertisseur statique 
+	
+	1.1	Carte ECPCB du Louis ALLIS (Magnetec).
+
+2.0	L'Ampli MF/BK (Excitation / Frein).
+                  
+Elle possède des potentiomètres pour le réglage:
+
+3.0	Du Gain (G).
+
+4.0	De la Réponse (R).
+
+5.0	De l'Equilibrage Electrique (LB).
+
+6.0	De la Réduction du Champs Moteur (FW).
+
+7.0	Du pèse charge noyau plongeur (suivant le
+	type de carte).		
+
+------------------------------------------------------------------------
+                               Maintenance
+------------------------------------------------------------------------
+   
+Cette carte peut être à l'origine des défauts:
+
+8.0	De Vibrations (réglages Gain ou réponse).
+
+9.0	D'erreur de Direction:
+
+	9.1	Test 200.2 : Défaut DIRF 
+
+		9.1.1	Mauvaise DV.
+		9.1.2	Mauvais réglage Gain 
+			ou Réponse.
+
+10.0	Du convertisseur A/D:
+
+	10.1	Test 200.2 : Défaut ADF.
+
+11.0	De Suppression de la réduction du champs (FW):
+
+	11.1	Echauffement anormal du moteur.
+
+	11.2	Défaut du convertisseur (Protistors ...)
+
+12.0	De Frein (commande défectueuse).
+
+13.0	D'Excitation machine (MF).
+	
+	

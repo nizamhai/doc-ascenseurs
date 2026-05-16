@@ -1,0 +1,38 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas .
+
+2.0	La Led OPEN FUSE / CB est allumée et ne peut être
+	Resetée.
+
+3.0	La Led READY est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Les Fusibles 4F et / ou 5F sont défectueux.
+
+2.0	Le contact actionné par le percuteur de 5F est défectueux
+	ou mal positionné.     
+
+3.0	Connexion(s) défectueuse(s) sur le contact actionné par 5F.
+
+4.0	Carte ECPCB (2PC) défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier l'état des fusibles 4F et 5F. Si ils sont hors service,
+	se reporter au défaut "Destruction des Protistors AC / DC ".
+
+2.0	Tester le contact actionné par le percuteur de 5F. Vérifier 
+	sa fixation sur son bâti (2 vis).   
+
+3.0	Tester la continuité du circuit entre les bornes 5TB9 & 5TB10
+	de la carte ECPCB.
+
+4.0	Remplacer la carte ECPCB (2PC).

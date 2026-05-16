@@ -1,0 +1,72 @@
+P613AB12  	Relais 115 vac (IDZ1/IDZ2/ODZ1/ODZ2/STOP)
+AAA605AAA023	Filtre pour relais P613AB12
+P618AF1		Embase pour relais P613AB4/P613AB12
+P613AB4		Relais 110 vdc (EES...)
+P613AY1		Relais Pompier
+P618Y1		Embase pour relais Pompier
+P613AP6		Relais 115 vac (DO/DO1...) AMVC15-2A/2BAC120
+GO613AN221 	Relais SIEMENS 110vac 2no/2nc (3TH80>3TH40)
+GO613AP441 	Relais SIEMENS 110vac 4no/4nc (3TH82>3TH42)
+GO613AR551	Relais SIEMENS 110vac 5no/5nc (3TH83>3TH43)
+GO613AP711 	Relais SIEMENS 110vac 7no/1nc (3TH82>3TH42)
+GO613AR731	Relais SIEMENS 110vac 7no/3nc (3TH83>3TH43)
+GO613AN225 	Relais SIEMENS 125vdc 2no/2nc (3TH80>3TH40)
+GO613AP445 	Relais SIEMENS 125vdc 4no/4nc (3TH82>3TH42)
+GO613AP535 	Relais SIEMENS 125vdc 5no/3nc (3TH82>3TH42)
+GO634B2		Filtre RC Relais 110vac SIEMENS 3TH42/3TH43
+
+A6164BP411-DS2	Relais MC (Duty: 35-37,40-42)
+A6164BP411-DS3	Relais MC (Duty: 3,3A,7,7A,10A,11,11A-14,15A
+	              17A,18,18A,19-21,22A,23A,24,25-28,31-34,38,39)
+A6164BP411-DS4	Relais MC (Duty: 30,30A)
+A6164BP411-DS5	Relais MC (Duty: 1,2,4-6,8-10,15-17,18B,22,23
+		24A,29,29A)
+
+E6754C128-EB2	Contacteurs H/BPS
+E6754A121-EB2	Contacteur MFS
+
+HT2E150/07-0002	Protistor 15A 250v : F3/F4
+HT2E150/07-0006	Protistor 40A 250V : F21/F22
+375Y25      	Protistor 25A 250v : F23/F24
+HT2E150/10-0001	Fusible 1A 250v : F16/F18/F31/F35/F36
+HT2E150/10-0002	Fusible 2A 250v : F11/F13
+HT2E150/10-0003	Fusible 3A 250v : F55
+HT2E150/10-0004	Fusible 5A 250v : F7/F8/F12/F13/F14/F17/F19
+		      	            F25/F26/F41/F51/F52/F53/F58
+HT2E150/10-0005	Fusible 10A 250v : F16/F54
+HT2E150/10-0006	Fusible 15A 250v : F27/F28
+HT2E150/03-0018	Fusible 2.5A 250v : F29/F30
+AAA375BN18	Fusible 6A 600V
+
+HT2E4755/10-0002	R3 : Résistance MFSR
+HT2E4755/11-0001	R4 : Résistance BSR 
+232E133		R1/R2 : Résistance MF1 & B1
+297H2		Collier pour Résistance R1/R2
+AAA617H3	Résistance 3 ohms 50W
+OHM0959		Résistance 50 ohms 100W
+AAA617L10	Résistance 100 ohms 100W
+OHM0960B	Résistance 250 ohms 100W
+OHM0371		Résistance 250 ohms 25W
+OHM0368		Résistance 100 ohms 25W
+P232EF6		Résistance 300 ohms
+P232DZ1		Résistance 1000 ohms 100W
+P232DZ2		Résistance 1500 ohms 100W
+AAA232GF23	Résistance 2000 ohms 100W
+
+622D2		Pèse charge Epaisseur 34mm
+622E1		Pèse charge Epaisseur 22mm, charge < 500 kgs
+622E2		Pèse charge Epaisseur 22mm, charge <1000 kgs
+-		Impulseur 30vdc (IDZ/ODZ)
+HT2E4890/01-0007	Redresseur : RF1
+424R1       	Lumineux 31vdc NAO
+HT201102-1	Ventilateur (sous le rack de carte E401)
+HT202326-1 	Ventilateur 110 vac + GROUP (Armoire seule)
+HT201191-1	Sonde Thermique (Rack de carte Cabine/GROUP)
+HT206378-1	Filtre à air (porte)
+HT201173-1	L1/L2/L3 : Filtre Antiparasite 
+FO194AW11	Clef UTF pour 6140W11/21
+FO194AW1	Clef UTD pour 6140W1
+FO194AW5	Clef UTA pour 6140W4/5/22
+297B1		Ruban Selecteur perforé (par 1 Metre)
+
+

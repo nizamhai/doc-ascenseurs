@@ -1,0 +1,98 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 13 (EMLS21) est allumée.	
+
+-------------------------
+Causes Probables
+--------------------------
+
+1.0	La tension de manoeuvre est incorrecte.
+
+2.0	Le fonctionnement du contacteur H est défectueux.
+
+3.0	Le fonctionnement du contacteur BPS est défectueux.
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Lors de l'arrêt à niveau, le système contrôle la séquence 
+	suivante:
+	
+	- Le contacteur H doit retombé (/H=1) car son autorisation
+	  de collage est repassée à 0 en MLS20 (HESS=0).	
+
+	- Le contacteur BPS doit retombé (BPS=0) quand son
+	  autorisation de collage repasse à 0 en MLS21 (BPSE=0).	
+
+	Lors du passage en MLS21, une temporisation (TS21) est 
+	remise à 0. Si les deux conditions décrites ci-dessus ne sont
+	pas atteintes avant le temps maximal (TS21MX est égal à 
+	50 Hex # 8 sec) alors le défaut EMSL21 est actif.
+
+1.0	Vérifier:
+
+	1.1	La tension de manoeuvre sur la borne A8 TB1-56 doit
+		être de 110 vdc:
+		
+		1.1.1	Vérifier le condensateur C1.
+
+	Nota:	Pour tous les EMLS(x), la tension de manoeuvre
+		peut être la cause du défaut si elle descend sous
+		les 100 vdc aux bornes des contacteurs MFS, H
+		et BPS.
+
+2.0	Le contacteur H:
+
+	2.1	Ne retombe pas.
+
+		2.1.1	Vérifier s'il existe un dur mécanique ou si 
+			un contact est soudé.
+
+		2.1.2	Vérifier si le relais n'est pas rémanent.
+
+		2.1.3	Le signal HESS à l'adresse @ F39A doit 
+			être égal à 0.
+
+		2.1.4	Remplacer la carte Relay I/O.
+
+	2.2	Retombe.
+
+		2.2.1	La tension en A6 TB1-58 doit être de 110 vdc.
+
+			2.2.1.1	Vérifier le contact à rupture H 9/10.
+
+		2.2.2	Le signal /H à l'adresse @ F394 doit être égal
+			à 1.
+
+		2.2.3	Remplacer la carte CF I/O si la tension est 
+			correcte.
+
+3.0	Le contacteur BPS
+
+	3.1	Ne retombe pas.
+
+		3.1.1	Vérifier s'il existe un dur mécanique ou si 
+			un contact est soudé.
+
+		3.1.2	Vérifier si le relais n'est pas rémanent.
+
+		3.1.3	Le signal BPSE à l'adresse @ F38C doit 
+			être égal à 0.
+
+		3.1.4	Remplacer la carte Relay I/O.
+
+	3.2	Retombe.
+
+		3.2.1	La tension en A6 TB1-53 doit être de 0 vdc.
+
+			3.2.2.1	Vérifier le contact BPS 11/12.
+
+		3.2.2	Le signal BPS à l'adresse @ F38A doit être
+			égal à 0.
+
+		3.2.3	Remplacer la carte CF I/O si la tension est
+			correcte.
+

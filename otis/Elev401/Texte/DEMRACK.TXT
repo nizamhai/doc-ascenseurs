@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+                               Procédure
+------------------------------------------------------------------------
+   
+1.0	Pour être tester, le Rack est enlevé du contrôleur mais doit
+	rester assemblé.
+		
+2.0	Pour extraire le Rack, procéder de la façon suivante.
+
+	2.1	Mettre l'ascenseur hors tension.
+
+	2.2	Enlever.
+
+		2.2.1	Le cache plastique de protection du Rack.
+		2.2.2	Les cordons des connecteurs 1 / 2 / 3 CONN.
+		2.2.3	Les connections vers la carte 12 Channel Gate
+			Firing.
+		2.2.4	La carte 12 Channel Gate Firing.
+		2.2.5	Les connections vers la carte Voltage Divider.
+		2.2.6	Les connections vers les Transformateurs
+			de courant (CT).
+		2.2.7	Les connections de la sonde Thermique.
+		2.2.8	Les 5 fils de puissance (3 phases + 2 fils
+			repérés 31 et 34).
+		2.2.9	Les fils du protistor 4F vers 5F.
+		2.2.9	Les 4 écrous de fixation du Rack sur les 
+			tampons isolateurs rouge.
+		2.2.10	La carte Voltage Divider.
+

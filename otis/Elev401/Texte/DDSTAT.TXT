@@ -1,0 +1,43 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 6 (DDSTAT) est allumée ou clignote.
+
+2.0	Si l'appareil se déplace, arrêt grande vitesse par retombée des
+	contacteurs H et BPS.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le convertisseur statique détecte des anomalies de fonctionnement.
+
+2.0	Mauvaises connections entre la carte ECPCB (2PC) du convertisseur
+	et la carte Relay I/O du contrôleur de manoeuvre. 
+
+3.0	La carte Relay I/O ou ECPCB est défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	DDSTAT (Direct Drive Status) est un signal qui est 
+	transmis du convertisseur statique vers le contrôleur
+	de manoeuvre pour signaler une défaut de fonctionnement.
+
+1.0	Se reporter au défaut " Convertisseur Louis ALLIS ".
+
+2.0	Si aucune Led de défaut ne s'allume dans le convertisseur lors 
+	de l'anomalie, vérifier:
+
+	2.1	Les connections entre les cartes ECPCB et Relay I/O.
+
+	2.2	Les connecteurs sur la carte ECPCB.
+
+		Nota:	Les cartes ECPCB d'ancienne génération 
+			possèdent des connecteurs gris qui viennent
+			se fixer sur des picots qui ont tendances à 
+			s'oxyder.
+	
+3.0	Remplacer la carte ECPCB (2PC) puis la carte Relay I/O.

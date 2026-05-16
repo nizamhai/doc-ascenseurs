@@ -1,0 +1,20 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est clignotante.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Alarmes non affectées (au 01/08/1997).
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Ces alarmes ne doivent pas apparaître et ne peuvent affecter
+	les fonctions normales.
+	Cependant, si il est nécessaire de supprimer ces alarmes, 
+	exécuter l'action décrite pour l'erreur E0.

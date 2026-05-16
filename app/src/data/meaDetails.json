@@ -1,0 +1,766 @@
+{
+  "13": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Coupure sécurité en marche"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut se mémorise si, pendant le déplacement de l'ascenseur, l'entrée sécu 3 (sécurités passives avant la borne 3) est coupée"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier tous les contacts correspondants'(stop, parachute, trappe, etc...). L'appareil repart dès que la sécurité est rétablie. Nota: tous les appels et envois sont effacés"
+    }
+  ],
+  "14": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Coupure sécurité 4 en marche"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Défaut identique au \"13\" mais pour le shunt de porte cabine en porte automatique, ou pour le préliminaire de porte battante en paroi lisse (sécurité active entre les bornes 3 et 4)"
+    }
+  ],
+  "2043": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Défaut de verrouillage"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé si un sens est donné à la cabine et que le verrouillage ne s'est pas effectué (SECU6 non établie) au bout de la temporisation paramétrable par l'utilisateur Pour connaître le niveau où s'est produit le mauvais verrouillage, retrancher 20 au nombre lu. Exemple: défaut lu 31 donne 31-20 = 11 soit , l'ascenseur se trouvait au onzième niveau lorsque le défaut est apparu"
+    },
+    {
+      "type": "text",
+      "text": "- En porte automatique, la porte s'ouvre de nouveau puis se referme après la temporisation de fermeture sur ordre"
+    },
+    {
+      "type": "text",
+      "text": "- En paroi lisse, la came retombe puis se retire au bout de la temporisation avant départ"
+    },
+    {
+      "type": "text",
+      "text": "Dans les deux cas, au bout de la cinquième tentative, les envois et appels sont effacés. Ensuite, l'appareil peut effectuer de nouvelles tentatives sur une nouvelle commande"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts de verrouillage, leur branchement et éventuellement si un objet ne vient pas entraver la fermeture de la porte. Nota: Si ce défaut survient en recalage, à la cinquième tentative le recalage est interrompu. Il est alors nécessaire de couper puis remettre le courant pour repartir"
+    }
+  ],
+  "5073": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Coupure sécurité 6 en marche"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Défaut identique au \"13\" mais pour les contacts de verrouillage (sécurité active entre les bornes 4 et 6) Pour connaître le niveau où s'est produit le mauvais verrouillage, retrancher 50 au nombre lu"
+    },
+    {
+      "type": "text",
+      "text": "Exemple: défaut lu 55 donne 55-50 = 5 soit, l'ascenseur se trouvait au cinquième niveau lorsque le défaut est apparu"
+    }
+  ],
+  "01": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Coupure secteur"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé à chaque recalage, ceci pouvant être après une coupure secteur, un passage du mode révision au mode normal, après un défaut"
+    }
+  ],
+  "02": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Contrôle retombée des contacteurs"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Conformément à la norme, il est nécessaire, à chaque arrêt et avant tout autre départ, de vérifier que tous les contacteurs de puissance soient bien retombés (non bloqués mécaniquement). Pour répondre à cet article, une série , réalisée à l'aide d'un contact normalement fermé associé à chaque contacteur de puissance , est câblée sur l'entrée \"CCO\". Si l'un de ces contacts reste ouvert à l'arrêt, le défaut \"02\" se mémorise. L'appareil repart dès que la série est de nouveau rétablie"
+    }
+  ],
+  "03": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "PV trop longue"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "préréglage MEA: 7s en électrique ou 14s oléodynamique"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le contacteur petite vitesse, la distance de ralentissement et le paramètre correspondant"
+    }
+  ],
+  "04": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Surcharge"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Défaut opérant uniquement à l'arrêt L'entrée \"SUR\" a été validée. L'appareil attend que l'entrée \"SUR\" soit de nouveau libérée pour repartir. Les portes fonctionnent normalement"
+    }
+  ],
+  "06": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Défaut de sens Ce défaut ne peut apparaître que pendant la phase de recalage. Trois cas sont possibles"
+    },
+    {
+      "type": "text",
+      "text": "Le capteur lit les faisceaux à l'envers par rapport au sens de déplacement de l'ascenseur - en montée FAI en premier, au lieu de FAS"
+    },
+    {
+      "type": "text",
+      "text": "- ou en descente FAS en premier, au lieu de FAI"
+    },
+    {
+      "type": "text",
+      "text": "Remède : permuter les faisceaux"
+    },
+    {
+      "type": "text",
+      "text": "Les boîtes arrêt GV sont inversées. L'appareil actionne - en montée, la boîte AGB au lieu de AGH"
+    },
+    {
+      "type": "text",
+      "text": "- ou en descente, la boîte AGH au lieu de AGB"
+    },
+    {
+      "type": "text",
+      "text": "Remède : permuter les entrées AGH et AGB"
+    },
+    {
+      "type": "text",
+      "text": "Les drapeaux sont trop courts ou trop rapprochés Remède : mettre des drapeaux plus longs ou allonger les distances entre les drapeaux"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est bloquant: couper puis remettre le courant pour repartir"
+    }
+  ],
+  "08": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Masse sur le 24V carte"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé si une des bornes \"REF\",\"DO 1 \",\"V+\",\"VOC\",\"THl, TH2\", \"24cc\" est ou a été reliée à la terre. L'appareil repart si la masse est éliminée"
+    }
+  ],
+  "0A": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Court-circuit sur DO1"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé si la sortie display cabine ou palier \"DO 1\" est ou a été reliée à la borne REF. Dans ce cas, les informations transmises au display sont stoppées et ne pourront revenir qu'après coupure et remise du secteur. Ce défaut permet de protéger la sortie correspondante"
+    }
+  ],
+  "0E": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Détection Incendie"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Si le paramètre U36 a été validé et qu'une entrée incendie est coupée, ce défaut est mémorisé . Il sera mémorisé à chaque entrée coupée"
+    }
+  ],
+  "0F": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Défaut oléo"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Pour répondre à la norme sur les appareils oléo, le paramètre utilisateur \"FC\" est mis à 1 au moment où l'appareil atteint le fin de course haut. Le défaut est alors mémorisé .Tous les envois et appels sont effacés. Après que l'appareil ait quitté le fin de course, seules les fonctions retour automatique, isonivelage et déplacement des portes restent possibles"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Pour annuler ce défaut, quitter le fin de course puis mettre à 0 le paramètre \"FC\""
+    },
+    {
+      "type": "text",
+      "text": "EXEMPLE :"
+    },
+    {
+      "type": "text",
+      "text": "1 - Pression sur PRG (1 seconde)--- Affichage \"FC\""
+    },
+    {
+      "type": "text",
+      "text": "2 - Pression sur DEF -------------------Affichage \"01\""
+    },
+    {
+      "type": "text",
+      "text": "3 - Pression sur - - -------------------Affichage '00\""
+    },
+    {
+      "type": "text",
+      "text": "4 - Pression sur PRG -------------------Sortie. retour a l'affichage du niveau"
+    }
+  ],
+  "0H": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Défaut mémoire électrique"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "La mémoire électrique est défectueuse ou non paramétrée"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Remplacer ou reparamètrer la mémoire électrique - Couper puis remettre le courant pour repartir"
+    },
+    {
+      "type": "text",
+      "text": "- Ré-initialiser les paramètres utilisateurs"
+    }
+  ],
+  "0L": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Court-circuit sortie \"VOC\" ou sur une sortie de la carte voyant"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "La sortie \"VOC\" se protège si elle est surchargée et ou si elle est en court-circuit avec la terre (lampe à la masse). Si une surcharge ou un court circuit est détecté sur une sortie voyant enregistré de la carte voyants, l'ensemble des 24 sorties voyant est neutralisé et le défaut \"OU est alors mémorisé. Pour pouvoir obtenir à nouveau les voyants d'occupation \"VOC \" ou voyants enregistrés, couper puis remettre le courant, après avoir remédié au problème"
+    }
+  ],
+  "0t": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Sonde thermique"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé lorsque les entrées \"TH1\" et \"TH2\" sont coupées"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Si l'appareil est équipé de thermistances, shunter les bornes \"TH1\" et \"TH2\" puis effacer le défaut - Si le défaut persiste, les entrées \"TH1\" et \"TH2\" de la carte sont défectueuses."
+    },
+    {
+      "type": "text",
+      "text": "- Sinon, vérifier les thermistances"
+    },
+    {
+      "type": "text",
+      "text": "Lorsque les entrées \"TH1\" et \"TH2\" redeviennent correctes, l'ascenseur repart"
+    }
+  ],
+  "0o̅": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Défaut entrée CCO"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut apparaît si l'entrée CCO est restée validée pendant le déplacement de l'ascenseur"
+    }
+  ],
+  "1HH": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Baisse tension 24V d'alimentation de la carte pendant le déplacement de l'ascenseur"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "La tension d'entrée de la carte est en permanence vérifiée si elle descend en dessous de 18V pendant la marche. Ce défaut est mémorisé"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les alimentations réseau (micro coupures) , 24Vcc (ne pas oublier de vérifier la capacité associée) Nota : dès que la tension revient à un seuil correct, l'appareil part en recalage"
+    }
+  ],
+  "1b": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Baisse tension 24V"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Idem que . 1 h mais à l'arrêt de l'appareil"
+    }
+  ],
+  "7HH": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage moteur traction en montée"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé lorsque les 2 faisceaux du capteur ne changent pas d'état pendant plus de 20 secondes"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacteurs, le frein, l'alimentation du moteur, le capteur, le condensateur C 1 de filtrage du 24V armoire et les relais d'interface sur la carte. Ce défaut est bloquant : couper puis remettre le courant pour repartir Pour effectuer le test d'antipatinage: débrancher la sortie RGV de la carte puis effectuer un envoi"
+    }
+  ],
+  "7d": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage moteur traction en descente"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Idem que le défaut précédent mais dans le sens descente"
+    }
+  ],
+  "9t": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Arrêt GV bas resté actionné"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut ne peut être mémorisé qu'à l'arrêt. Le contact \"AGB\" est resté ouvert alors que la cabine arrive à l'extrême haut"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier l'état du contact \"AGB\" Nota : La cabine repart dès que le contact \"AGB\" n'est plus actionné"
+    }
+  ],
+  "9HH": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Arrêt GV haut resté actionné"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Même principe que précédemment mais pour le contact \"AGH\""
+    }
+  ],
+  "9A": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Extrêmes simultanés"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Les deux entrées AGH et AGB sont coupées simultanément. Lorsqu'une des deux entrées redevient correcte, l'ascenseur part en recalage"
+    },
+    {
+      "type": "header",
+      "text": "R E M E D E"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier l'état des contacts, des boîtes arrêt GV ainsi que leur branchement"
+    }
+  ],
+  "A0": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage porte A en ouverture"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "- le fin de course ouverture porte et son branchement - l'alimentation du moteur de porte - le contacteur d'ouverture - le relais ROA"
+    }
+  ],
+  "AF": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage porte A en fermeture"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Identique au défaut précédent mais pour la fermeture"
+    }
+  ],
+  "bA": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Mémorisation du bouton d'arrêt"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Nota : en recalage , cette mémorisation est annulée"
+    }
+  ],
+  "b0": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage porte B en ouverture"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Idem défaut \"AO\", mais pour la porte B"
+    }
+  ],
+  "bF": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antipatinage porte A en fermeture"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Idem défaut \"AF\", mais pour la porte B"
+    }
+  ],
+  "dE": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Décalage de sélection"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Lorsque l'appareil s'arrête au niveau , le point pile à niveau (cf. 4.1.1) s'allume. En fonctionnement normal les deux leds FAI et FAS sont allumées (cf. 1.2.1.5 ). Si une de ces deux leds est éteinte alors que le point est allumé , ce défaut qui correspond à un décalage de sélection est mémorisé. L'appareil toutefois continue de fonctionner Nota : Un seul défaut de ce type est mémorisé entre deux coupures secteur"
+    }
+  ],
+  "to.": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Détection du fonctionnement en mode secours Tobia intégré"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Si l'armoire est équipée du système Tobia, après une coupure secteur , l'entrée EL3 de la NG 12 est activée et le défaut est mémorisé (voir documentation Tobia)"
+    }
+  ],
+  "AN": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Antinuisance"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "rien"
+    }
+  ],
+  "Ad": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Arrêt dépassé"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Ce défaut est mémorisé si, pour 5 fois consécutives, la cabine en s'arrêtant glisse et dépasse la zone de porte. Tous les enregistrements sont alors effacés et un recalage est effectué"
+    }
+  ],
+  "dI": [
+    {
+      "type": "text",
+      "text": "NG12"
+    },
+    {
+      "type": "text",
+      "text": "Dispatcher"
+    },
+    {
+      "type": "header",
+      "text": "C A U S E S"
+    },
+    {
+      "type": "text",
+      "text": "Spécification Russes"
+    }
+  ]
+}

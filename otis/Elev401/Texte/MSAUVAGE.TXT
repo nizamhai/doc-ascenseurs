@@ -1,0 +1,89 @@
+----------------
+Symptômes
+----------------
+
+1.0	L'appareil ne répond plus aux appels paliers mais dessert 
+	des envois cabine qui sont crées automatiquement. 
+	
+2.0	Défaut GCF à l'OMT en Test 200-2.
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Il n'y a plus de communication en provenance du GROUP.	
+
+2.0	Le fusible des appels paliers est hors service.
+
+3.0	Le GROUP est hors service.
+
+4.0	La carte Transducer, COMM I/O ou GF I/O est défectueuse.
+
+-------------
+Remèdes
+-------------
+
+Nota:	GCF (Group Communication Failure) est un défaut de
+	communication entre le GROUP et le contrôleur cabine.
+	  
+1.0	Vérifier:
+
+	1.1	Que les connections entre le GROUP et le Contrôleur
+		sont correctes. 
+
+	1.2	Que l'alimentation GEPS du GROUP fonctionne.
+
+2.0	Vérifier le fusible des appels paliers (alimentation +31vdc).
+
+3.0	Deux Leds permettent de surveiller le bon déroulement du
+	programme sur la carte µP du GROUP:     
+
+	3.1	Led rouge clignotante (Watchdog).
+
+	3.2	Led verte fixe (Alimentation).
+	
+	3.3	Dans le cas contraire suivre les étapes suivantes
+		en procédant chaque fois à un essai:
+
+		3.3.1	Faire un Reset de la carte.
+
+		3.3.2	Remplacer le TMS9901.
+
+		3.3.3	Remplacer les TMS9900 / 9902 / 9904.
+
+		3.3.4	Remplacer les circuits mémoire RAM si ils
+			sont montés sur socket.
+
+		3.3.5	Laisser uniquement dans le Rack la carte
+			avec l'OMT débranché (avec la carte PET
+			BOARD si il y a un EMS).
+
+		3.3.6	Remplacer provisoirement la carte µP par
+			celle d'une cabine en prenant soins de 
+			changer les Eproms et les interrupteurs.
+
+		Nota:	Lors d'un fonctionnement prolongé en 
+			manoeuvre sauvage, le risque principal est
+			l'élévation importante de la température en 
+			machinerie du fait du trafic intense. C'est 
+			alors toute la batterie d'ascenseur qui va se
+			retrouver à l'arrêt.
+
+			Il se peut que les cartes microprocesseur 
+			Cabine et GROUP ne possède pas le même
+			type d'Eprom (2732 ou 2716).
+
+			Certaines cartes microprocesseur ne sont 
+			pas capables d'adresser des cartes Pet Board
+			(pour EMS et Analyse de Trafic)
+
+4.0	Si l'anomalie persiste, remplacer:
+	
+	4.1	La carte Transducer dans le Rack du contrôleur cabine.
+
+	4.2	La carte COMM I/O dans le Rack du GROUP.
+
+	4.3	La carte GF I/O qui contrôle la tension +31vdc sur les
+		appels paliers (GROUP).
+
+				

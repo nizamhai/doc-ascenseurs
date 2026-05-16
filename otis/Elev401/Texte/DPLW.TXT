@@ -1,0 +1,50 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 5 (DPLW) est allumée.
+
+2.0	L'appareil se déplace à vitesse réduite.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La charge en cabine est comprise entre 105 et 110%.
+
+2.0	Les pèses charge sont défectueux.
+
+3.0	La carte COP est défectueuse. 
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la charge en cabine:
+
+	- Si la valeur est supérieure à 105% et inférieure à 110% 
+	  (surcharge), le signal DPLW (Degraded Profil Load Weight)
+	  est mis à 1.
+
+	- Le profil de vitesse dicté (vitesse de référence) est 
+	  limité à 60 cm/s jusqu'à ce que la valeur repasse sous
+	  les 105%.
+		
+1.0	Vérifier en Test 200-3 à l'OMT la charge.
+
+	Nota:	La charge étant donnée en Livre Anglaise (lb) 
+		(égale à 454 gr), il suffit de diviser la valeur
+		par deux pour obtenir la pesée en kg.
+		
+2.0	Vérifier la tension de sortie de chaque Pèse charge.
+
+	2.1	A vide et en charge.
+
+3.0	Carte COP I ou COP II défectueuse.
+
+	3.1	Circuit U24 (ADC0804) de la Carte COP I défectueux.
+
+	3.2	Remplacer la carte COP.
+
+
+

@@ -1,0 +1,22 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Défaut de l'Eeprom sur la carte COPII.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Effacer en Mode 0 l'Eeprom ou remplacer ce composant. 
+	Si l'erreur persiste, changer la carte COPII.
+
+	Nota:	Les charges sont nécessaires pour exécuter un 
+		nouveau réglage des pèse charge.
+

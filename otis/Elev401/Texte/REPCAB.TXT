@@ -1,0 +1,25 @@
+HT201727-1	Carte Mother Board
+HT204349-1	Carte µP 2732
+HT201788-3	Carte µP 2716/2732	* voir Nota1 *
+HT201733-1	Carte TRANSDUCER
+HT205925-1	Carte PA I/O
+HT203101-2	Carte RELAY I/O
+HT203103-1	Carte CF I/O
+HT201723-1	Carte GP I/O
+HT201736-1	Carte BUS TERMINATOR
+8200BT2        	Carte PET BOARD
+8200BT3       	Carte PET BOARD avec CPI
+-		Carte COP I		* voir Nota2 *
+ABA26800ACB001	Carte COP II
+AAA26800ACA001	Carte support COP II
+ADA25000D1     	Paquet remplacement COP I
+8200EA2		Carte SYNTHETISEUR (COP)
+8201AB1		Carte SPT (boite KJ)
+
+Nota1:	La carte µp 2716/2732 n'est pas compatible avec la 
+	carte PET BOARD quand il y a un EMS. 
+	Il faut dans ce cas commander une carte HT204349-1 
+	(Carte µP 2732).
+
+Nota2:	La carte COP I doit etre remplacee par le paquet
+	ADA25000D1 (COP II + supports + cables).

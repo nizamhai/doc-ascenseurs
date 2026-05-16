@@ -1,0 +1,99 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur fonctionne constamment à vitesse réduite.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La commande DV (Dictation Voltage) venant de la carte 
+	PA I/O du contrôleur de manoeuvre est erronée.
+
+2.0	Le mode de fonctionnement est mal sélectionné.
+
+3.0	Le connecteur 4 CONN est défectueux.
+
+4.0 	La Carte ECPCB (2PC) est défectueuse.
+
+5.0 	Le courant de limitation sur la carte 12SCR est atteint.
+
+6.0	La tension en sortie du Rack (Voltage Feed-back) sur la 
+	carte 12SCR est erroné.
+
+7.0	Le courant en sortie du Rack (Current Feed-back) sur la 
+	carte 12SCR est erroné.
+
+8.0	Le couple moteur est insuffisant.
+
+9.0	L'excitation du moteur est trop importante.
+
+-------------
+Remèdes
+-------------
+
+1.0	Vérifier que la tension du signal DV présente entre les 
+	bornes 3TB19 (+) & 3TB18 (-) est correcte pour le mode 
+	de fonctionnement désiré.
+
+2.0	Vérifier : 
+
+	2.1	Le mode de fonctionnement:
+
+		2.1.1	Led 3 allumée en Mode Normal.
+
+		2.1.2	Led 3 éteinte en Mode Spécial.
+
+	2.2	Le connecteur 4 CONN sur la carte ECPCB.
+
+	2.3	La Led "Excessive Output Voltage" doit être éteinte.
+		Dans le cas contraire, se reporter au défaut "Excessive
+		Output Voltage".
+
+3.0	Vérifier que sur la carte ECPCB : 
+
+	3.1	La tension au point test 17TP doit être de polarité
+		opposée et égale à 1.1 fois la tension entre les 
+		bornes 3TB19 (+) et 3TB18 (-).
+
+	3.2	En traction, la tension au point test 19TP doit être
+		de la même polarité que celle en 17TP.
+		En régénération, les deux tensions en 19TP et 17TP
+		doivent être de polarité différente.
+
+	3.3	La tension au point test 14TP doit être égale en 
+		magnitude mais de polarité opposée à la tension
+		au point test 13TP.
+
+	Dans le cas contraire, remplacer la carte ECPCB (2PC).		
+
+4.0	Vérifier que sur la carte 12SCR : 
+
+	4.1	La tension au point test 36TP soit égale à +/- 4.6 vdc. 
+
+	4.2	La tension au point test 4TP doit être proportionnelle et 
+		de polarité identique à la tension mesurée entre les fils
+		32 et 35 en sortie du convertisseur. Vérifier les 
+		Connexions vers la carte Voltage Divider.
+
+	4.3	La tension au point test 37TP doit être négative et
+		proportionnelle au courant en sortie du convertisseur.
+		Mesurer le courant en sortie et le comparer avec IFBK
+		(le courant de Feed-back). Si celui ci est différent,
+		vérifier :
+		
+		4.3.1	Le connecteur 6 CONN.
+
+		4.3.2	Les transformateurs de courant 1CT, 2CT, 3CT
+			situés sous les 3 protistors AC:
+
+			4.3.2.1	Position verticale.
+
+			4.3.2.2	Résistance à peu près égale à 55 ohms.
+
+			4.3.2.3	Connexions vers la carte Voltage Divider.
+
+	Dans le cas contraire, remplacer la carte 12SCR (1PC).		
+		
+5.0	Vérifier que l'excitation de la machine est conforme.

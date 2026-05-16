@@ -1,0 +1,61 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 5 (DADTF) est allumée.
+
+2.0	La Led 27 (POT) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Carte PA I/O défectueuse.
+
+2.0	Carte Relay I/O défectueuse.
+
+3.0	Transformateur(s) de courant (CT) dans le convertisseur 
+	défectueux.
+
+4.0	Carte 12 SCR / ECPCB défectueuse.
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Ce contrôle Hardware est utilisé pour arrêter le déplacement
+	de l'appareil si l'accélération dépasse une valeur pré-réglée 
+	pendant plus de 0,25 sec.
+
+	Le signal du courant moteur IFBK (carte ECPCB du convertisseur)
+	est converti dans la carte PA I/O pour devenir le signal IDD, 
+	puis à nouveau amplifié, calibré puis différencié deux fois 
+	pour qu'il représente la variation d'accélération par rapport 
+	au temps (dA/dT).
+
+	Le signal ainsi crée est comparé à un niveau de référence réglé 
+	par le potentiomètre R126 de la carte PA I/O. Le résultat de la 
+	comparaison /DADTF est envoyé à la carte Relay I/O ou il est 
+	amplifié et appliqué à une temporisation.
+
+	Si le signal /DADTF est nul pendant plus de 0,25 sec, le relais 
+	EES n'est plus commandé, C et CX qui autorisent H et BPS 
+	retombent, provoquant un arrêt d'urgence (POT).
+
+	Le Software reçoit l'information DADTF (DADTRP) qui intervient
+	dans le signal SAFE.
+
+1.0	Remplacer la carte PA I/O
+
+2.0	Remplacer la carte Relay I/O
+
+3.0	Vérifier les connections entre la carte ECPCB et PA I/O, puis
+	si le défaut persiste:
+	
+	3.1	Sonner les transformateurs de courant (CT) dans le 
+		convertisseur. Leur résistance avoisine normalement
+		les 55 ohms.
+
+	3.2	Vérifier leurs connections vers la carte DIVIDER.
+
+4.0	Remplacer la carte 12 SCR (1PC) puis la carte ECPCB (2PC).

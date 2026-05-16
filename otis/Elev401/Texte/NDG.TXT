@@ -1,0 +1,107 @@
+----------------
+Symptômes
+----------------
+
+1.0	L'appareil actionne son buzzer et :
+
+	1.1	Referme automatiquement ses portes en petite vitesse.
+
+	1.2	Ou maintient les portes ouvertes.
+
+2.0	Aucun défaut à l'OMT.
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le patin électronique ou la cellule est actionné en permanence.
+	
+2.0	Un des boutons de réouverture (DOB) dans le COP en cabine 
+	est coincé.
+
+3.0	La Carte GP I/O est défectueuse.	
+
+4.0	Un bouton palier est coincé obligeant les appareils qui 
+	viennent desservir l'appel à partir en fermeture forcée.
+
+5.0	La Carte GF I/O du GROUP est défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier si l'appareil arrive à fermer ses portes: 
+
+	1.1	Que le relais RVD1 (Réouverture par le Patin 
+		électronique) ne soit pas collé en permanence.
+
+		1.1.1	Test 40: RVD1 (@ F0b2) doit être égal à 0.
+
+		1.1.2	La tension sur la borne A8 TB1-49 doit être
+			égale à 110 vac.
+
+		1.1.3	Si la tension est correcte et que RVD1
+			est retombé, remplacer la carte GP I/O.
+
+		1.1.4	Si la tension sur la borne A8 TB1-49 est nulle
+			(reliée au HL1), débrancher et vérifier le patin.
+
+	1.2	Que le relais RVD2 (Réouverture par une cellule)
+		ne soit pas collé en permanence.
+
+		1.2.1	Test 40: RVD2 (@ F0b4) doit être égal à 0.
+
+		1.2.2	La tension sur la borne A8 TB1-52 doit être
+			égale à 110 vac.
+
+		1.2.3	Si la tension est correcte et que RVD2
+			est retombé, remplacer la carte GP I/O.
+
+		1.2.4	Si la tension sur la borne A8 TB1-52 est nulle
+			(reliée au HL1), débrancher et vérifier la cellule.
+
+	1.3	Le contact de RVD1 en parallèle avec celui de RVD2
+		qui autorisent le maintien des relais DO/DO1.
+
+2.0	Vérifier si l'appareil reste portes ouvertes: 
+	
+	2.1	Que les boutons DOB (Commande d'ouverture des 
+		portes) ne sont pas actionnés en permanence.
+		
+		2.1.1	Test 400-2: La Led 7 (DOB) doit être éteinte.
+
+		2.1.2.	Débrancher la borne A8 TB1-115.
+
+			2.1.2.1	Si le signal DOB est nul, sonner les 
+				boutons DOB dans les 2 COP. 
+				
+			2.1.2.2	Si le signal DOB reste actif, changer
+				la carte GP I/O.
+
+		2.2.3	Débrancher sur la borne A8 TB1-74 le fil de 
+			cordon souple venant des contacts de boutons
+			DOB.
+
+			2.2.3.1	Si les relais DO et DO1 retombent, 
+				sonner les boutons DOB dans les 
+				2 COP en cabine. 
+
+	2.2	Que les relais DO et DO1 ne reste pas coincé 
+		mécaniquement.
+
+	2.3	Que l'interface ADO ou NDO n'est pas actionnée
+		en permanence.
+			
+		2.3.1	Test 40: ADO (@ EE74) doit repassé à 0 
+			après la temporisation de porte.
+
+		2.3.2	Test 40: NDO (@ EFEA) doit repassé à 0 
+			après la temporisation de porte.
+
+		2.2.3	Remplacer la carte GP I/O.
+
+3.0	Remettre en état le bouton palier défectueux.
+
+4.0	Si l'anomalie persiste, remplacer la carte GF I/O qui traite
+	l'appel palier (interface d'entrée/sortie hors service).
+

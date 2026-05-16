@@ -1,0 +1,1586 @@
+{
+  "circuit-smic-1-q-ecu__p01-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F2,5A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier larrivée du éVDC (X24)"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la liaison avec les autre modules"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-1-q-ecu__p03-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "12VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F2,5A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier XCAN, XBIO"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-1-q-ecu__vcc-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut du circuit SCIL"
+    },
+    {
+      "type": "text",
+      "text": "EPROM mal positionnée"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la connexion du circuit SCIC"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la position de lEPROM sur le circuit SCIT . la marque doit correspondre avec le coin biseaute"
+    }
+  ],
+  "circuit-smic-1-q-ecu__rkph-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Mauvais sens des phases"
+    },
+    {
+      "type": "text",
+      "text": "surtension ou chute de tension"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "inverser deux phases : XMAIN(4,5)"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le f Fusible F1A-LB 250VAC"
+    },
+    {
+      "type": "text",
+      "text": "vérifier lalimentation du transformateur TS"
+    }
+  ],
+  "circuit-smic-1-q-ecu__ispt-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT(1-2)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT(1-2)"
+    }
+  ],
+  "circuit-smic-1-q-ecu__isk-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT-2 et XESE-3"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT-2 et XESE-3"
+    }
+  ],
+  "circuit-smic-2-q-ecu__p01-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F4A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier larrivée du éVDC (X24)"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la liaison avec les autre modules"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-2-q-ecu__p02-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F2A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le 24VDC : ADDU, COP, ESE"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-2-q-ecu__vdd1-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "12VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F1,6A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le bio-bus, LOP, LIN"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-2-q-ecu__vcc-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut du circuit SCIL"
+    },
+    {
+      "type": "text",
+      "text": "EPROM mal positionnée"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la connexion du circuit SCIC"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la position de lEPROM sur le circuit SCIT . la marque doit correspondre avec le coin biseaute"
+    }
+  ],
+  "circuit-smic-2-q-ecu__rkph-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Mauvais sens des phases"
+    },
+    {
+      "type": "text",
+      "text": "surtension ou chute de tension"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "inverser deux phases : XMAIN(4,5)"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le f Fusible F1A-LB 250VAC"
+    },
+    {
+      "type": "text",
+      "text": "vérifier lalimentation du transformateur TS"
+    }
+  ],
+  "circuit-smic-2-q-ecu__rkph-dis-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Mauvais sens des phases du câblage du module de secours SEM"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le câblage du module SEM"
+    }
+  ],
+  "circuit-smic-2-q-ecu__ispt-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT(1-2)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT(1-2)"
+    }
+  ],
+  "circuit-smic-2-q-ecu__isk-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT-2 et XESE-3"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT-2 et XESE-3"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__p01-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F4A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier larrivée du éVDC (X24)"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la liaison avec les autre modules"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__p02-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F2A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le 24VDC : ADDU, COP, ESE"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__vdd1-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "12VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F1,6A-LB 250VAC défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le bio-bus, LOP, LIN"
+    },
+    {
+      "type": "text",
+      "text": "vérifier et /ou remplacer le fusible"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__vcc-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut du circuit SCIL"
+    },
+    {
+      "type": "text",
+      "text": "EPROM mal positionnée"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la connexion du circuit SCIC"
+    },
+    {
+      "type": "text",
+      "text": "vérifier la position de lEPROM sur le circuit SCIT . la marque doit correspondre avec le coin biseaute"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__ispt-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT(1-2)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT(1-2)"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__isk-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert entre XISPT-2 et XKHA-1"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier les contacts du circuit de sécurité se trouvant entre XISPT-2 et XKHA-1"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__enable-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Alimentation général déclenchée et alimentation secourue pour la Led LUET non présente"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le circuit de lalimentation de secours (NSG et ACCU) vérifier létat de lACCU"
+    }
+  ],
+  "circuit-smic-4-q-42-q-ecu__luet-allumee": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement normal le circuit de sécurité est ouvert entre XISPT(1) et XISPT(3)"
+    },
+    {
+      "type": "text",
+      "text": "Pendant la manuvre de desincarseration (KHA enclenché) un contact KTS est ouvert"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Si lappareil est au repos au niveau cela est normal car le KTS du niveau ou se trouve la cabine est ouvert par la pince de porte cabine Si lappareil est entre étage a larrêt (panne), vérifier les contacts entre XISPT(1) et XISPT(3)"
+    },
+    {
+      "type": "text",
+      "text": "dans ce cas ceci indique que la cabine se trouve dans la zone de porte ce qui permet de faire sortir les usagers en toute sécurité"
+    }
+  ],
+  "circuit-smic__service": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement normal"
+    },
+    {
+      "type": "text",
+      "text": "Switch n°8 sur ON : Mode montage = invalidation des informations gaine et du fonctionnement de la cabine. Effacement des données pour la course dapprentissage"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Mettre le switch n°8 sur OFF"
+    }
+  ],
+  "circuit-smic__wdog-non-clignotante-1-hz": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut de programme"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Faire un reset en appuyant sur le bouton reset du circuit SCIT"
+    }
+  ],
+  "circuit-smic-ecu__trip1": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement normal"
+    },
+    {
+      "type": "text",
+      "text": "Pesée inhibée (Switch n°8 sur ON)"
+    },
+    {
+      "type": "text",
+      "text": "Pesée déréglée"
+    },
+    {
+      "type": "text",
+      "text": "Digisens défectueux"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Mettre le switch n°1 sur OFF"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler la pesée (réglage mécanique et électrique) voir MS 225.01.01 Contrôler la liaison du Digisens au circuit SDIC (bornier XLD)"
+    }
+  ],
+  "circuit-smic-ecu__trip2": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement normal"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement mode maintenance DKFM (Switch n°7 sur ON)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Switch n°7 sur OFF"
+    }
+  ],
+  "circuit-smic-ecu__trip1-et-trip2": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Erreur fatal de la manuvre"
+    },
+    {
+      "type": "text",
+      "text": "Erreur du circuit de sécurité"
+    },
+    {
+      "type": "text",
+      "text": "Surcharge"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Faire un reset en appuyant sur le bouton reset du circuit SCIC Vérifier le circuit de sécurité Vérifier le fonctionnement et le réglage du Digisens"
+    }
+  ],
+  "circuit-smic-ecu__ks-kse": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "KS/KSE = 0"
+    },
+    {
+      "type": "text",
+      "text": "KS/KSE =1"
+    }
+  ],
+  "circuit-smic-ecu__err": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "En fonctionnement normal"
+    },
+    {
+      "type": "text",
+      "text": "Erreur temporaire"
+    },
+    {
+      "type": "text",
+      "text": "Un module nest pas disponible"
+    },
+    {
+      "type": "text",
+      "text": "Erreur fatale"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier létat des autres LEDs et agir en conséquences"
+    },
+    {
+      "type": "text",
+      "text": "Faire un reset en appuyant sur le bouton reset du circuit SCIC"
+    }
+  ],
+  "circuit-smic-ecu__door-clignotement-en-permanence": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "ERREUR DANS LE MODULE DE PORTE"
+    },
+    {
+      "type": "text",
+      "text": "Sous système de porte non disponible"
+    },
+    {
+      "type": "text",
+      "text": "Problème de communication du bus CAN"
+    },
+    {
+      "type": "text",
+      "text": "La manuvre a fait 3 mouvements de porte sans avoir le signal KET-S"
+    },
+    {
+      "type": "text",
+      "text": "La manuvre a fait 3 mouvements de porte sans avoir le signal KET-O"
+    },
+    {
+      "type": "text",
+      "text": "Apres un ordre ou un appel, les portes sont fermées (KET-S actif), mais dans les 3 minutes lasc. Ne démarre pas. La manuvre tente a 10 reprises mais le circuit de sécurité ne se ferme pas"
+    },
+    {
+      "type": "text",
+      "text": "Le contact de choc de la porte cabine KSKB est active trop fréquemment"
+    },
+    {
+      "type": "text",
+      "text": "Problème de communication du bus CAN"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Asc en mode course de montage, vérifier le Switch 8"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le pentatif et les connecteurs du bus CAN"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le contact KET-S (réglage et connexion), vérifier le connecteur ST-S Vérifier le contact KET-O (réglage et connexion), vérifier le connecteur ST-O"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier KTS Vérifier KTC Vérifier le reste du circuit de sécurité"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le contact KSKB (réglage et connexion) Vérifier quil ny a pas dobstacle a la fermeture Vérifier quil ny a pas de dur dans la porte"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le pendentif et les connecteurs du bus CAN"
+    }
+  ],
+  "circuit-smic-ecu__drive-clignotement-en-permanence": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "ERREUR DANS LE MODULE DENTRAINEMENT"
+    },
+    {
+      "type": "text",
+      "text": "Entraînement non disponible"
+    },
+    {
+      "type": "text",
+      "text": "Erreur fatal du convertisseur de fréquence"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité. Au départ dune course, le circuit de sécurité ne se ferme pas, bien que les portes soient verrouillées"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Asc en course de synchronisation, course dapprentissage, course de recalage, mode inspection"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le journal des erreurs et avertissement de lentraînement VACOM"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le circuit de sécurité"
+    },
+    {
+      "type": "text",
+      "text": "vérifier le contact KTS"
+    }
+  ],
+  "circuit-smic-ecu__drive-clignote-depend-du-nombre-de-clignotement": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Enclenchement des contacteurs. Les informations donnes par les contacts auxiliaires a la manuvre sont incorrectes"
+    },
+    {
+      "type": "text",
+      "text": "Mauvais sens de délassement. Lentraînement va dans le sens oppose à celui qui est demande"
+    },
+    {
+      "type": "text",
+      "text": "Lors du déplacement, les informations gaine ne correspondent pas aux informations mémorises lors de la derniers course dapprentissage"
+    },
+    {
+      "type": "text",
+      "text": "Temps de course dépasse Le temps de course est mémorise lors de la course dapprentissage"
+    },
+    {
+      "type": "text",
+      "text": "déclenchement du thermique moteur THMH ou du thermique"
+    },
+    {
+      "type": "text",
+      "text": "Erreur fatal de lentraînement VACOM en boucle fermé"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le câblage des contacteurs et des contacts auxiliaires"
+    },
+    {
+      "type": "text",
+      "text": "Inverser deux phases du moteur de traction Vérifier le câblage et linstallation des bistables KS et KSE"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les aimant en gaine Vérifier lalignement entre les bistables et les aimants gaine Vérifier la connexion des bistables"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier que rein nempêche le déplacement de lascenseur. Faire un reset et contrôles"
+    },
+    {
+      "type": "text",
+      "text": "Nombre de course par heure trop important. Thermique défectueux"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le journal des erreurs et avertissements de lentraînement VACOM"
+    }
+  ],
+  "combinaison-de-plusieurs-led-du-circuit-scic-ecu__wdog-drive-err-clignotent-lentement": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Etat spécial de la manuvre"
+    },
+    {
+      "type": "text",
+      "text": "Mode inspection enclenche"
+    },
+    {
+      "type": "text",
+      "text": "Manuvre électrique de rappel enclenchée"
+    },
+    {
+      "type": "text",
+      "text": "La manuvre effectue une course de synchronisation"
+    },
+    {
+      "type": "text",
+      "text": "La manuvre effectue une course dapprentissage"
+    }
+  ],
+  "combinaison-de-plusieurs-led-du-circuit-scic-ecu__wdog-door-drive-err-clignotent-lentement": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "La carte SIM nest pas présente"
+    },
+    {
+      "type": "text",
+      "text": "La carte SIM défectueuse"
+    },
+    {
+      "type": "text",
+      "text": "La carte SIM nappartient pas a cette commission"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Poser la carte SIM"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les connections de la carte SIM, remplacer la carte SIM"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier si les carte SIM et SCIC ne proviennent pas de sites différents"
+    }
+  ],
+  "circuit-sdic-ecu__p01-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "24VDC manquant"
+    },
+    {
+      "type": "text",
+      "text": "Fusible F2,5A-LB 250VAC défectueux (SMIC 1.Q) Fusible F4A-LB ou/et F2A-LB défectueux (SMIC 2.Q / 4/Q /42.Q)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier larrivée du 24VDC"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier la liaison avec les autre modules"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier et/ou remplacer le/les fusibles"
+    }
+  ],
+  "circuit-sdic-ecu__vcc-eteinte": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut de lalimentation interne du circuit SDIC"
+    },
+    {
+      "type": "text",
+      "text": "Défaut dalimentation du DIGISENS"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Remplacer le circuit SDIC"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le capteur de mesure de charge"
+    }
+  ],
+  "circuit-sdic-ecu__wdog-eteinte-ou-allumee-en-permanence": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Défaut dans le programme / défaut de communication sur le bus"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Faire un reset de la manuvre en coupant lalimentation générale"
+    }
+  ],
+  "circuit-sdic-ecu__err-allumee-en-permanence": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Digisens débranché (XLD)"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le branchement de la pesée"
+    }
+  ],
+  "circuit-sdic-ecu__wdog-err-clignotement-a-une-frequence-de-2-hz": [
+    {
+      "type": "header",
+      "text": "CAUSES POSSIBLES"
+    },
+    {
+      "type": "text",
+      "text": "Bandeau cabine COP débranche"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier le branchement du COP"
+    }
+  ],
+  "smart-diag__00": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Pas derreur enregistrée"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Toutes les erreurs mémorisées dans le registre dévènement sont effacées"
+    }
+  ],
+  "smart-diag__01": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Circuit de sécurité ouvert"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Un contact du circuit de sécurité est ouvert ( mou de câble, survitesse, verrouillage, etc...)"
+    }
+  ],
+  "smart-diag__02": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Ouverture du circuit de sécurité au niveau des portes pendant une course"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "La chaîne de sécurité a été ouverte au niveau des portes cabine ou paliers pendant la course"
+    }
+  ],
+  "smart-diag__03": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Problème dans la séquence normal de fermeture des portes"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "La porte ne sest pas fermée comme définis dans les paramètres"
+    }
+  ],
+  "smart-diag__04": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Cabine arrête en dehors de la zone de porte"
+    }
+  ],
+  "smart-diag__05": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Bouton dappel ou dordre coince"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Un appel ou un ordre reste enregistre après que la cabine ne soit arrêtée au niveau en question depuis un temps impartis"
+    }
+  ],
+  "smart-diag__06": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur ne démarre pas"
+    }
+  ],
+  "smart-diag__07": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Défaut dalimentation des circuits bionic"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Lunité dalimentation est hors des tolérances"
+    }
+  ],
+  "smart-diag__08": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Non utilise"
+    }
+  ],
+  "smart-diag__09": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Procédure dautocontrôle défaillante"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur ne répons pas au appels périodiques, si cette option existe"
+    }
+  ],
+  "smart-diag__10": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Temps de course trop long"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Une zone de déverrouillage na pas été atteinte dans le temps calcule lors de la course dapprentissage"
+    }
+  ],
+  "smart-diag__11": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Position perdue"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Il est apparu une remise en phase de la position cabine"
+    }
+  ],
+  "smart-diag__12": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Surchauffe"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Le moteur de traction est en surchauffe"
+    }
+  ],
+  "smart-diag__13": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Problème dans la séquence normal douverture des porte"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "La porte ne sest pas ouverte comme définit dans les paramètre"
+    }
+  ],
+  "smart-diag__25": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Temps de verrouillage trop long"
+    }
+  ],
+  "smart-diag__26": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur KSKB"
+    }
+  ],
+  "smart-diag__27": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur ouverture anticipée"
+    }
+  ],
+  "smart-diag__28": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale de porte"
+    }
+  ],
+  "smart-diag__29": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur de direction de lentraînement"
+    }
+  ],
+  "smart-diag__30": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur de retour contact entraînement"
+    }
+  ],
+  "smart-diag__31": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale dentraînement"
+    }
+  ],
+  "smart-diag__32": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale de sim card"
+    }
+  ],
+  "smart-diag__33": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale EEPROM"
+    }
+  ],
+  "smart-diag__34": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mesure de charge pontée"
+    }
+  ],
+  "smart-diag__35": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mesure de charge non calibrée"
+    }
+  ],
+  "smart-diag__36": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mauvaise calibration de charge"
+    }
+  ],
+  "smart-diag__37": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale mesure de charge"
+    }
+  ],
+  "smart-diag__38": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Erreur générale ascenseur"
+    }
+  ],
+  "smart-diag__39": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "réserve"
+    }
+  ],
+  "smart-diag__40": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mode normal"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur est en mode normal"
+    }
+  ],
+  "smart-diag__41": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Défaut dalimentation principal"
+    }
+  ],
+  "smart-diag__42": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur est en mode inspection"
+    }
+  ],
+  "smart-diag__43": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Le service pompier est actif"
+    }
+  ],
+  "smart-diag__44": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Réserve"
+    }
+  ],
+  "smart-diag__45": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "La réservation est active"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur ne répond duau ordres"
+    }
+  ],
+  "smart-diag__46": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Lascenseur est alimente par une source de secours"
+    }
+  ],
+  "smart-diag__55": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Manuvre électrique de rappel active"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "JRH"
+    }
+  ],
+  "smart-diag__56": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Service pompier actif"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "BR2"
+    }
+  ],
+  "smart-diag__57": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mode de non autorisation"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    }
+  ],
+  "smart-diag__58": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Asc en pleine charge"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "KLV"
+    }
+  ],
+  "smart-diag__59": [
+    {
+      "type": "header",
+      "text": "DESCRIPTION"
+    },
+    {
+      "type": "text",
+      "text": "Mode maintenance actif"
+    },
+    {
+      "type": "header",
+      "text": "SOLUTIONS"
+    },
+    {
+      "type": "text",
+      "text": "DKFM"
+    }
+  ]
+}

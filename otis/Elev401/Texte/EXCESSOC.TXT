@@ -1,0 +1,45 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.	
+
+2.0	La Led EXCESSIVE OC VOLTS est allumée et ne peut être
+	Resetée.	
+
+3.0	La Led READY est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La carte 12SCR (1PC) est défectueuse.
+
+2.0	La carte ECPCB (2PC) est défectueuse.     
+
+3.0	Le tension de fuite du Rack est supérieure à 5% de la tension
+	nominale quand le système est à l'arrêt (contacteurs retombés).
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier la tension entre les fils 31 / 33 (sortie du 
+	convertisseur).
+
+	1.1.1	Si elle est égale à 0 vdc:
+
+		1.1.1.1	Prendre la tension sur le point test 3TP de 
+			la carte 12SCR. Si elle est non nulle, remplacer 
+			la carte 12SCR.
+
+	1.1.2	Si elle est différente de 0 vdc:
+
+		1.1.2.1	Remplacer la carte 12SCR.
+
+2.0	Si la tension au point test 3TP de la carte 12SCR est nulle,
+	remplacer l'ECPCB.
+
+3.0	Si la tension entre les fils 31 et 33 subsiste, vérifier le 
+	Rack en se reportant au menu " Rack de Thyristor ".	
+

@@ -1,0 +1,22 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Défaut du Test des pèse charge.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Procéder en Mode 5 au réglage des pèse charge et 
+	contrôler les éventuelles Alarmes pouvant s'afficher 
+	dans ce Mode.
+
+	Nota:	Les charges sont nécessaires pour exécuter
+		un nouveau réglage des pèse charge.

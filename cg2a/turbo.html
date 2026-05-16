@@ -1,0 +1,98 @@
+<HTML>
+
+<!-- Mirrored from manoeuvres-ascenseurs.fr/cg2a/turbo.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 May 2026 22:10:45 GMT -->
+<body bgcolor="#C0C0C0">
+<p align=center><IMG SRC="../logo/logoCG2A.jpg"></p>
+<p align=center><a href="../DefaultAscenseur.html"><b>Retour Acceuil</b></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../DefaultAscenseur.html#cg2a">CG2A</a></p>
+<p align="center"><strong><big><big>CG2A:TURBO 3000</big></big></strong></p></a>
+<p align="center"><strong>01 Capteur</strong></a>
+<center>Temps de coupure faisceau A et B supérieur à 1,5 seconde
+<p align="center"><strong>02 contacteurs</strong></a>
+<center>Contrôle que les contacteurs M,D,PV,GV sont bien commandés
+<center>Entées de la carte turbo GVS,PVS,MDS=1(9v) au repos
+<center>et qu'ils vont bien au collage sur ordre
+<p align="center"><strong>03 Capteur</strong></a>
+<center>Coupure 2 fois du MEME faisceau sans donnerl'autre
+<p align="center"><strong>04 Défaut PV</strong></a>
+<center>Arrêt de la PV si temps supérieur à 10s
+<center>En hydraulique on contrôle également le retour taquet(entrée CTAQ)
+<p align="center"><strong>05 Défaut de phase</strong></a>
+<center>Manque ou inversion de phase
+<p align="center"><strong>06 Défaut de sens</strong></a>
+<center>Déplacement en sens opposé à l'ordre donné
+<p align="center"><strong>07 Intégrateur</strong></a>
+<center>Contrôle du temps de course entre chaque écran
+<center>Défaut lancé si ce temps est sup à 12 ou 20 sec
+<p align="center"><strong>08 Masse</strong></a>
+<center>Défaut permanent sur circuits:24Vcc à la masse,entrées de carte 12 ou 24V
+<center>circuit voyant blocage,flèche de sens en collective,sorties multiplexeurs
+<p align="center"><strong>09 Boites extrêmes</strong></a>
+<center>Apparait si les deux boites EM et ED sont actionnés en même temps
+<p align="center"><strong>10 Came et contrôle ISO</strong></a>
+<center>Défaut de verrouillage:Information donnée si 8S établi et pas 10S
+<center>(tempo 9s entre chaque défaut)
+<center>Défaut ISO:en hydraulique avec ISO portes ouvertes(absence CISO)
+<p align="center"><strong>11 Révision</strong></a>
+<center>Information révision.Entrée REV=1 en marche normale(9v)
+<p align="center"><strong>12 Sonde thermique</strong></a>
+<center>Entrée STH=0V défaut sonde moteur
+<center>Défaut présent:12 clignote,Défaut disparait:12 Fixe
+<center>(RAZ pour remise en service)
+<p align="center"><strong>13 Surcharge</strong></a>
+<center>Entrée SU à 9v si défaut,0v en normal
+<center>L'appareil reste porte ouverte tant que l'information est presente
+<p align="center"><strong>14 Cellule</strong></a>
+<center>Entrée CEP à 9v si faisceau obstrué ou cellule HS
+<center>Entrée CEP à 0v en normal
+<p align="center"><strong>15 Réouverture</strong></a>
+<center>Entrée REO à 9v si choc ou BP réouverture donnée
+<center>Entrée REO à 0v en normal
+<p align="center"><strong>16 Pompier</strong></a>
+<center>Entrée POMP=1 si information donnée
+<center>(RAZ info 16 après disparition de POMP et retour au niveau prioritaire pompier)
+<p align="center"><strong>17 Infar</strong></a>
+<center>Contrôle la bonne commande des contacteurs
+<center>(Venant de la VF)
+<center>Après 3 tentatives ce défaut devient permanent
+<p align="center"><strong>18 Suspension palière</strong></a>
+<center>Validée en paroi lisse(pas de porte cabine):
+<center>Coupure cellule de seuil entre niveau
+<center>Envoi possible uniquement de la cabine,envoie palier inhibé
+<p align="center"><strong>19 Manoeuvre liftier</strong></a>
+<center>Information liftier donnée inhibe les appels palier,donne la 
+<center>priorité cabine avec maintien portes ouvertes au niveau
+<p align="center"><strong>20 Capteur 2ème piste</strong></a>
+<center>défaut de comptage sur 2ème piste utilisation niveaux 
+<center>rapprochés ou vitesse élevée(sup à 1,6ms)
+<p align="center"><strong>21 Pas de défaut</strong></a>
+<center>Pas de défaut signalé
+<center>En télésurveillance:information présence technicien
+<center>(information clignotante)
+<p align="center"><strong>25 Complet</strong></a>
+<center>N'intercepte plus en palier
+<center>uniquement en cabine si cabine chargée complètement
+<p align="center"><strong>28 Défaut EEPROM</strong></a>
+<center>Absence ou défaut d'écriture en EEPROM
+<p align="center"><strong>29 Pendentif HS</strong></a>
+<center>Contrôle de la continuité de la ligne du bouton d'alarme
+<p align="center"><strong>32 Absence ligne téléphonique</strong></a>
+<center>Défaut signalé à la turbo 3000 par TMS 2000 
+<center>à partir de la version HKAxxH(V43)
+<p align="center"><strong>33 Pendentif HS et/ou tension batterie basse</strong></a>
+<center>Remplace le défaut n°29 dans le cas d'une
+<center>télésurveillance de type TMS 2008
+<p align="center"><strong>EH Extrême haut</strong></a>
+<center>L'ascenseur se situe au niveau le plus haut
+<p align="center"><strong>EB Extrême bas</strong></a>
+<center>L'ascenseur se situe au niveau le plus bas
+<p align="center"><strong>LC limite de course(hydraulique)</strong></a>
+<center>Le temps TM est dépassé(en marche normale)
+<p align="center"><strong>FC Fin de course haut(hydraulique)</strong></a>
+<center>Entrée turbo "CIS"activée,contact NO,FCH
+<p align="center"><strong>90 Télésurveillance</strong></a>
+<center>Info:appui sur le bouton alarme cabine</p>
+<center><a href="../DefaultAscenseur.html"><b>Retour Acceuil</b></a></p>
+<center><IMG SRC="../logo/logoCG2A.jpg"></p>
+
+<!-- Mirrored from manoeuvres-ascenseurs.fr/cg2a/turbo.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 May 2026 22:10:45 GMT -->
+</html>

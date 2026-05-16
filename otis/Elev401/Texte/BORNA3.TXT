@@ -1,0 +1,84 @@
+Le Bornier de la zone A3 du contrôleur sert au
+raccordement: 
+
+1.0	Du PVT
+2.0	Du PPT
+3.0	De la Communication avec le GROUP (GRP).
+4.0	De la Communication avec la carte COP
+	en cabine.
+5.0	Des alimentations de l'Ampli MF/BK.
+
+------------------------------------------------------------------------
+                                   Bornes
+------------------------------------------------------------------------
+
+	- A3 TB1-1    >>  X		PPT	  
+	- A3 TB1-2    >>  /X		PPT
+	- A3 TB1-3    >>  Y		PPT
+	- A3 TB1-4    >>  /Y		PPT
+	- A3 TB1-5    >>  A		PPT
+	- A3 TB1-6    >>  /A		PPT
+	- A3 TB1-7    >>  B90		PPT
+	- A3 TB1-8    >>  /B90		PPT
+	- A3 TB1-9    >>  + 8 vdc	PPT
+	- A3 TB1-10  >>  8 v return	PPT
+	- A3 TB1-11  >>  - 8 vdc	PPT type1
+	- A3 TB1-12  >>  J		PPT
+	- A3 TB1-13  >>  /J		PPT
+	- A3 TB1-14  >>  K		PPT
+	- A3 TB1-15  >>  /K		PPT
+	- A3 TB1-16  >>  B		PPT
+	- A3 TB1-17  >>  /B		PPT
+	- A3 TB1-18  >>  A90		PPT
+	- A3 TB1-19  >>  /A90		PPT
+	- A3 TB1-20  >>
+	- A3 TB1-21  >>  +8 vdc		PVT
+	- A3 TB1-22  >>  8 v return	PVT
+	- A3 TB1-23  >>  -8 vdc		PVT type1
+	- A3 TB1-24  >>  XPV		PVT
+	- A3 TB1-25  >>  /XPV		PVT
+	- A3 TB1-26  >>  YPV		PVT
+	- A3 TB1-27  >>  /YPV		PVT
+	- A3 TB1-28  >>
+	- A3 TB1-29  >>
+	- A3 TB1-30  >>
+	- A3 TB1-31  >>
+	- A3 TB1-32  >>  +GXT		Control. > GRP
+	- A3 TB1-33  >>  -GXT		Control. > GRP
+	- A3 TB1-34  >>  +GRC		GRP > Control.
+	- A3 TB1-35  >>  -GRC		GRP > Control.
+	- A3 TB1-36  >>  SHIELD		terre
+	- A3 TB1-37  >>  +KXT		Control. > COP
+	- A3 TB1-38  >>  -KXT		Control. > COP
+	- A3 TB1-39  >>  +KRC		COP > Control.
+	- A3 TB1-40  >>  -KRC		COP > Control.
+	- A3 TB1-41  >>  +18 vdc	MF/BK
+	- A3 TB1-42  >>  +18 vdc	MF/BK
+	- A3 TB1-43  >>  +18 vdc	MF/BK
+	- A3 TB1-44  >>  
+	- A3 TB1-45  >>  
+	- A3 TB1-46  >>  +8 vdc		MF/BK
+	- A3 TB1-47  >>  +8 vdc		MF/BK
+	- A3 TB1-48  >>  8 v return	MF/BK
+	- A3 TB1-49  >>  8 v return	MF/BK
+	- A3 TB1-50  >>
+	- A3 TB1-51  >>  +IPR		
+	- A3 TB1-52  >>  -IPR
+	- A3 TB1-53  >>  SHIELD		terre
+	- A3 TB1-54  >>  120 vac	ventilateur
+	- A3 TB1-55  >>  OTP red
+	- A3 TB1-56  >>  HL1		ventilateur
+	- A3 TB1-57  >>  18 v return	MF/BK
+	- A3 TB1-58  >>  18 v return	MF/BK
+	- A3 TB1-59  >>  +LAC		PA I/O
+	- A3 TB1-60  >>  -LAC		PA I/O
+
+Nota:
+	Le PPT type 1 possède des bornes à vis.
+	Le PVT type 1 est à friction (galet frotteur
+	sur la bande de roulement de la poulie 
+	machine).
+
+
+
+

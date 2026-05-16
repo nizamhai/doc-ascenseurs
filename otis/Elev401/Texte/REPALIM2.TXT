@@ -1,0 +1,4 @@
+HT203867-1	31 Vdc Flèche et Gong (aux paliers)
+HT203867-1	31 Vdc Appel Palier GROUP E401
+
+Nota:	Les deux Alimentations sont identiques.

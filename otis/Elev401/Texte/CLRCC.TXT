@@ -1,0 +1,139 @@
+----------------
+Symptômes
+----------------
+
+1.0	Aucun défaut en Test 200-2.
+		
+--------------------------
+Causes Probables
+--------------------------
+
+
+1.0	Le contrôleur cabine reçoit des infos de portes coupe feu lui
+	interdisant la desserte des niveaux concernés.
+
+2.0	L'appareil est dans un Mode ou une manoeuvre spéciale.
+
+3.0	Quand les portes sont ouvertes, le système détecte une pesée 
+	en contradiction avec le nombre d'envois cabine et déclenche 
+	l'Anti-nuisance.
+
+4.0	La carte COP est défectueuse.
+
+-------------
+Remèdes
+-------------
+
+1.0	Vérifier:
+	
+	1.1	Que les Envois Cabine fonctionnent en Test 220 à l'OMT.
+
+	1.2	La Tension AC4 nécessaire au bon fonctionnement des
+		portes coupe-feu.
+
+	1.3	Remplacer la carte GP I/O ou CF I/O qui gère les portes 
+		coupe-feu si le signal FPDCN (@ F27C ou F8E4 suivant la
+		version de programme: voir Link MAP) est à 0 en Test 40.
+
+2.0	Vérifier que l'appareil est encore dans la régulation:
+
+	2.1	La Led 5 (CIG) en Test 200-5 doit être allumée.
+
+	2.2	Le signal BEP (manoeuvre sur courant de secours) à 
+		l'adresse @ EE84 doit resté à 0.
+
+	2.3	Le signal BNP (manoeuvre sur courant normal) à 
+		l'adresse @ EE86 doit resté à 1.
+
+	2.4	L'appareil est peut être dans une manoeuvre spéciale
+		(Anti-émeute, Car To Lobby, Manoeuvre par EMS , etc ...).
+
+	2.5	Un passage fugitif en Indépendant provoque l'effacement
+		de tous les envois.
+		
+		2.5.1	Vérifier le contact à clefs INDS.
+
+3.0	Vérifier en Test 200-3 à l'OMT la charge et corriger l'anomalie.
+
+	Nota:	La charge étant donnée en Livre Anglaise (lb) (égale 
+		à 454 gr), il suffit de diviser la valeur par deux pour
+		obtenir la pesée en kg.
+		
+	3.1	Circuit U24 (ADC0804) de la Carte COP I hors service.
+
+	3.2	Carte COP I ou COP II défectueuse.
+
+	3.3	Pèse charge en défaut.
+
+	3.4	Il est possible de supprimer le contrôle d'Anti-nuisance
+		en modifiant l'Eprom 8L à l'adresse du branchement de 
+		la routine BANSR:
+
+		3.4.1	Déterminer l'adresse grâce à la LINK MAP.
+		
+			- Exemple Tour ELF:  BANSR  @ 80d8.
+
+		3.4.2	Remplacer l'instruction 60 par 5b à l'adresse:
+			
+			- Exemple tour ELF :
+
+			Adresse dans l'Eprom = ( 80d8 - 8000 ) / 2 = 6c
+			
+			Il faut soustraire 8000 Hex puis diviser par 2 car:
+				
+			- Le programme à modifier se trouve dans les Eprom
+			  8H et 8L qui mémorisent les instructions de:
+
+				- 8000 à 8FFE pour Eprom 2716.
+				- 8000 à 9FFE pour Eprom 2732.
+
+			Nota:	Si pour une Eprom 2732, l'adresse à changer
+				se situe en 3000/5000/7000/9000/b000/d000,
+				il faudra rajouter 800 à la valeur calculée.
+
+				ADR système.		ADR Eprom 2732.
+				---------------------------------------
+				8000 à 8FFE	>>	0 à 7FF.
+				9000 à 9FFE	>>	800 à FFF.
+				
+			- Le bit de poids le plus faible (LSB) n'est pas 
+			  utilisé pour l'adressage du micro TMS9900 en 
+			  Elevonic 401.
+
+			- De ce fait, les adresses système ne peuvent être
+			  que paires car le LSB a pour valeur 1.
+
+			- Les Eproms mémorisant les données les unes à la
+			  suite des autres, il faut diviser par deux pour
+			  obtenir l'adresse réelle dans le composant
+			  (Test 910-1).
+
+			- Comme on ne modifie que la partie basse de 
+			  l'instruction, seule l'Eprom 8L (Low = Basse)
+			  est à changer:
+
+				- Mettre 5b à l'adresse @ c6.
+
+			           ancien			nouveau
+			-------------------------------------------------
+			80d8	0460	Branch		045b	no Branch
+			80da	cb7a	ANSR		cb7a	ANSR
+
+		Nota:	Il est possible de calculer l'adresse à modifier 
+			dans l'Eprom dans le menu Principal, sous menu 
+			Software, "Adresse dans une Eprom".
+
+4.0	Vérifier que la carte COP ne soit pas en Accès Codé. Dans ce
+	cas, un lumineux rouge "ACCES RESERVE" doit s'allumer dans
+	le COP quand on actionne un bouton codé.
+
+	4.1	Pour annuler la manoeuvre, positionner sur OFF le switch:
+
+		4.1.1	'SEC' ou 'SECURITY' sur une carte COP I.
+		4.1.2	'ACCES' sur une carte COP II.
+	
+	4.2	Valider la modification par un Reset de la carte COP.
+
+5.0	Faire les tests de la carte COP et la remplacer si nécessaire.
+	
+

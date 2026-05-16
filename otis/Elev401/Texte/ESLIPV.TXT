@@ -1,0 +1,61 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 16 (ESLIPV) est allumée ou clignote.
+
+2.0	La Led 20 (IMOD13) peut être allumée.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le fonctionnement du PVT est incorrect.
+
+2.0	Les connections du PVT / PPT sont défectueuses.
+
+3.0	Le PVT , PPT ou la carte Transducer est défectueux. 
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la différence entre la vitesse cabine 
+	(PPT) et la vitesse machine (PVT) pour détecter un éventuel
+	glissement des câbles de traction.
+
+	Si la valeur dépasse 0,9 m/s pendant 2 lectures consécutives,
+	le défaut ESLIPV passe à 1 entraînant un arrêt d'urgence, CSF
+	passant à 1 et SAFE à 0.
+
+	CSF = ESLIPV + EXVC + EMLS1 + EMLS4 + EMLS89
+
+	L'ascenseur effectue un 2ème essais qui en cas d'erreur 
+	provoque un nouvel arrêt d'urgence puis une interdiction 
+	du Mode de fonctionnement Normal IMOD13.
+
+	Seul un Reset du système (POR) permet alors de corriger 
+	ce défaut Critique (CSF). Le défaut ESLIPV est crée dans 
+	la routine d'Auto contrôle SHELTH.
+
+1.0	Vérifier:
+	
+	1.1	La compression du galet frotteur sur la bande de 
+		roulement de la poulie machine pour les PVT à 
+		friction
+
+	1.2	L'accouplement du PVT.
+
+
+2.0	Vérifier les connections du PVT / PPT.
+
+3.0	Remplacer:
+
+	3.1	La carte Transducer.
+
+	3.2	Le PVT (Primary Velocity Transducer).
+
+	3.3	Le PPT (Primary Position Transducer).
+
+	
+	

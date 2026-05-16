@@ -1,0 +1,111 @@
+------------------------------------------------------------------------
+                               CF I/O
+------------------------------------------------------------------------
+   
+Cette carte (Car Fixture) permet :
+
+1.0	La lecture de 32 entrées 110 vac.
+         	
+	1.1	Tensions: AC2 / AC4 red / HL1.
+
+2.0	La commande de :
+	
+	2.1	24 sorties 31vdc (Flèches et Gongs).
+	2.2	6 sorties pour des lumineux 31 vdc.
+	2.3	2 signaux Data pour l'indicateur HPI.
+	2.4	2 signaux Clock pour l'indicateur HPI.
+	
+Parmi les 24 sorties 31 vdc, certaines peuvent servir aux
+informations du REMIII si celui-ci doit être raccordé.
+
+Habituellement située dans le Slot 6, la carte CF I/O peut
+aussi se retrouver dans le Slot 8 pour la gestion en entrée
+des portes coupe-feu. Dans ce cas, la tension est de l'AC4.
+
+------------------------------------------------------------------------
+                               Maintenance
+------------------------------------------------------------------------
+ 
+Cette carte gère (Slot 6):	(ex: Tour ELF ASC9)
+
+   - les Entrées:		- les Sorties:
+
+   A6TB1-41  GES		A6TB1-05  HX1
+   A6TB1-42  ASL		A6TB1-06  HX2
+   A6TB1-43  OTP		A6TB1-07  FAULTL ou BRKrem
+   A6TB1-44  BNP1		A6TB1-08  /EPTL	ou BUTrem
+   A6TB1-45  BEP		A6TB1-09  /MGL	ou CPRrem 
+   A6TB1-46  /SKO		A6TB1-10  HUDL	ou DOrem
+   A6TB1-47  SKC		A6TB1-11  /HDDL	ou MFrem
+   A6TB1-48  HSS		A6TB1-12  /GESL	ou NORem
+   A6TB1-49  /TCI2		A6TB1-13  HX3
+   A6TB1-50  ODZ1		A6TB1-14  HX4
+   A6TB1-51  ODZ2		A6TB1-15  HX5
+   A6TB1-52  LVC2X		A6TB1-16  HX6
+   A6TB1-53  BPS12		A6TB1-17  HX7
+   A6TB1-54  EES		A6TB1-18  HX8
+   A6TB1-55  SC			A6TB1-19  HX9
+   A6TB1-56  /IIS		A6TB1-20  HX10
+   A6TB1-57  /BS		A6TB1-21  HY1
+   A6TB1-58  /H10		A6TB1-22  HY2
+   A6TB1-59  CES		A6TB1-23  HY3
+   A6TB1-60  L10		A6TB1-24  HY4
+   A6TB1-61  M10		A6TB1-25  HY5
+   A6TB1-62  SS9		A6TB1-26  HY6
+   A6TB1-63  IDZ2		A6TB1-27  HY7
+   A6TB1-64  AFS		A6TB1-28  HY8
+   A6TB1-65  KHBP		A6TB1-29  HX11	ou SERem
+   A6TB1-66  BAKU		A6TB1-30  HX12	ou LNDrem
+   A6TB1-67  /PES1B		A6TB1-31  HY9
+   A6TB1-68  /MFS8		A6TB1-32  HY10
+   A6TB1-69  TAKU		A6TB1-33  HY11	ou LEVrem
+   A6TB1-70  TAKD		A6TB1-34  HY12
+   A6TB1-71  IDZ1		A6TB1-35  DATA
+   A6TB1-72  BAKD		A6TB1-36  /DATA
+
+   A6TB1-37  AC4 red		A6TB1-01  /CLOCK
+   A6TB1-38  AC2		A6TB1-02  CLOCK
+   A6TB1-39  -			A6TB1-03  +31 
+   A6TB1-40  HL1		A6TB1-04  +31 RET
+
+Cette carte gère (Slot 8):	(ex: Tour ELF ASC9)
+
+   - les Entrées:		
+
+   A6TB4-41  FPD1
+   A6TB4-42  FPD2
+   A6TB4-43  FPD3
+   A6TB4-44  FPD4
+   A6TB4-45  FPD5
+   A6TB4-46  FPD6
+   A6TB4-47  FPD7
+   A6TB4-48  FPD8		
+   A6TB4-49  FPD9		
+   A6TB4-50  FPD10
+   A6TB4-51  FPD11
+   A6TB4-52  FPD12
+   A6TB4-53  FPD13
+   A6TB4-54  FPD14
+   A6TB4-55  FPD15
+   A6TB4-56  FPD16
+   A6TB4-57  FPD17
+   A6TB4-58  FPD18
+   A6TB4-59  FPD19
+   A6TB4-60  FPD20
+   A6TB4-61  FPD21
+   A6TB4-62  FPD22
+   A6TB4-63  FPD23
+   A6TB4-64  FPD24
+   A6TB4-65  FPD25
+   A6TB4-66  -
+   A6TB4-67  -
+   A6TB4-68  -
+   A6TB4-69  -
+   A6TB4-70  -
+   A6TB4-71  -
+   A6TB4-72  -
+
+   A6TB4 37  AC4
+   A6TB4 38  AC4
+   A6TB4 39  -
+   A6TB4 40  AC4

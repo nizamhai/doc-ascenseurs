@@ -1,0 +1,72 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 3 (CMF) est allumée.
+
+2.0	L'appareil est stationné portes ouvertes au niveau bas. 
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La carte COP II à sa charge par défaut sélectionnée sur la 
+	valeur " PK ".
+
+2.0	Il y a un problème de connexion entre le contrôleur et la carte
+	COP en cabine.	
+
+3.0	L'alimentation +30 vdc / +12vdc pour la carte COP est hors
+	service.
+
+4.0	La carte COP est défectueuse.
+
+5.0	La carte Transducer est défectueuse.
+
+-------------
+Remèdes
+-------------
+
+Nota:	Le défaut CMF indique que la communication entre la cabine
+	et le contrôleur est défectueuse.
+
+1.0	Si le CPI en cabine affiche "PK", résoudre le problème lié à la
+	charge en cabine (Menu Défauts : Carte COP II, message "PK".)
+	  
+2.0	Couper le courant sur l'appareil pendant au moins 10 sec puis
+	vérifier que les connections entre le COP et le Contrôleur sont
+	correctes:
+
+	2.1	Transmission du contrôleur vers la cabine.
+
+		+KXT	A3TB1-38 - A8TB1-15 >> A1J1-5	
+
+		-KXT	A3TB1-37 - A8TB1-14 >> A1J1-6	
+
+	2.2	Transmission de la cabine vers le contrôleur.
+
+		+KRT	A3TB1-40 - A8TB1-12 >> A1J1-8	
+
+		-KRT	A3TB1-39 - A8TB1-11 >> A1J1-7	
+
+3.0	Vérifier que les alimentations +30 vdc et +12 vdc de la boite KJ
+	fonctionne.
+
+		3.1	Fusible F1 et F3 du 220 vac.
+
+		3.2	Fusible F4 du + 30 vdc.
+
+		3.3	Fusibles F1 et F2 dans le COP (+30 vdc).
+
+		3.4	Vérifier sur les points test de la carte les
+			tensions.
+
+		Nota:	Avec une carte COPII, si le +12vdc est absent
+			en TP6, les Leds RXD et TXD clignotent bien
+			que le défaut CMF soit actif.
+
+4.0	Si l'anomalie persiste, remplacer la carte Transducer dans le
+	contrôleur.
+
+5.0	Remplacer la carte COP dans la cabine.
+				

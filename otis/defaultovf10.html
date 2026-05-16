@@ -1,0 +1,197 @@
+<html>
+
+<!-- Mirrored from manoeuvres-ascenseurs.fr/otis/defaultovf10.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 May 2026 22:09:41 GMT -->
+<body bgcolor="#C0C0C0">
+<p align="center"><IMG SRC="../logo/logoOTIS.gif"></p>
+<p align="center"><a href="../DefaultAscenseur.html"><b>Retour Acceuil</b></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../DefaultAscenseur.html#otis">OTIS</a></p>
+
+<p align="center"><font size=6><strong>OVF 10</font></strong></p>
+<p align="center"><font size=6>Code événement</font></p>
+
+<font size="4">
+<p align="center"><b>
+0 SYS:WARMSTART fatal</b>
+<center>Reset programme sans coupure d'alimentation</p>
+
+<p align="center"><b>1 SYS:Shut Down fatal</b>
+<center>Affiche le nombre de pannes sur l'appareil.
+<center>En tapant <BLEU>-<DOWN> on peut visualiser
+<center>le défaut cause de la panne</p>
+
+<p align="center"><b>2 SYS:DDP fatal</b>
+<center>Le drive a détecté un DDP</p>
+
+<p align="center"><b>3 SYS:E2P missing fatal</b>
+<center>Il n'y a pas d'EEPROM sur la carte DCB</p>
+
+<p align="center"><b>4 SYS:E2P written</b>
+<center>Des paramètres ont été modifiés depuis 
+<center>la dernière mise sous tension</p>
+
+<p align="center"><b>5 SYS:E2P Default</b>
+<center>Tous les paramètres ont été programmés 
+<center>à leur valeur par défaut</p> 
+
+<p align="center"><b>6 SYS:E2P UnvPara</b>
+<center>Certains paramètres dans l'EEPROM sont 
+<center>hors limite ou en conflict avec d'autres</p>
+
+<p align="center"><b>7 SYS:Inputs lost</b>
+<center>Le drive ne voit plus les entrées U, D,ouT</p>
+
+<p align="center"><b>9 SYS:Power Fail</b>
+<center>Tension d'alimentation secteur trop basse</p>
+
+<p align="center"><b>10 SYS:(<)24V Supply</b>
+<center>fatal à 3 essais Pas d'alimentation 24 Volts</p>
+
+<p align="center"><b>11 SYS:not all errors</b>
+<center>Uniquement visibles dans les 
+<center>erreurs sauvegardée (<M>-<2>-<2>-<2>)</p>
+
+<p align="center"><b>21 INV:(>)Volt DC</b>
+<center>Surtension dans le circuit continu
+<center>aux bornes des condensateurs dans le rack</p>
+
+<p align="center"><b>23 INV:(<)Volt DC</b>
+<center>Tension dans le circuit continu trop basse</p>
+
+<p align="center"><b>25 INV:> Curr IGBT</b>
+<center>Surintensité dans les transistors IGBT</p>
+
+<p align="center"><b>26 INV:Mod stopped</b>
+<center>Défaut dans le contrôle de la fréquence</p>
+
+<p align="center"><b>27 INV:DCLI Offset</b>
+<center>pour engineering</p>
+
+<p align="center"><b>28 INV:DCLI Not 0</b>
+<center>pour engineering</p>
+
+<p align="center"><b>37 MC:EMERGENCY ST</b>
+<center>Arrêt d'urgence provoqué par une ouverture 
+<center>de la chaîne de sécurité avant l'arrêt <center>normal de l'appareil en zone de porte</p>
+
+<p align="center"><b>38 MC:T with INS</b>
+<center>Pendant une course en inspection
+<center>l'entrée T est activée</p>
+
+<p align="center"><b>39 MC:both U & D</b>
+<center>Les entrées U et D sont actives en même temps</p>
+
+<p align="center"><b>40 MC:T w/o UD</b>
+<center>L'entrée T est activée
+<center>alors que U ou D ne sont pas actifs</p>
+
+<p align="center"><b>41 MC:U/D changed</b>
+<center>Pendant une course en mode normal
+<center>les entrées U et D ont changé
+<center>d'état en même temps</p>
+
+<p align="center"><b>42 MC:UD not drop</b>
+<center>Les entrées U ou D restent 
+<center>actives après l'arrêt normal dans DZ</p>
+
+<p align="center"><b>43 MC:/OP -> no T</b>
+<center>l'entrée T doit être activée 
+<center>quand OP retombe. Sinon => défaut</p>
+
+<p align="center"><b>44 MC:OP -> no /T</b>
+<center>l'entrée T doit être désactivée 
+<center>quand OP recolle. Sinon => défaut</p>
+
+<p align="center"><b>45 MC:U_DC notOFF</b>
+<center>Signifie que le drive est encore 
+<center>sous tension après que U et D soient retombés</p>
+
+<p align="center"><b>51 MLS:< ACC DIST</b>
+<center>La distance d'accélération est trop courte
+<center>pour la valeur d'accélération calculée</p>
+
+<p align="center"><b>52 MLS:< Dec Dist</b>
+<center>La distance de décélération est trop courte</p>
+
+<p align="center"><b>53 MLS:Dec by LS</b>
+<center>La décélération à été activée par le switch LS</p>
+
+<p align="center"><b>54 MLS:Tdec expird</b>
+<center>Le contrôleur de manoeuvre a 
+<center>désactivé trop tard la commande de T</p>
+
+<p align="center"><b>55 MLS:(<)Creep Time</b>
+<center>La vitesse creep speed est trop courte(< à 0,5 s.)
+
+<p align="center"><b>56 MLS:(<)Const Time</b>
+<center>La période de creep speed constante 
+<center>est trop courte, le système ne peut pas <center>faire les calculs de compensation</p>
+
+<p align="center"><b>57 MLS:No 2nd LV</b>
+<center>L'OVF10 ne détecte pas le deuxième LV</p>
+
+<p align="center"><b>58 MLS:LV sequence</b>
+<center>L'OVF10 ne détecte pas 1LV et 2LV dans le bon ordre</p>
+
+<p align="center"><b>59 MLS:LV Lost Idl</b>
+<center>Perte des information LV1 et LV2 
+<center>alors que la cabine est arrêtée dans le DZ</p>
+
+<p align="center"><b>60 MLS:LV Missed</b>
+<center>L'OVF10 ne détecte pas les LV dans le temps précalculé</p>
+
+<p align="center"><b>61 MLS:LV Lost</b>
+<center>L'OVF10 à perdu les informations LV 
+<center>alors qu'il avait détecté le DZ auparavant</p>
+
+<p align="center"><b>62 MLS:LV Cnt Err</b>
+<center>L'OVF10 à détecté moins de Door 
+<center>Zone que de niveaux programmés</p>
+
+<p align="center"><b>63 MLS:LV Trig Err</b>
+<center>La mesure de la vitesse pendant 
+<center>la creep speed n'a pas pu être faite</p>
+
+<p align="center"><b>64 MLS:LV w. Noise</b>
+<center>Problème de détection des LV.
+<center>Les signaux peuvent être parasités</p>
+
+<p align="center"><b>65 MLS:Halt wo SWI</b>
+<center>Information pour l'engineering</p>
+
+<p align="center"><b>66 MLS:invld . CrSp</b>
+<center>La vitesse de creep speed ne
+<center>correspond pas à la valeur 
+<center>programmée dans "CRE SPE"</p>
+
+<p align="center"><b>69 MLS:LV failures</b>
+<center>Il y a trop d'évènements montrant 
+<center>des problèmes de détection des LV</p>
+
+<p align="center"><b>78 DRV:OverLd > 0,5s</b>
+<center>Une surintensité sur le moteur 
+<center>est détectée pendant plus de 0,5 s</p>
+
+<p align="center"><b>79 DRV:No Cal Init</b>
+<center>La calibration automatique ne s'est pas déclenchée
+
+<p align="center"><b>80 DRV:Failed Cal</b>
+<center>Un autre défaut est survenu pendant 
+<center>la routine de calibration automatique</p>
+
+<p align="center"><b>81 DRV:Out of Cal</b>
+<center>Le système n'arrive plus à compenser 
+<center>les variations de charges</p>
+
+<p align="center"><b>82 DRV:Volt Boost</b>
+<center>Ce défaut se produit si la creep 
+<center>speed est trop longue</p>
+
+<p align="center"><b>83 DRV: > Reduction</b>
+<center>Surintensité moteur trop importante; 
+<center>le système ne peut pas réduire plus son <center>profil, pourprotéger les composants de puissance</p>
+
+<p align="center"><a href="../DefaultAscenseur.html"><b>Retour Acceuil</b></a></p>
+<p align="center"><IMG SRC="../logo/logoOTIS.gif"></p>
+
+
+<!-- Mirrored from manoeuvres-ascenseurs.fr/otis/defaultovf10.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 May 2026 22:09:41 GMT -->
+</html></center></font></body>

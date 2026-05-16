@@ -1,0 +1,39 @@
+Le Rack est constitué d'une carte mère (Mother Board) 
+située en fond de Rack ou viennent s'insérer dans un ordre
+précis les différentes cartes (10 Slots).
+
+1.0	Processor.			
+2.0	Transducer.		
+3.0	PA I/O.		
+4.0	rien.			
+5.0	Relay I/O.	            
+6.0	CF I/O.
+7.0	GP I/O.
+8.0	GP I/O ou CF I/O.
+9.0	GP I/O (option).	
+10.0	Bus Terminator ou Pet Board
+
+Les tensions, fréquence et signaux nécessaires au 
+fonctionnement des cartes sont fournies par l'Alimentation 
+Electronique CEPS via la Mother Board (carte mère située
+en fond de Rack).
+
+Sur la face frontale des cartes viennent se raccorder des 
+connecteurs (72 voies) qui assurent les liaisons extérieures
+au Rack (Entrées / Sorties / Commandes). 
+
+Une sonde Thermique est placée dans le Rack afin de
+détecter une élévation anormale de la température (signal
+OTP).
+
+En aucun cas une carte ne devra être extraite sans que 
+l'alimentation générale de l'ascenseur soit hors service. 
+En effet, des tensions 110 vac/vdc et 31 vdc sont toujours
+présentes sur les connecteurs même si l'alimentation 
+électronique est coupée.
+
+De plus, avant toute manipulation, il est recommandé de 
+toucher une partie métallique du Rack (ou une masse) afin
+d'éviter des problèmes électrostatiques. Le transport des 
+cartes sera à effectuer dans la pochette antistatique livrée
+à cet effet.

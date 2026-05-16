@@ -1,0 +1,94 @@
+----------------
+Procédure
+----------------
+
+Nota:	Si le PPT est Hors service et qu'aucune lecture de la
+	position n'est possible, procéder aux Opérations 1 à 14.
+
+	Si la panne est intermittente, ramener l'appareil au niveau bas
+	en Test 220 puis procéder aux Opérations 3 à 14.
+
+1.0	Mettre l'appareil le plus près possible du niveau bas à l'aide
+	de la Manoeuvre ERO.
+
+2.0	Mesurer la distance qui sépare le seuil de la cabine au niveau.
+
+3.0	Mettre l'ascenseur hors tension.
+
+4.0	Mettre en place et raccorder le nouveau PPT.	
+	La bague de fixation avec la poulie du ruban sera serrée avec
+	une pince étau afin de ne pas détériorer le filetage de la vis
+	(clef Allen 9/64). Desserrer la vis puis enlever la pince étau.
+	
+5.0	Serrer la vis d'accouplement du PPT avec l'axe de la poulie du
+	ruban à l'aide d'une clef Allen 7/64. 
+
+6.0	Mettre:
+
+	6.1	Le bouton d'arrêt dans le contrôleur.
+
+	6.2	L'appareil sous tension.
+
+7.0	Déterminer l'altitude du 1er étage mémorisé dans la table 
+	des niveaux:
+
+	7.1	En Test 40, relever la valeur à l'adresse @ 00CA.
+		(en général: A00 ou 1A00).
+
+8.0	Placer l'OMT en Test 211 (Lecture de l'altitude).
+
+9.0	Avec une pince, tourner lentement l'axe de la poulie du 
+	ruban jusqu'à obtenir une valeur (2 tours sont au moins
+	nécessaires).
+
+	9.1	Si la valeur reste figée à 0, vérifier le câblage
+		ou tourner l'axe moins rapidement.
+
+10.0	Tourner l'axe pour obtenir la valeur lue en Test 40 (@ CA). 
+
+	10.1	Corriger la valeur selon la distance mesurée
+		par rapport au niveau sachant qu'une valeur 
+		Hexadécimale est égale à 1.2mm.
+
+	10.2.	Si l'appareil est au-dessus, il faut additionner le 
+		décalage:
+
+		Ex: 30mm au-dessus avec @ CA = 0A00.
+
+		Décalage:  30mm / 1.2 mm = 25  (Hex = 19).
+
+		Valeur = 0A00 + 19 = 0A19.
+
+	10.3.	Si l'appareil est au-dessous, il faut soustraire le 
+		décalage:
+
+		Ex: 10mm au-dessous avec @ CA = 0A00.
+
+		Décalage:  10mm / 1.2 mm # 8  (Hex = 8).
+
+		Valeur = 0A00 - 8 = 09F8.
+
+11.0	Serrer la bague de fixation de l'axe de la poulie du ruban
+	à l'aide d'une pince étau (pour ne pas détruire le filetage
+	de la vis).
+
+	11.1	Serrer la vis avec la clef Allen 9/64.
+
+	11.2	Enlever la pince étau.
+
+12.0	Faire un RESET de la carte µP dans le Rack de Cartes E401.
+	(Si l'axe est tourné trop rapidement, un défaut de vitesse
+	est possible).
+
+13.0	Enlever le bouton d'arrêt et mettre l'appareil en Mode normal.
+
+14.0	Vérifier la précision d'arrêt au niveau bas après une course.
+
+	14.1	Pour corriger, mettre le bouton d'arrêt dans le 
+		contrôleur.
+
+	14.2	Desserrer la bague de fixation avec la pince étau.
+
+	14.3	Placer l'OMT en Test 211.
+
+	14.4	Procéder de nouveau aux Opérations 10.1 à 14.

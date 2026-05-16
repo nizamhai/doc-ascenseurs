@@ -1,0 +1,36 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur fonctionne uniquement dans une direction ou 
+	ne régénère pas.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La commande DV (Dictation Voltage) venant de la carte 
+	PA I/O ne change pas de polarité.
+
+2.0 	La Carte ECPCB (2PC) est défectueuse.
+
+3.0 	La Carte 12SCR (1PC) est défectueuse.
+
+-------------
+Remèdes
+-------------
+
+1.0	Vérifier que la tension du signal DV présente entre les bornes
+	3TB19 (+) et 3TB18 (-) à une polarité correcte pour le sens de
+	rotation désiré.
+
+	Dans le cas contraire, remplacer la carte PA I/O.		
+
+2.0	Vérifier que sur la carte ECPCB : 
+
+	2.1	La tension au point test 19TP puisse être de polarité
+		positive ou négative suivant le sens de rotation.
+
+	Dans le cas contraire, remplacer la carte ECPCB (2PC).		
+
+3.0	Remplacer la carte 12SCR (1PC).		

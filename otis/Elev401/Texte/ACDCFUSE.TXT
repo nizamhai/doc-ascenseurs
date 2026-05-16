@@ -1,0 +1,37 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.	
+
+2.0	La Led OPEN FUSE / CB est allumée et ne peut être Resetée.	
+
+3.0	La Led LINE LOSS TRIP est allumée et ne peut être Resetée.
+
+4.0	La Led READY est éteinte.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Un ou des protistors AC sont hors service.	
+
+2.0	Mauvaises(s) connexion(s).
+
+3.0	Carte ECPCB (2PC) défectueuse.
+
+4.0	Carte Voltage Divider défectueuse.	
+
+5.0	Carte 12SCR (1PC) défectueuse.	 
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier hors tension l'état des 3 protistors. Remplacer ceux qui
+	sont défectueux et rechercher la cause de la disjonction en se
+	reportant au défaut " Destruction des Protistors AC / DC".
+	
+2.0	Pour la recherche des mauvaises connexions, d'anomalies sur
+	les 3 cartes ECPCB, 12SCR et Voltage Divider, se reporter au
+	défaut "Low Line Trip".

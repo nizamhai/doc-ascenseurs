@@ -1,0 +1,91 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 8 (GDSFLG) est allumée.	
+
+-------------------------
+Causes Probables
+--------------------------
+
+1.0	Le fonctionnement du relais DST est incorrect.
+
+2.0	Le fonctionnement du relais DFC / DFCX est incorrect.
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Dans l'état logique de déplacement 8/9 (MLS), le système 
+	commence par contrôler la fermeture des portes par la 
+	séquence suivante:
+	
+	- Le signal DST (portes cabine et palières) doit être à 1.
+
+	- Le signal GDS (portes cabine) doit être à 1.
+
+	GDS = DFC . RDFC avec anti-rebond (4 lectures consécutives).
+
+	Lors du passage en MLS89, une temporisation (TSGDS) est
+	remise à 0.
+	Si les deux conditions décrites ci-dessus ne sont pas 
+	atteintes avant le temps maximal (TSGDSM = 5 ou 10 min.) 
+	alors le défaut GDSFLG (vérification de la fermeture des portes
+	avec les contacteurs collés) est actif.
+
+	Nota:	En MLS89, l'excitation machine est maximale. Cette 
+		vérification permet donc la protection du moteur si le 
+		problème de portes persiste.
+
+1.0	Vérifier:
+
+	1.1	Si le relais DST n'est pas collé:
+
+		1.1.1	La tension sur la borne A8 TB1-92 doit être 
+			égale à 110 vdc:
+
+			1.1.1.1	Vérifier les contacts de portes DS 
+				et GS.
+
+			1.1.1.2	Vérifier l'état du relais DST.
+
+	1.2	Si le relais DST est collé:
+
+		1.2.1	La tension sur la borne A6 TB1-62 doit être 
+			égale à 110 vdc:
+
+			1.2.1.1	Vérifier le contact du relais DST 
+				avant la borne A6 TB1-62.
+
+		1.2.2	Remplacer la carte CF I/O si la tension est
+			correcte.
+		
+2.0	Vérifier:
+
+	2.1	Si le relais DFC / DFCX n'est pas collé:
+
+		2.1.1	Vérifier le contact GS2 dans la DOCB.
+
+		2.1.2	Vérifier l'état du contact du relais DST 
+			qui autorise DFC.
+
+		2.1.3	Vérifier l'état du relais DFC / DFCX.
+
+	2.2	Si les relais DFC et DFCX sont collés:
+
+		2.2.1	La tension sur la borne A6 TB1-114 doit être
+			égale à 0 vdc:
+
+			2.2.1.1	Vérifier le contact du relais DFC ou
+				DFCX avant la borne A6 TB1-114.
+
+		2.2.2	Remplacer la carte GP I/O si la tension est 
+			correcte.
+		
+		2.2.3	Le signal RDFC sur la borne A6 TB1-122 doit
+			être relié à HL1 (si pas de porte face arrière).
+
+		2.2.4	Le signal RDFC (@ F04E) doit être à 1.
+	
+			2.2.4.1	Remplacer la carte GP I/O.
+

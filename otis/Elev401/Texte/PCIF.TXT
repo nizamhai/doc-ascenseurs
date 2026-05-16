@@ -1,0 +1,80 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 25 (PCIF) est allumée.
+
+2.0	La Led 24 (PCF) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+1.0	Un ventilateur est bloqué dans le contrôleur de manoeuvre.
+
+2.0	L'Alimentation Electronique fournie des tensions qui ne sont
+	pas dans les tolérances.
+
+3.0	Le PPT ou la carte Transducer est défectueuse. 
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la différence entre les positions cabine 
+	lues sur la piste X/Y et J/K du PPT.
+	
+	Si la valeur limite est dépassée, le défaut PCF passe à 1 
+	entraînant un arrêt contrôlé de l'appareil (VMODE5).
+
+	Le système place alors la cabine dans le Mode 7 (Initialisation)
+	pour une nouvelle tentative. 
+
+	Si la tentative échoue, l'ascenseur se déplace vers le niveau le
+	plus proche pour permettre aux passagers de sortir, puis il est
+	parqué portes fermées.
+
+	Seul un Reset du système (POR) permet de corriger ce défaut
+	qui est crée dans la routine de référence de la position POSREF.
+
+	Nota:	Un Reset (POR) de la carte microprocesseur force PCF
+		à 1 pour obliger le système à initialiser la position de
+		la cabine.
+
+		Si l'ascenseur ne peut réaliser cette initialisation 
+		(exemple: parce qu'il est en panne sans pouvoir se 
+		déplacer), les défauts PCF / PCIF seront présents 
+		sans être la cause réelle de la panne.
+
+1.0	Vérifier:
+
+	1.1	Qu'aucun ventilateur dans le contrôleur ne soit bloqué et
+		ne parasite, par intermittence, les cartes dans le Rack.
+
+		Nota:	Les ventilateurs sont protégés en interne par une
+			sonde thermique (Ipsotherme) qui les protège d'un
+			échauffement excessif.
+	
+	1.2	Les connections du PPT.
+
+2.0	Tester les alimentations du PPT venant de l'Alimentation 
+	Electronique CEPS.
+		
+	2.1	+ 8 vdc.
+
+	2.2	- 8 vdc pour les PPT à vis (Type 1).
+
+3.0	Avec le Test 230-1, vérifier les valeurs lues sur les pistes X/Y
+	et J/K ainsi que leurs écarts successifs sur un déplacement 
+	(commande par les touches UP ou DOWN de l'OMT).
+
+	Nota:	Ce Test n'est pas significatif pour des défauts 
+		intermittents qui peuvent intervenir en fonction
+		de la position en gaine.
+			 
+	3.1	Remplacer:
+
+		3.1.1	La carte Transducer.
+
+		3.2.2	Le PPT (Primary Position Transducer).
+
+

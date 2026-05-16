@@ -1,0 +1,66 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 9 (DZTRP) est allumée.
+
+2.0	La Led 27 (POT) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La Carte Relay I/O est défectueuse.
+
+2.0	Passage intempestif en Inspection.
+
+3.0	Perte du signal DST pendant la marche.
+
+4.0	Le PPT est défectueux.
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Ce contrôle Hardware sur la carte Relay I/O est utilisé 
+	pour arrêter le déplacement de l'appareil si la vitesse 
+	cabine (PPT) dépasse 0,75 m/s dans les cas suivants:
+
+	- L'appareil est en Inspection (/TCI = 0).
+
+	- L'appareil est dans un Mode Normal (Mode 9 à 13) avec
+	  les portes ouvertes (DST = 0).
+
+	Si le signal DZTRP est à 1, le relais EES n'est plus 
+	commandé, C et CX qui autorisent H et BPS retombent,
+	provoquant un arrêt d'urgence (POT).
+
+	Nota:	En inspection, l'appui sur TUIB ou TDIB permet 
+		un nouveau déplacement.
+
+1.0	Remplacer la carte Relay I/O.
+
+2.0	Vérifier:
+	
+	2.1	Le relais TRO doit rester collé en permanence.
+
+	2.2	La tension au bornes A6 TB1-49 (/TCI2), A6 TB1-56 
+		(/IIS) et A6 TB2-9 doit être de 110 vdc en permanence.
+
+	2.3	Remplacer la carte CF I/O.
+	
+3.0	Vérifier:
+
+	3.1	L'état du signal DST pendant la marche (@ EEFC) 
+		en isolant l'appareil de la régulation (interrupteur S1-7
+		sur la carte microprocesseur) de façon à interdire 
+		l'ouverture des portes.
+
+		3.1.1	Vérifier le passage du sabre entre les galets
+			de serrure.
+		
+		3.1.2	Si la tension en A6 TB1-62 est de 110 vdc,
+			remplacer la carte CF I/O.
+
+4.0	Remplacer le PPT.
+	

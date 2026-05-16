@@ -1,0 +1,19 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Défaut de Convertisseur Analogique Digital 
+	(Temps d'accès) de la carte COPII.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Procéder en Mode 4 au Test 20. Si l'erreur persiste,
+	changer la carte COPII.

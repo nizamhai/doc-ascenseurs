@@ -1,0 +1,61 @@
+----------------
+Symptômes
+----------------
+
+1.0	L'appareil ouvre ses portes seulement quand il est à l'arrêt.
+
+2.0	Aucun défaut à l'OMT.
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le relais ODZ1 ou ODZ2 est défectueux.	
+
+2.0	Carte CF I/O défectueuse.
+
+3.0	Le fils de cordon souple du signal ODZ1 / ODZ2 est coupé.
+
+4.0	L'impulseur ODZ1 / ODZ2 est hors service
+
+5.0	L'Opto-coupleur ou le Triac du signal ODZ1 / ODZ2 de la carte
+	SPT est hors service.	 
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier: 
+
+	1.1	En Test 400-2 à l'OMT:
+
+		1.1.1	La Led 13 (ODZ1) doit être allumée.
+
+		1.1.2	La Led 14 (ODZ2) doit être allumée.
+
+	1.2	Si la tension est de 110 vac aux bornes de la bobine:
+
+		1.2.1	Remplacer le relais ODZ1 / ODZ2 défectueux.
+
+	1.3	Si les relais ODZ1 / ODZ2 sont collés:
+		
+		1.3.1	Leur contact 13/14.
+
+2.0	Remplacer la carte CF I/O si les test précédents sont bons.
+
+3.0	Sonner les fils de cordon souple suivants:
+
+	3.1	ODZ1:	A8 TB1-59 >> KJ1-18
+
+	3.2	ODZ2:	A8 TB1-58 >> KJ1-19
+
+4.0	Vérifier:
+	
+	4.1	Que la tension en sortie des Impulseurs ODZ1 / ODZ2  
+		(bornes KJ1-14 et 15) est nulle quand la cabine est
+		à niveau.
+
+	4.2	Dans le cas contraire, remplacer l'impulseur défectueux.
+
+5.0	Remplacer la carte SPT dans la boite KJ sur le toit de la cabine.
+

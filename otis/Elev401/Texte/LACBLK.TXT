@@ -1,0 +1,55 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 21 (LACBLK) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté une tension réseau trop faible pour 
+	continuer le fonctionnement.
+
+2.0	Le transformateur ZCTRF est défectueux.
+
+3.0	L'Alimentation CEPS est défectueuse.
+
+4.0	La carte PA I/O est défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	A partir de la tension réseau, un transformateur ZCTRF 
+	délivre à l'Alimentation Electronique CEPS des tensions
+	de 6.0 vac.
+	Les tensions sont converties en un signal LAC (réglable
+	sur certaines alimentations) qui est transmis à la carte 
+	PA I/O.
+
+	Converti sous forme numérique, le signal LACF est comparé
+	par le software à une valeur référence stockée dans les 
+	Eproms 0.
+
+	Si LACF est inférieure à ACBLK, le système empêche le 
+	départ de l'appareil ou le laisse terminé sa course.
+
+	Si la tension remonte au dessus de la valeur de rétablissement
+	ACBLKR, l'ascenseur est remis en service.
+
+1.0	Vérifier les tensions au primaire du transformateur de
+	puissance.
+
+2.0	Vérifier les tensions en sortie du transformateur ZCTRF.
+
+3.0	Vérifier le signal LACF en Test 40 à l'adresse @ F3DE.
+	La valeur doit être proche de 03b6 pour une tension réseau
+	de 380 vac.
+
+4.0	Remplacer si la valeur de LACF est incohérente.
+
+	4.1	L'Alimentation Electronique CEPS
+	
+	4.2	La carte PA I/O.
+

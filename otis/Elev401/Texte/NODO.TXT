@@ -1,0 +1,122 @@
+----------------
+Symptômes
+----------------
+
+1.0	Aucun défaut à l'OMT.
+		
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le relais IDZ1 ou IDZ2 ou STOP est défectueux.	
+
+2.0	Le relais DO / DO1 ou l'interface NDO ou ADO sur la carte
+	GP I/O est défectueuse.
+
+3.0	L'interface IDZ1 ou IDZ2 sur la carte CF I/O est défectueuse.
+
+4.0	Le fils de cordon souple du signal IDZ1 / IDZ2 est coupé.
+
+5.0	L'Impulseur IDZ1 / IDZ2 est hors service.
+
+6.0	L'Opto-coupleur ou le Triac du signal IDZ1 / IDZ2 de la carte 
+	SPT est hors service.	 
+
+7.0	Le PPT s'est décalé sans que le système ne détecte d'anomalie.
+
+8.0	La clavette sur le pignon d'entraînement de l'opérateur OVL est
+	sortie de son logement.
+
+9.0	Résistances / Fusibles de porte / Contacts de DOCB / OVL 
+	défectueux.
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier: 
+
+	1.1	En Test 400-2, à l'arrêt au niveau:
+
+		1.1.1	La Led 9 ( /IDZ1 ) doit être éteinte.
+
+		1.1.2	La Led 10 ( /IDZ2 ) doit être éteinte.
+
+	1.2	Le relais STOP doit être collé à l'arrêt.
+		
+		1.2.1	La tension de la bobine doit être 110 vac.
+
+		1.2.2	Remplacer le relais si la tension est correcte.
+
+		1.2.3	Remplacer la carte GP I/O.
+
+		1.2.4	Vérifier ses contacts autorisant les relais:
+
+			1.2.4.1	IDZ1 / IDZ2 et ODZ1 / ODZ2.
+
+			1.2.4.2	DO et DO1.
+
+	1.3	Si la tension est de 110 vac aux bornes des bobines
+		des relais IDZ1 / IDZ2 :
+
+		1.3.1	Remplacer le relais IDZ1 / IDZ2 défectueux.
+
+2.0	Remplacer:
+
+	2.1	Si la tension est de 110 vac aux bornes des bobines 
+		DO et DO1.
+		
+		2.1.1	Le relais DO / DO1 défectueux.
+
+	Nota:	Certains relais arrivent à se bloquer mécaniquement.
+
+	2.2	La carte GP I/O.
+
+3.0	Si les relais IDZ1 / IDZ2 sont collés à l'arrêt au niveau:
+		
+	3.1	Leur contact vers les bornes A6 TB1-71 et 63.
+
+	3.2	Remplacer la carte CF I/O.
+
+4.0	Sonner les fils de cordon souple suivants:
+
+	4.1	IDZ1:	A8 TB1-60 >> KJ1-17
+
+	4.2	IDZ2:	A8 TB1-57 >> KJ1-20
+
+5.0	Vérifier:
+	
+	5.1	Que la tension en sortie des Impulseurs IDZ1 / IDZ2  
+		(bornes KJ1-13 et 16) est nulle quand la cabine est 
+		à niveau.
+
+	5.2	Dans le cas contraire, remplacer l'Impulseur défectueux.
+
+6.0	Remplacer la carte SPT dans la boite KJ sur le toit de la cabine.
+
+7.0	Lorsque l'appareil est à l'arrêt, faire un Reset de la carte µP
+	pour provoquer une initialisation:
+
+	7.1	Si le décalage de position persiste, changer:
+		
+		7.1.1	La carte Transducer.
+
+		7.1.2	Le PPT.
+
+8.0	Refixer la clavette sur le pignon d'entraînement de l'opérateur
+	OVL et verrouiller mécaniquement l'assemblage par une 
+	mécanimbus.
+	
+9.0	Vérifier:
+
+	9.1	Les Résistances dans le contrôleur et la DOCB.
+
+	9.2	Les fusibles de porte F41 / F42 / F43.
+
+	9.3	Le pont redresseur RF2.
+
+	9.4	Les contacts dans la DOCB.
+
+	9.5	La tension d'excitation DMF et d'induit DMA.
+
+	9.6	Les charbons sur le moteur de l'OVL.

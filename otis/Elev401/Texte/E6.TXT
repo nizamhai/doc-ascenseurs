@@ -1,0 +1,31 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le signal de charge est négatif par rapport à la valeur 
+	mémorisée pour la cabine vide (-10%).
+
+2.0	Le signal qui bloque le contrôle de la pesée pendant
+	la course est absent de la routine CKCOML.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Contrôler les sorties des pèse charge et procéder en 
+	Mode 5 au recalibrage à vide de la cabine.
+
+2.0	Vérifier que le 6ème signal (adresse: @ F9E4) de 
+	la routine CKCOML (Communications [COM] du 
+	Contrôleur [C] vers la cabine [K] ) est présent et 
+	passe à 1 lors d'un déplacement afin de bloquer 
+	le contrôle de la charge dans la carte COP II.
+	En effet, lors d'une décélération, la valeur peut 
+	devenir négative (-10%) et entraîner ce défaut.
+

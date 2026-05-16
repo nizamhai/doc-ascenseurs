@@ -1,0 +1,79 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 22 (LCF) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Perte du signal DST (portes) pendant la marche.
+
+2.0	Le fonctionnement du PVT / PPT est incorrect.
+
+3.0	La carte Transducer ou le PVT / PPT est défectueux. 
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système détecte un défaut LCF (Leveling Car Failure)
+	dans les 5 cas suivants:
+
+	- Les portes sont ouvertes (DST = 0) en dehors de la zone
+	  de porte (ODZPPT ou ODZ).
+
+	- L'appareil est à l'arrêt (RUN=0) avec les portes ouvertes 
+	  (DST = 0), sans le signal ID2PPT (ou IDZ) mais avec 
+	  ODZPPT (ou ODZ).
+
+	- L'appareil a les portes ouvertes (DST = 0), sans le signal
+	  ID2PPT (ou IDZ) mais avec ODZPPT (ou ODZ) et ID2RUN.
+
+	- La vitesse machine (VM1) du PVT quand les portes sont 
+	  ouvertes (DST = 0) dépasse la valeur de 0,75 ms dans la
+	  zone de porte (ODZPPT ou ODZ).
+
+	- La vitesse machine (VM1) du PVT quand les portes sont
+	  ouvertes (DST = 0) dépasse la valeur de 0,37 ms dans la 
+	  zone de porte (ID2PPT ou IDZ).
+
+	- Le système se sert des signaux ODZPPT et ID2PPT quand
+	  il n'y a pas de PCF (erreur de position du PPT) sinon les 
+	  signaux ODZ et IDZ des Impulseurs sont utilisés.
+
+		ODZ = ODZ1 . ODZ2		IDZ = IDZ1 . IDZ2
+	
+	Ce défaut est crée dans la routine de contrôle des sécurités 
+	SFTYCK.
+
+1.0	Vérifier:
+
+	1.1	L'état du signal DST (@ EEFC) pendant la marche en
+		isolant l'appareil de la régulation (interrupteur S1-7 sur
+		la carte µP) de façon à interdire l'ouverture des portes.
+
+		1.1.1	Vérifier le passage du sabre entre les galets 
+			de serrure.
+		
+		1.1.2	Si la tension en A6 TB1-62 est de 110 vdc, 
+			remplacer la carte CF I/O.
+
+2.0	Vérifier:
+	
+	2.1	Les connections du PVT / PPT.
+
+	2.2	L'accouplement du PVT.
+
+	2.3	La compression du galet frotteur sur la bande de 
+		roulement de la poulie machine pour les PVT à friction.
+	
+3.0	Remplacer:
+
+	3.1	La carte Transducer.
+
+	3.2	Le PVT (Primary Velocity Transducer).
+
+	3.3	Le PPT (Primary Position Transducer).
+

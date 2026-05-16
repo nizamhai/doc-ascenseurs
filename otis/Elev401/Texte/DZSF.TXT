@@ -1,0 +1,45 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 6 (DZSF) est allumée et l'appareil se trouve au
+	niveau principal.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le PVT est défectueux.
+
+2.0	La carte Transducer est défectueuse. 
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la vitesse machine (VM1) du PVT 
+	dans la zone de porte.
+
+	Si la valeur dépasse 0,75 m/s, le défaut DZSF passe à 1
+	entraînant un arrêt de l'appareil ( Door Zone Speed Failure ).
+
+	L'ascenseur effectue un retour au niveau principal ou il 
+	stationne jusqu'à l'annulation du défaut par un Reset (POR).
+
+	Ce défaut est crée dans la routine d'Auto contrôle SHELTH.
+
+1.0	Vérifier:
+	
+	1.1	Les connections du PVT.
+
+	1.2	L'accouplement du PVT.
+
+	1.3	La compression du galet frotteur sur la bande de 
+		roulement de la poulie machine pour les PVT à friction
+
+2.0	Remplacer:
+
+	2.1	La carte Transducer.
+
+	2.2	Le PVT (Primary Velocity Transducer).
+

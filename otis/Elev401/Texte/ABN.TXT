@@ -1,0 +1,24 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 1 (ABN) est allumée.
+
+2.0	L'appareil se déplace à vitesse réduite ou il stationne au niveau
+	principal portes ouvertes.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté des anomalies de fonctionnement et décide
+	de réduire les performances de l'appareil ou de le faire 
+	stationner au niveau principal portes ouvertes
+
+-------------
+Remèdes
+-------------
+	  
+1.0	La Led ABN indique qu'il faut se reporter au Test 200-4 pour
+	déterminer l'anomalie en cours.
+	

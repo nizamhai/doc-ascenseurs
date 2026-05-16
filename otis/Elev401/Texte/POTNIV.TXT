@@ -1,0 +1,35 @@
+----------------
+Symptômes
+----------------
+
+1.0	Défaut POT à l'OMT.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Vibrations d'un des relais actionnés lors du ralentissement
+	(SC / STOP / IDZ / ODZ / etc.) et transmission au relais CX
+	entraînant la perte du signal RUN vers le Convertisseur.
+
+2.0	Retombée en marche des contacteurs H / BPS.
+
+3.0	PPT défectueux.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Doubler le contact de CX autorisant RUN vers le Convertisseur
+	et isoler mécaniquement le relais responsable des vibrations.
+
+2.0	La tension de manoeuvre peut être la cause du défaut si elle 
+	descend sous les 100 vdc aux bornes des contacteurs (chute 
+	de tension dans les serrures ...)
+
+3.0	Si quand l'appareil ouvre ses portes, le contacteur BPS retombe
+	puis recolle, remplacer le PPT (Primary Position Transducer). 
+	
+	Nota:	Ce défaut n'apparaît pas si l'appareil est isolé de la
+		régulation (Interrupteur S1/7 de la carte µp).
+	

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" fill="none">
+  <defs>
+    <linearGradient id="tke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b2d8e"/>
+      <stop offset="40%" stop-color="#d4512a"/>
+      <stop offset="100%" stop-color="#e8611a"/>
+    </linearGradient>
+  </defs>
+  <!-- T -->
+  <rect x="8" y="10" width="24" height="100" fill="url(#tke)"/>
+  <rect x="32" y="10" width="40" height="28" fill="url(#tke)"/>
+  <!-- K -->
+  <rect x="80" y="10" width="24" height="100" fill="url(#tke)"/>
+  <polygon points="104,10 104,52 140,10" fill="url(#tke)"/>
+  <polygon points="104,58 104,110 148,110" fill="url(#tke)"/>
+  <!-- E — pixel/block style -->
+  <rect x="156" y="10" width="28" height="28" fill="url(#tke)"/>
+  <rect x="188" y="10" width="28" height="28" fill="url(#tke)"/>
+  <rect x="220" y="10" width="12" height="12" fill="url(#tke)" opacity="0.5"/>
+  <rect x="156" y="42" width="28" height="28" fill="url(#tke)"/>
+  <rect x="156" y="74" width="28" height="28" fill="url(#tke)"/>
+  <rect x="188" y="74" width="28" height="28" fill="url(#tke)"/>
+  <rect x="220" y="74" width="12" height="12" fill="url(#tke)" opacity="0.5"/>
+</svg>

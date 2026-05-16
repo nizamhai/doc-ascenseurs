@@ -1,0 +1,182 @@
+------------------------------------------------------------------------
+                               Processor
+------------------------------------------------------------------------
+       
+C'est la carte du microprocesseur Texas TMS9900. Le
+programme et les paramètres sont stockés sur des Eproms
+2716 (24) ou 2732 (14) suivant la génération de carte. 
+
+Le circuit TMS9901: 
+
+	- Génère une interruption toute les 16 ms pour
+	  l'exécution des taches suivant les priorités.
+	       
+Le circuit TMS9902 assure les liaisons avec 
+
+	- L'OMT (Outil de Maintenance Technique).
+	- Le Group (Régulation).
+	- La carte COP en cabine.
+	- Les indicateurs de position au palier HPI.
+         
+Un bouton poussoir permet un Reset de la carte mais
+une coupure générale de 10 sec peut être parfois plus
+efficace sur certaines anomalies (défaut: CMF).
+         
+La carte dispose de 16 dipswitch (interrupteurs):
+
+Nota:	Les valeurs décrites ci-dessous sont données à
+	titre purement indicatif et peuvent faire l'objet de 
+	modification sur site.
+
+Carte µP Cabine:
+------------------------------------------------------------------------
+Signal	       Interrupteur         Position interrupteur
+------------------------------------------------------------------------
+Contrôle par Ordinateur extérieur:
+		S1/8		normal = 0 (droite)
+------------------------------------------------------------------------
+Mise Hors Groupe et suppression de l'ouverture de porte:
+		S1/7		normal = 0 (droite)
+				isolé = 1    (gauche)
+------------------------------------------------------------------------
+Non utilisés:	S1/6
+		S1/5
+------------------------------------------------------------------------
+IMON: Reduction de la temporisation de porte par coupure
+          du faiseau de la cellule.
+			1sec    2sec    3sec    4sec
+		S1/4	   0         0         1         1
+		S1/3	   0         1         0         1
+------------------------------------------------------------------------
+PI: Temporisation de porte sur appel palier, ascenseur
+     stationné à l'étage
+			4sec    6sec    8sec    10sec
+		S1/2	   0         0         1         1
+		S1/1	   0         1         0         1
+------------------------------------------------------------------------
+MLI: Temporisation de porte au niveau principal
+			4sec    6sec    8sec    16sec
+		S2/8	   0         0         1         1
+		S2/7	   0         1         0         1
+------------------------------------------------------------------------
+RI: Choix de la Temporisation de porte sur réouverture
+			0.5sec  1sec   1.5sec  2sec
+		S2/6	   0         0         1         1
+		S2/5	   0         1         0         1
+------------------------------------------------------------------------
+HI: Choix de la Temporisation de porte sur appel palier
+			3sec    4sec    5sec    6sec
+		S2/4	   0         0         1         1
+		S2/3	   0         1         0         1
+------------------------------------------------------------------------
+CI: Choix de laTemporisation de porte sur envoi cabine
+			1sec    2sec    3sec    4sec
+		S2/2	   0         0         1         1
+		S2/1	   0         1         0         1
+------------------------------------------------------------------------
+
+Carte µP Groupe:
+------------------------------------------------------------------------
+Signal	       Interrupteur         Position interrupteur
+------------------------------------------------------------------------
+Contrôle par Ordinateur extérieur:
+		S1/8		normal = 0 (droite)
+------------------------------------------------------------------------
+SUCB : Nb de cabine ne répondant pas aux appels paliers
+            en pointe descente
+            nb cab / groupe	>       1   2   3   4   5   6   7   8 
+		S1/7	0       0   0   0   0   0   0   0   0
+			1       1   2   2   3   4   4   5   6  
+------------------------------------------------------------------------
+SHLB : Nb de cabine retournant au niveau principal lors
+           d'une pointe montée
+           nb cab / groupe	>      1   2   3   4   5   6   7   8 
+		S1/6	0      0   0   0   0   0   0   0   0
+			1      1   2   2   3   4   4   5   6  
+------------------------------------------------------------------------
+IMGT : Choix de l'intervalle de temps pour désactiver MFS
+           après le dernier appel ou déplacement cabine
+		(min)	1    2  2.4   3   3.5  4   4.5   5	
+		S1/5	0    0    0    0    1    1    1    1
+		S1/4 	0    0    1    1    0    0    1    1
+		S1/3	0    1    0    1    0    1    0    1
+------------------------------------------------------------------------
+SCDS1: Interrupteurs pour manoeuvres spéciales
+		S1/2		0 (normal)
+		S1/1		0 (normal)
+------------------------------------------------------------------------
+IMOT: Choix de l'intervalle de temps pour débuter la pointe
+          descente quand 2 cabines arrivent au niv. principal
+          chargées à plus de 50%.
+		(sec)	  60        90      120       150
+		S2/8	   0          0         1          1
+		S2/7	   0          1         0          1
+------------------------------------------------------------------------
+IMIT: Choix de l'intervalle de temps pour débuter la pointe
+        montée quand 2 cabines quittent le niveau principal
+        chargées à plus de 50%.
+		(sec)	  60        90      120       150
+		S2/6	   0          0         1          1
+		S2/5	   0          1         0          1
+------------------------------------------------------------------------
+SCDS2: Interrupteurs pour manoeuvres spéciales
+		S2/4		0 (normal)
+		S2/3		0 (normal)
+------------------------------------------------------------------------
+IGD: Choix de l'intervalle de temps pour débuter la répar-
+        tition lors d'une pointe montée
+		(sec)	  14        19        24        29
+		S2/2	   0          0         1          1
+		S2/1	   0          1         0          1
+------------------------------------------------------------------------
+                               Maintenance
+------------------------------------------------------------------------
+       
+Deux Leds permettent de surveiller le bon déroulement
+du programme:     
+
+	- Led rouge clignotante (Watchdog).
+
+	- Led verte fixe (Alimentation).
+          
+Dans le cas contraire suivre les étapes suivantes en
+procédant chaque fois à un essai:
+
+1.O	Vérifier les ventilateurs du contrôleur (leur
+	blocage peut générer des parasites).
+
+2.0	Faire un Reset de la carte.
+
+3.0	Vérifier les Alimentations électroniques.
+
+4.0	Remplacer le TMS9901.
+
+5.0	Remplacer les TMS9900 / 9902 / 9904.
+
+6.0	Remplacer les circuits mémoire RAM si ils
+	sont montés sur socket.
+
+7.0	Laisser uniquement dans le Rack la carte
+	micro avec l'OMT débranché (avec la carte
+	PET BOARD si il y a un EMS).
+
+8.0	Débrancher sur le bornier A3 l'alimentation 
+	du PVT et du PPT (bornes: 9/10/11).
+
+9.0	Remplacer les Eproms ou permuter avec un 
+	autre appareil et condamner le déplacement
+	le temps de faire l'essai (Bouton STOP).
+
+	U93 ----- 3H		U94 ----- 3L
+	U33 ----- 0H		U34 ----- 0L
+	U37 ----- 45H		U38 ----- 45L
+	U35 ----- CDH		U36 ----- CDL
+	U91 ----- ABH		U92 ----- ABL
+	U87 ----- 89H		U88 ----- 89L
+	U89 ----- 67H		U90 ----- 67L
+
+10.0	Remplacer la carte.
+
+Nota:	Certaines cartes microprocesseur ne sont pas 
+	capables d'adresser des cartes Pet Board.
+	(Utilisation pour EMS et Analyse de Trafic)

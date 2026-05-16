@@ -1,0 +1,650 @@
+{
+  "90": [
+    {
+      "type": "text",
+      "text": "Défaillance interne"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Remplacer le module de commande EPB"
+    }
+  ],
+  "91": [
+    {
+      "type": "text",
+      "text": "Défaut ChA ou ChB ou ChC"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler l'alignement de bande, le fonctionnement du lecteur et les réactions du lecteur sur l'armoire de commande en fonc­tion des paragraphes 3.4 et 3.5"
+    }
+  ],
+  "92": [
+    {
+      "type": "text",
+      "text": "Croisement du câblage ChA et ChB ou mauvaise polarité 77"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler la polarité 77 (appelée 136) sur les DEL du contrô­ leur et les tolérances ; si la polarité est bonne, dans ce cas intervertir les fils ChA et ChB"
+    }
+  ],
+  "93": [
+    {
+      "type": "text",
+      "text": "Nombre incorrect de dra­ peaux d'étage ou étages mal programmés"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler les étages programmés, le nombre réel d'étages et les drapeaux d'étage installés"
+    }
+  ],
+  "94": [
+    {
+      "type": "text",
+      "text": "Distance de décélération trop longue"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Si après certains passages cet avertissement persiste, contrôler et ajuster le réglage du volant V3F10 &quot;An-03&quot;, le paramètre de décélération &quot;bn-05&quot; et la masse du volant"
+    }
+  ],
+  "95": [
+    {
+      "type": "text",
+      "text": "ChD ne fonctionne pas"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "S'il est installé, contrôler le fonctionnement des circuits de supervision"
+    }
+  ],
+  "1 =A": [
+    {
+      "type": "text",
+      "text": "Pas de signal d'ouvertue 85:SGA 15 sec aprés ordre ouverture"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier jumps X2 et X5 ;les leds L22 et 23 sont allumées, la carte EPB donne la sortie(XC4/1 et XMX/5) ;controler sur les connecteurs XC8/8"
+    }
+  ],
+  "2 =b": [
+    {
+      "type": "text",
+      "text": "Le frein reste levé.Les portes cabines resteront fermées tant que le contact frein ne sera pas revenu normal"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Dur mécanique sur le frein ; Problème sur contact ou filerie ;Le jump X3 est mal placé ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    }
+  ],
+  "3 =9": [
+    {
+      "type": "text",
+      "text": "Le frein ne s'est pas levé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Dur mécanique ;bobine grillée ou non alimentée ;contact de frein défectueux ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Connecteur XM7/2-XM7/12 Frein repos:0v -Frein levé:24v"
+    }
+  ],
+  "4 =C": [
+    {
+      "type": "text",
+      "text": "Le contrôle fermeture de porte cabine ou le contrôle verrouillage portes palières n'est pas obtenu , annulation d'ordre après 5 essais"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Mécanique des portes ;contacts de porte cabine ou palières défectueux ;moteur de porte ou fusible HS ;contacteur 211:S ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "la led L21 indique bien la commande de fermeture ;vérifier l'état des leds L17 à L21 (chaine de sécu)"
+    }
+  ],
+  "5 =CH": [
+    {
+      "type": "text",
+      "text": "En porte auto un contact de réouverture est resté fermé (s'affiche à chaque utilisation) ;la porte reste ouverte"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier cellule ,contact de choc ,bouton de réouverture ;mauvaise position de X4 ou X5 ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    }
+  ],
+  "6 =d": [
+    {
+      "type": "text",
+      "text": "temps de course entre niveau trop long :antipatinage.L'appareil se met à l'arrêt porte ouverture"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Oscillateur ou impulseur défectueux ;défaut dans les contacts fin de gaine ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Lles leds L14 etL15 doivent s'allumer au passage d'un drapeau ou d'un aimant"
+    }
+  ],
+  "7 =E": [
+    {
+      "type": "text",
+      "text": "L'appareil ne s'est pas recalé après 3 essais , la cabine stoppe"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Tôles aux extrêmes mal placées ;problème sur 136:U ou136:N ;problème sur circuit sécurité porte"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Couper le courant force puis le remettre"
+    }
+  ],
+  "8 =F": [
+    {
+      "type": "text",
+      "text": "Après 15 sec en PV pas de top d'arrêt (idem en 1 ou 2 vit) , arrêt immédiat ,tentative d'ouverture si en zone de porte"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Oscillateur, impulseur défectueux ou déréglés ;aimants ou drapeaux déréglés ;PV ne fonctionne pas ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les capteurs en gaine ;le passage en PV ,le frein ..."
+    }
+  ],
+  "10 =Hin": [
+    {
+      "type": "text",
+      "text": "Un contacteur est resté collé avant un enregistrement , enregistrement annulé ,les portes s'ouvrent"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Le contacteur 201:U ou 201:N est défectueux ou led L11 reste éteinte ;problème connexion connecteurs XM5/7-XM5/8"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    }
+  ],
+  "11 =h": [
+    {
+      "type": "text",
+      "text": "Déplacement de cabine sans appel , arrêt au 1er niveau rencontré et attente d'un ordre"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Problème sur la carte mère ou la carte d'extension"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Contrôler les appels paliers ou les envois cabine séparément"
+    }
+  ],
+  "12 =L": [
+    {
+      "type": "text",
+      "text": "Enregistrement Montée ou descente alors que cabine déjà en extrême , appel effacé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Problème sur la sélection"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Connecteurs XH4/3 et XH4/4 (136:U/N) = +24v en zone / 0v hors zone"
+    }
+  ],
+  "13 =L̲": [
+    {
+      "type": "text",
+      "text": "Enregistrement Montée ou descente alors que cabine déjà en extrême , appel effacé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Problème sur la sélection"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Connecteurs XH4/3 et XH4/4 (136:U/N) = +24v en zone / 0v hors zone"
+    }
+  ],
+  "14 =o.": [
+    {
+      "type": "text",
+      "text": "Sur config à 2 lignes impulseurs ,pendant la marche la sélection ne lit pas une des infos de ralentissement"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Impulseurs ou oscillateurs 62:U ou 62:N défectueux ;manque des drapeaux ou aimants"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les aimants ou drapeaux en gaine"
+    }
+  ],
+  "16 =P": [
+    {
+      "type": "text",
+      "text": "Suite à un ordre, non départ de la cabine au bout de 5 sec en électrique, ou 8 sec en hydraulique."
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Frein ne s'ouvre pas ;manque d'alimentation ;moteur ;oscillateurs ;en hydraulique passage étoile-triangle"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier capteurs en gaine (oscillateurs et fin de gaine) ;vérifier frein et moteur ..."
+    }
+  ],
+  "17 =S": [
+    {
+      "type": "text",
+      "text": "Coupure de chaîne de sécurité en marche ;arrêt immédiat"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "1 ou plusieurs contacts dans la chaîne de sécurités sont ouverts"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Led L17 éteinte, contact ouvert début sécurités gaine et cabine ;Led L18 éteinte, contact ouvert sur la porte ;Led L19 porte cabine ;Led L20 éteinte pas de verrouillages"
+    }
+  ],
+  "18 =t": [
+    {
+      "type": "text",
+      "text": "Contact 90° déclenché ou une thermistance a déclenché ;arrêt de la cabine à un étage porte ouverte"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Contact défectueux ,frein bloqué ou non alimenté ,blocage treuil ,surcharge ..."
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Connecteur D12:thermo-contact XM7/4 -XM7/3 ;thermistance XM8/2 -XM8/3"
+    }
+  ],
+  "19 =u.": [
+    {
+      "type": "text",
+      "text": "Le signal d'un top oscillateur ou impulseur est resté donné plus de 15 sec."
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Problème d'oscillateur ou d'impulseur ; drapeaux ou aimants ;connexions"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Led L14 ou L15 reste allumée ;vérifier fonctionnement oscillateurs et drapeaux ou aimants"
+    }
+  ],
+  "20 =rin": [
+    {
+      "type": "text",
+      "text": "Course de synchronisation (recalage)"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Suite à remise sous tension ,soit suite à décalage de sélection"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Si reste affiché et pas de démarrage vérifier la chaîne de sécurité"
+    }
+  ],
+  "22 =LHB": [
+    {
+      "type": "text",
+      "text": "Signifie que l'appareil est en inspection"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Bouton inspection sur toit de cabine ou connexions"
+    }
+  ],
+  "23 ==.": [
+    {
+      "type": "text",
+      "text": "Signifie que l'appareil est hors service"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Vérifier les entrées de la carte"
+    }
+  ],
+  "24 =L̲m": [
+    {
+      "type": "text",
+      "text": "Le signal du &quot;contacteur principal&quot; provenant de V3F-20 n'arrive pas sur EPB pendant un démarrage ou un arrêt"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "Pendant le démarrage, le relais de démarrage 201:1 et 201:2 n'est pas activé et l'ascenseur reste à l'étage. En marche de décélération, l'ascenseur dépasse l'étage"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "1 : Le signal de &quot;Contacteur principal&quot; (201) n'est pas activé sur la sortie V3F-20 2 Contrôler la connexion et la polarité de diodes (en série) entre EPB et V3F-20 (XM4/1 - 11)."
+    },
+    {
+      "type": "text",
+      "text": "3 Contrôler les cds de défaut qui apparaissent sur l'armoire V3F- 20"
+    }
+  ],
+  "25 =L̲r": [
+    {
+      "type": "text",
+      "text": "Le système de traction V3F-20 perd la position de cabine en gaine et il communique à EPB qu'une marche de synchronisation est nécessaire"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "La cabine s'arrête à l'étage de toute manière"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "1 : La carte de commande TAC-M ne fonctionne pas correctement ou n'est pas correctement connectée 2 Les fils raccordant TAC-M et EPS sont mal connectés ou mal réglés"
+    }
+  ],
+  "28 =n.": [
+    {
+      "type": "text",
+      "text": "Arrêt transmission du microprocesseur"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "Couper le courant puis le remettre ;si problème persistant changer carte EPB"
+    }
+  ],
+  "31 =F̲A": [
+    {
+      "type": "text",
+      "text": "Durant la décélération d'étage dans les installations de câbles de traction TAC-M, le relais de signal d'arrêt (523) n'est pas activé"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "La cabine s'arrête à l'étage de toute manière"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "1 La carte de commande TAC-M ne fonctionne pas correctement ou n'est pas correctement connectée 2 Les fils raccordant TAC-M et EPS sont mal connectés ou mal réglés"
+    }
+  ],
+  "33 =U": [
+    {
+      "type": "text",
+      "text": "HYD:pas de top d'arrêt durant la PV"
+    },
+    {
+      "type": "text",
+      "text": "Dans les installations hydraulique, pendant la remise a niveau, l'interrupteur d'arrêt d'étage n'est pas détecte au bout de 20 sec"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "1) un ou plusieurs aimant sue les commutation de deceleration et/ou d'arrêt magnétique 61:U et/ou 61:N manque, sont mal positionnes ou ont une polarité inverse 2) les commutation de deceleration et/ou d'arrêt magnétique 61:U et/ou 61:N sont mal règles, mal connectes ou défectueux"
+    },
+    {
+      "type": "text",
+      "text": "3) Un défaut mécanique ou hydraulique empêche le bon fonctionnement"
+    },
+    {
+      "type": "text",
+      "text": "4) Le mini-contacteur installe sur l'armoire, utilise pour la remise a niveau (202) ne fonctionne pas"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "La cabine s'arrêt et après un remis a niveau, attend un nouvel appel et ne fait pas de remis a niveau pendant au moins 3 minutes"
+    }
+  ],
+  "36 =y": [
+    {
+      "type": "text",
+      "text": "V.3.F:alarme sur V.3.F"
+    },
+    {
+      "type": "text",
+      "text": "Il indique que le signal d'alarme e été active avec les systèmes de traction V3F-10 et V3F-20 le système de traction entaine un signal de défaut vers le contrôleur"
+    },
+    {
+      "type": "header",
+      "text": "CAUSES"
+    },
+    {
+      "type": "text",
+      "text": "un signal de défaut arrive a partir de le système de traction"
+    },
+    {
+      "type": "header",
+      "text": "TEST"
+    },
+    {
+      "type": "text",
+      "text": "La cabine arrive a l'étage ou s'arrêtera immédiatement, contrôleur que le code de défaut qui apparaît a l'écran sur la face avant du système de traction et se report aux instructions pour l'installation et le démarrage dans le manuels V3F-10 (AME-11.65.6) et V3F-20 (AME-11.65.8)"
+    }
+  ],
+  "37 =rin2": [
+    {
+      "type": "text",
+      "text": "HYD:marche en nivelage descente"
+    }
+  ],
+  "38 =rau": [
+    {
+      "type": "text",
+      "text": "HYD:marche en nivelage montée"
+    }
+  ]
+}

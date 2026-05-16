@@ -1,0 +1,68 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 23 (DZRF) est allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le relais DFC / DFCX / DST / DFO est défectueux.
+
+2.0	Le signal DFC ou DST est erroné.
+
+3.0	Le signal DFO est erroné
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le signal DZRF est nécessaire pour contrôler que les 
+	portes ne restent pas shunter en permanence:  
+
+		DZRF = DFO . ( DFC + DST )
+
+	En pleine ouverture (DFO = 1), DFC et DST doivent être
+	retombés. 
+
+	Si le système détecte une information contradictoire sur
+	l'état des portes, DZRF passe à 1.
+
+1.1	Vérifier:
+
+	1.1	L'état des relais DFC / DST / DFCX et DFO.
+
+	1.2	Que les relais ne sont pas bloqués mécaniquement.
+
+		1.2.3	Remplacer le relais défectueux.
+
+2.0	Tester portes complètement ouvertes:
+	
+	2.1	Que le signal DFC (Test 40) à l'adresse @ EEFE 
+		est nul.
+
+		2.1.1	La tension aux bornes du relais doit être 
+			nulle.
+
+		2.1.2	Remplacer la carte GP I/O.
+
+	2.2	Que le signal DST (Test 40) à l'adresse @ EEFC 
+		est nul.
+
+		2.2.1	La tension aux bornes du relais doit être 
+			nulle.
+
+		2.2.2	Remplacer la carte CF I/O.
+
+3.0	Tester portes complètement fermées:
+		
+	3.1	Que le signal DFO (Test 40) à l'adresse @ EF00
+		est à 0.
+
+	3.2	La tension aux bornes du relais doit être nulle.
+
+	3.3	L'état du contact DOL dans la DOCB.
+
+	3.4	Remplacer la carte GP I/O.
+

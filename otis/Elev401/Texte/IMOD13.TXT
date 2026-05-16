@@ -1,0 +1,31 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 20 (IMOD13) est allumée.
+
+2.0	Une autre Led de défaut doit être allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté un défaut et décide d'interdire 
+	le Mode de fonctionnement Normal (Mode 9 à 13).
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	La Led IMOD13 indique que l'un des défauts suivant est
+	apparu au moins 2 fois:
+
+	IMOD13 =  EMLS1 + EMLS4 + EMLS89 + ESLIPV 
+			+ EXVC + EVF + ADF + DIRF.
+
+	Seul un Reset du système (POR) permet d'annuler le 
+	défaut qui est crée dans la routine d'Auto contrôle SHELTH.
+
+1.0	Rechercher la cause du défaut avec les autres Leds qui 
+	s'affichent en Test 200-2.
+	

@@ -1,0 +1,18 @@
+HT201728-1	Carte Mother Board (Controleur Group seul)
+HT201728-2	Carte Mother Board (Group dans Controleur A)
+HT204349-1	Carte µP 2732
+HT201788-3 	Carte µP 2716/2732	* voir Nota*
+HT201732-4	Carte COMM I/O (4 cabines)
+HT201732-6	Carte COMM I/O (6 cabines)
+HT201732-8	Carte COMM I/O (8 cabines)
+HT203102-1	Carte GF I/O
+B8200BT1       	Carte PET BOARD
+HT201735-1	Carte BUS TERMINATOR (Controleur GROUP seul)
+HT204327-1	Carte BUS TERMINATOR (Group ds Controleur A)
+HT201823-1	Carte Feature Panel
+HT204329-1 	Carte Alimentation (remplacee par AAA21000C2)
+
+Nota:	La carte µp 2716/2732 n'est pas compatible avec la carte
+	PET BOARD quand il y a un EMS. 
+	Il faut dans ce cas commander une carte HT204349-1 
+	(Carte µP 2732).

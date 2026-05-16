@@ -1,0 +1,156 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 7 (DIRF) est allumée ou clignote.
+
+2.0	Les Leds 27 (POT) et 20 (IMODE13) peuvent être allumés.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Vibrations d'un des relais actionnés lors du déplacement, 
+	transmission au relais CX entraînant la perte du signal RUN
+	vers le Convertisseur statique.
+
+2.0	Le couple moteur n'est pas suffisant pour entraîner la charge
+	dans le sens souhaité.
+	
+	2.1	Le Roll-back est du à une erreur de pesée.
+
+	2.2	Les connections du convertisseur sont défectueuses.
+
+	2.3	Les connections de la carte ECPCB sont défectueuses.
+
+	2.4	La carte ECPCB / 12SCR du convertisseur Louis ALLIS
+		est défectueuse.
+
+3.0	L'asservissement en vitesse est mal réglé.
+
+4.0	L'Alimentation Electronique fournie des tensions qui ne sont 
+	pas dans les tolérances.
+
+5.0	La carte Transducer / le PPT / la carte PA I/O est défectueux.
+
+6.0	Le ruban du PPT est trop tendu et provoque des vibrations lors
+	de l'arrivée à niveau (pour les grandes hauteurs).
+
+7.0	L'excitation du moteur est trop faible lors du départ ou de 
+	l'arrivée à niveau (plein champs).
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle pour les Modes Normaux ( NMODE=1, 
+	Mode 9 à 13) la direction de la cabine lorsque l'appareil 
+	est en dehors du Door Zone PPT (IDZPPT= 1 quand la distance
+	du niveau est inférieure à +/- 7,5 cm).
+	
+	- L'altitude mesurée par le PPT est comparée à celle du 
+	  niveau à atteindre lors du prochain arrêt.(Table des 
+	  niveaux stockés dans les Eproms). 
+	  Le sens théorique du déplacement peut ainsi être 
+	  déterminé.
+
+	- Le système observe alors si la direction cabine est en 
+	  contradiction avec le sens théorique du déplacement.
+
+	- Dans ce cas, si la vitesse cabine (VC) est supérieure à 
+	  37 cm/s, le défaut DIRF est immédiat.
+
+	- Si la vitesse est inférieure à 37 cm/s, le système permet
+	  pendant 1 sec à l'anomalie détectée de se corriger. Dans 
+	  le cas contraire, DIRF passe à 1 entraînant un arrêt 
+	  d'urgence de l'ascenseur.
+
+	- Un second essai est autorisé mais son échec conduit à 
+	  l'arrêt définitif de l'appareil. 
+
+	- Seul un Reset du système (POR) permet de corriger ce 
+	  défaut qui est crée dans la routine de contrôle des 
+	  sécurités SFTYCK.
+
+	- Exemple:
+
+	  Si la position de la cabine est inférieure au niveau à 
+	  atteindre, le sens supposé du déplacement est la montée.
+
+	  Dans ce cas, si une vitesse en descente est détectée 
+	  (CMD = 1, Car Motion Down / Déplacement de la Cabine
+	  en Descente), le défaut DIRF peut être déclenché.
+		
+1.0	Vérifier:
+
+	1.1	Doubler le contact de CX autorisant RUN et isoler 
+		mécaniquement le relais responsable des vibrations.
+		Vérifier les connections entre les cartes Relay I/O
+		du contrôleur et ECPCB du convertisseur.
+
+2.0	Vérifier:
+
+	2.1	Les pèses charge (une erreur importante dans la pesée 
+		peut provoquer un Roll-Back susceptible de créer ce 
+		type de défaut).
+
+	2.2	L'état des contacteurs 1M / 2M et le circuit 
+		d'alimentation du moteur (connections et serrage pour 
+		l'induit et l'excitation).
+	
+	2.3	Les connecteurs sur la carte ECPCB.
+
+		2.3.1	Les cartes ECPCB d'ancienne génération 
+			possèdent des connecteurs gris qui viennent
+			se fixer sur des picots qui ont tendances à 
+			s'oxyder.
+
+	2.4	Remplacer la carte ECPCB / 12SCR du convertisseur 
+		Louis ALLIS.
+
+3.0	Régler sur la carte PA I/O:
+
+	3.1	L'équilibrage électrique LB (R143) pour que lors d'un
+		départ cabine vide, aucun mouvement de la poulie du PPT
+		n'ait lieu avant le départ effectif (Roll-back).
+		Le réglage est à optimiser dans les 2 directions et à 
+		tous les niveaux.
+
+	3.2	Le gain (R142) pour obtenir une arrivée franche et 
+		régulière à niveau.
+
+		3.2.1	Eviter surtout les arrivées en deux temps et 
+			les dépassement du niveau.
+
+	3.3	La réponse (R141) pour obtenir une précision d'arrêt 
+		proche de l'altitude mémorisée dans la table des niveaux
+		(réglage à moins 3 unités en Test 211, 1 unité # 1.2 mm).
+
+		3.3.1	Une réponse trop importante peut provoquer des
+			vibrations lors du déplacement.
+
+4.0	Les alimentations du PPT venant de l'Alimentation 
+	Electronique CEPS.
+		
+	4.1	+ 8 vdc.
+
+	4.2	- 8 vdc pour les PPT à vis (Type 1).
+
+5.0	Remplacer dans l'ordre suivant:
+
+	5.1	La carte Transducer.
+
+	5.2	Le PPT (Primary Position Transducer).
+
+	5.3	La carte PA I/O.
+	
+	5.4	L'Alimentation Electronique CEPS.
+
+6.0	Diminuer la tension du ruban si les vibrations de la poulie 
+	du PPT ne sont pas éliminées par le réglage du Gain et de
+	la Réponse.
+
+7.0	L'excitation doit être maximale (plein champs) lors du
+	départ ou de l'arrivée.
+	
+	7.1	Remplacer l'Ampli MF/BK.

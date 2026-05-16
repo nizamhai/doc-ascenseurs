@@ -1,0 +1,35 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 30 (VMODE5) est allumée.
+
+2.0	Une autre Led de défaut doit être allumée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le système a détecté une des anomalies suivantes:
+
+	1.1	ADF :	Panne du convertisseur Analogique / Digital
+			de la carte PA I/O.
+
+	1.2	PCF :	Erreur dans la position cabine.
+
+	1.3	ES :	Bouton d'arrêt en cabine (non utilisé).
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Si un des 3 défauts ADF / PCF / ES apparaît, le système
+	amorce un ralentissement qui amène progressivement la 
+	cabine à l'arrêt.
+
+	Les portes s'ouvrent si la zone de porte a été atteinte, puis 
+	elles se referment.
+
+2.0	La Led VMODE5 indique qu'il faut se reporter aux autres 
+	Leds pour déterminer l'anomalie en cours.
+	

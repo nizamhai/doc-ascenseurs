@@ -1,0 +1,43 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led OVERCURRENT s'allume pendant la marche.
+
+2.0	Les Protistors AC / DC ne fusionnent pas lors du défaut.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Des thyristors sont défectueux.
+
+2.0	Il y a un court circuit en sortie du convertisseur.
+
+3.0	La continuité de l'alimentation moteur est défectueuse.     
+
+4.0	Une des cartes 12SCR / Voltage Divider / Gate Firing 
+	est défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier le Rack de Thyristor en se reportant au menu 
+	" Rack de Thyristor ".
+
+2.0	Rechercher le court circuit en sortie du convertisseur.
+
+3.0	Vérifier l'état:
+
+	3.1	Des contacteurs 1M & 2M :
+
+		3.1.1	Doigt fixe ou mobile fondu.
+
+		3.1.2	Ressort cassé.
+
+	3.2	Des Connexions des câbles du moteur / Inductance.
+
+4.0	Remplacer les cartes 12SCR / Voltage Divider / Gate Firing
+	en procédant à chaque fois à un essai.
+

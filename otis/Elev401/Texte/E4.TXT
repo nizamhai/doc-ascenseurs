@@ -1,0 +1,24 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est Fixe.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Une surintensité a été détectée.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Procéder:
+
+	1.1	Au test en Mode 3 (Test automatique) et noter 
+		les différences sur les sorties.
+
+	1.2	Au Test en Mode 1 pour obtenir le recalibrage en
+		courant des sorties.
+

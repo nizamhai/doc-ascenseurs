@@ -1,0 +1,75 @@
+----------------
+Symptômes
+----------------
+
+1.0	Les portes sont fermées.
+
+2.0	Aucun défaut à l'OMT.
+
+3.0	L'ascenseur est initialisé (sinon se reporter à l'anomalie
+	"Pas d'Initialisation").
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La pesée est telle qu'elle place la cabine en mode LNS
+	(Non Stop 80%). 
+
+2.0	Tous les niveaux sont condamnés (Porte coupe-feu).
+
+3.0	L'interrupteur S1/7 de la carte Microprocesseur est sur ON.
+
+-------------
+Remèdes
+-------------
+
+1.0	Après la desserte des derniers Envois, la cabine referme ses
+	porte et ne répond plus aux Appels Paliers.
+
+	Vérifier en Test 200-3 à l'OMT la charge et corriger l'anomalie.
+
+	Nota:	La charge étant donnée en Livre Anglaise (lb) (égale 
+		à 454 gr), il suffit de diviser la valeur par deux pour
+		obtenir la pesée en kg.
+		
+	1.1.1	Circuit U24 (ADC0804) de la Carte COP I hors service.
+
+	1.2.1	Carte COP I ou COP II défectueuse.
+
+	1.3.1	Pèse charge en défaut.
+
+2.0	Vérifier 
+
+	2.1.1	Que les Envois Cabine fonctionnent en Test 220.
+
+	2.2.1	La Tension AC4 nécessaire au bon fonctionnement
+		des portes coupe-feu.
+
+	2.3.1	Remplacer la carte GP I/O ou CF I/O qui gère les 
+		portes coupe-feu si le signal FPDCN (@ F27C ou F8E4
+		suivant la version de programme: voir Link MAP) est
+		à 0 en Test 40.
+
+3.0	Rechercher l'ascenseur qui à son signal FPDCN à 0. Isoler 
+	la cabine de la régulation en débranchant les 4 Fils du bornier
+	A3 assurant la communication entre le Contrôleur et le GROUP.
+	
+	3.1	Transmission des Données vers le GROUP.
+
+		A3 TB1-32  >>	+GXT
+
+		A3 TB1-33  >>	-GXT
+		
+	3.2	Réception des Données du GROUP.
+
+		A3 TB1-34  >>	+GRC
+
+		A3 TB1-35  >>	-GRC
+
+	Répéter les vérifications décrites en 2.1.1, 2.2.1 et 2.3.1.
+
+4.0	Mettre l'interrupteur S1/7 de la carte µP sur OFF et vérifier
+	que la Led 5 (CIG) dans le Test 200-5 est allumée.
+
+  

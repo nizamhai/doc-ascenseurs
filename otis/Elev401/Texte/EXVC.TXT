@@ -1,0 +1,55 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 18 (EXVC) est allumée ou clignote.
+
+2.0	La Led 20 (IMOD13) peut être allumée.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Les connections du PPT sont incorrectes.
+
+2.0	La carte Transducer est défectueuse. 
+
+3.0	Le PPT est défectueux
+ 
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la vitesse cabine (VC) par le PPT pour
+	détecter un éventuel dépassement de la vitesse maximale 
+	autorisée VSPG95 .
+
+	La valeur VSPG95 est égale à 90% de la vitesse de prise du
+	régulateur de vitesse (Velocity Speed Governor 95) pour un 
+	système Direct Drive (E401) et 95% pour un système Ward
+	Leonard (E101).
+
+	Si la valeur VC dépasse VSPG95 pendant deux lectures 
+	consécutives, le défaut EXVC passe à 1 entraînant un arrêt
+	d'urgence, CSF passant à 1 et SAFE à 0.
+
+	CSF = ESLIPV + EXVC + EMLS1 + EMLS4 + EMLS89
+
+	L'ascenseur effectue un 2ème essais qui en cas d'erreur 
+	provoque un nouvel arrêt d'urgence puis une interdiction 
+	du Mode de fonctionnement Normal IMOD13.
+
+	Seul un Reset du système (POR) permet alors de corriger 
+	ce défaut Critique (CSF). Le défaut EXVC est crée dans la 
+	routine d'Auto contrôle SHELTH.
+
+1.0	Vérifier:
+	
+	1.1	Les connections du PPT.
+
+2.0	Remplacer la carte Transducer.
+
+3.0	Remplacer le PPT (Primary Position Transducer).
+
+	
+	

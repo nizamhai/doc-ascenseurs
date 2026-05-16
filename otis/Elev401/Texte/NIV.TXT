@@ -1,0 +1,139 @@
+----------------
+Procédure
+----------------
+
+1.0	Tendre le ruban puis mettre l'appareil le plus près possible
+	du niveau bas à l'aide de la Manoeuvre ERO.
+	
+2.0	Mesurer la distance qui sépare le seuil de la cabine au niveau.
+
+3.0	Mettre le bouton d'arrêt dans le contrôleur.
+
+4.0	Déterminer l'altitude du 1er étage mémorisé dans la table 
+	des niveaux:
+
+	4.1	En Test 40, relever la valeur à l'adresse @ 00CA.
+		(en général: A00 ou 1A00).
+
+5.0	Placer l'OMT en Test 211 (Lecture de l'altitude).
+
+6.0	Serrer la bague de fixation de l'axe de la poulie du ruban
+	à l'aide d'une pince étau (pour ne pas détruire le filetage
+	de la vis).
+
+7.0	Desserrer la vis avec une clef Allen 9/64 puis enlever la
+	pince étau.
+
+8.0	Avec une pince, tourner lentement l'axe de la poulie du 
+	ruban jusqu'à obtenir la valeur lue en Test 40 (@ CA). 
+
+	8.1	Corriger la valeur selon la distance mesurée
+		par rapport au niveau sachant qu'une valeur 
+		Hexadécimale est égale à 1.2mm.
+
+	8.2.	Si l'appareil est au-dessus, il faut additionner le 
+		décalage:
+
+		Ex: 30mm au-dessus avec @ CA = 0A00.
+
+		Décalage:  30mm / 1.2 mm = 25  (Hex = 19).
+
+		Valeur = 0A00 + 19 = 0A19.
+
+	8.3.	Si l'appareil est au-dessous, il faut soustraire le 
+		décalage:
+
+		Ex: 10mm au-dessous avec @ CA = 0A00.
+
+		Décalage:  10mm / 1.2 mm # 8  (Hex = 8).
+
+		Valeur = 0A00 - 8 = 09F8.
+
+9.0	Serrer la bague de fixation de l'axe de la poulie du ruban
+	à l'aide d'une pince étau.
+
+	9.1	Serrer la vis avec une clef Allen 9/64.
+
+	9.2	Enlever la pince étau.
+
+10.0	Faire un RESET de la carte µP dans le Rack de Cartes E401.
+	(Si l'axe est tourné trop rapidement, un défaut de vitesse
+	est possible).
+
+11.0	Enlever le bouton d'arrêt et mettre l'appareil en Mode normal.
+
+12.0	Vérifier la précision d'arrêt au niveau bas après une course.
+
+	12.1	Pour corriger, mettre le bouton d'arrêt dans le 
+		contrôleur.
+
+	12.2	Serrer la bague de fixation avec la pince étau.
+
+	12.3	Desserrer la vis avec la clef Allen 9/64.
+
+	12.4	Placer l'OMT en Test 211.
+
+	12.5	Procéder de nouveau aux Opérations 8.1 à 12.
+
+13.0	Noter pour chaque étage, la distance séparant le seuil de la
+	cabine au niveau en montée et en descente (faire la moyenne).
+	
+	13.1	Si le décalage est trop important:
+
+		13.1.1	Les portes risquent de ne pas s'ouvrir car
+			les relais IDZ ne seront pas collés.
+
+		13.1.2	Attention au Fin de course Haut ...
+
+		13.1.3	Faire une estimation pour les niveaux où
+			l'ouverture est impossible.
+
+14.0	Mettre l'appareil hors tension et enlever: 
+
+	14.1	La carte µP du Rack de carte E401.
+
+	14.2	Les Eproms 0H et 0L.
+
+15.0	Placer l'OMT en Test 910 / 1.
+
+16.0	Modifier dans la Table des Niveaux l'altitude de chaque
+	étage.
+	
+	16.1	Corriger la valeur selon la distance mesurée
+		par rapport au niveau sachant qu'une valeur 
+		Hexadécimale est égale à 1.2mm (1.19mm).
+
+	16.2	Si l'appareil est au-dessus, il faut soustraire
+		le décalage.
+
+	16.3	Si l'appareil est au-dessous, il faut additionner
+		le décalage.
+
+	16.4	L'altitude est stockée dans les Eproms 0H et 0L.
+		
+		Exemple:
+
+		système	Eprom  0H 0L niv Altitude
+		-----------------------------------------------------
+		@ 00C8	0064 > 00 00  1  00000A00
+		@ 00CA	0065 > 0A 00	   
+		@ 00CC	0066 > 00 00  2  00001AEB
+		@ 00CE	0067 > 1A EB	   
+		@ 00D0	0068 > 00 00  3  00002E8F
+		@ 00D2	0069 > 2E 8F	   
+		@ 00D4	006A > 00 01  4  000135F7
+		@ 00D6	006B > 13 F7	   
+
+		L'altitude est mémorisée sur 2 adresses consécutives
+		car la course peut être supérieure à 75 mètres.
+
+17.0	Remettre:
+
+	17.1	Les Eproms 0H et 0L. 
+
+	17.2	La carte µP dans le Rack de carte E401.
+
+	17.3	L'appareil sous tension. 
+
+18.0	Vérifier la précision d'arrêt à tous les niveaux après une
+	course.

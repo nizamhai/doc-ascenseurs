@@ -1,0 +1,76 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 26 (PES1B) est allumée ou clignote.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La chaîne des sécurités est ouverte.
+
+2.0	Le shuntage des portes n'est pas correctement réalisé.	     
+
+3.0	Le relais PES1B est défectueux.
+
+4.0	L'interface d'entrée du signal sur la carte CF I/O est défectueux.
+ 
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier que:
+
+	1.1	La tension en A8 TB1-120 doit être égale à 110 VDC.
+		Dans le cas contraire, vérifier:
+
+		1.1.1	Le fusible F13.
+
+		1.1.2	Les 3 boutons d'arrêt.
+
+			1.1.2.1	Contrôleur.
+
+			1.1.2.2	Toit de cabine.
+
+			1.1.2.3	Fond de fosse.
+
+		1.2.3	Les sécurités.	
+
+			1.1.2.1	Machinerie.
+
+			1.1.2.2	Toit de cabine.
+
+			1.1.2.3	Fond de fosse.
+
+			1.1.2.4	Trémie.
+
+		1.2.4	Les portes d'Intercom.
+
+2.0	Vérifier:
+	
+	2.1	Que lors de l'arrivée à niveau.
+		
+		2.1.1	Les relais LVC1, LVC2, LVC3 collent avant
+			l'ouverture des portes.
+
+		2.1.2	Leur contact en série assurent correctement
+			le shuntage des portes.
+
+	2.2	Que lors d'un déplacement:
+		
+		2.2.1	Le sabre ne raccroche pas un galet de serrure.
+
+		2.2.2	Les relais DFC, DST, DFCX restent collés.
+
+		2.2.3	Pour les appareils équipés d'une diode en 
+			parallèle sur les 3 contacts en série de LVC1,
+			LVC2 et LVC3, tester celle ci.
+
+3.0	Si la tension aux bornes de la bobine de PES1B est de 110 vdc
+	et que le relais n'est pas collé, remplacer le relais PES1B.
+
+4.0	Si la tension à la borne A6 TB1-67 est de 110 vdc, remplacer la 
+	carte CF I/O.
+
+

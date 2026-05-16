@@ -1,0 +1,18 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led Error est clignotante.	
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Le switch 6 (LWDFLT / Load Weight Default) est sur la 
+	position OFF.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier la position du switch 6.

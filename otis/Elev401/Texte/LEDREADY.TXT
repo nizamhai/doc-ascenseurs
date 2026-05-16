@@ -1,0 +1,54 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.
+
+2.0	La Led READY est allumée en permanence.    
+
+3.0	La Led RUN ne s'allume pas. 
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	La carte ECPCB ne reçoit pas l'ordre de départ (RUN)
+	envoyé à partir de la carte Relay I/O vers ses bornes
+	3TB21 et 3TB22.
+
+2.0	Carte ECPCB (2PC) défectueuse.
+
+3.0	Carte Relay I/O du contrôleur de manoeuvre défectueuse.
+
+4.0 	Mauvaise(s) liaison(s) entre les cartes Relay I/O et ECPCB.
+
+-------------
+Remèdes
+-------------
+
+1.0	Le signal RUN est normalement envoyé par la carte µP
+	du contrôleur de manoeuvre via la carte Relay I/O et un
+	des contacts du relais CX.
+
+	Le signal est une tension de 2 à 3 vdc, 10ma maximum
+	envoyée aux bornes 3TB21 et 3TB22 de la carte ECPCB.
+		
+	1.1	Regarder le signal en TEST 40 :
+		
+		1.1.1	RUN (@ FOAC) à 1 si cmd déplacement
+
+	1.2	Vérifier le fonctionnement du relais CX :
+		
+		1.2.1	Collage.
+
+		1.2.2	Etat du contact (le doubler).
+				
+2.0	Remplacer la Carte ECPCB (2PC) si le signal arrive à ses
+	bornes.
+				
+3.0	Remplacer la Carte Relay I/O du contrôleur de manoeuvre si
+	le signal n'en part pas.
+	
+4.0 	Courant coupé, vérifier les liaisons entre les cartes Relay I/O 
+	et ECPCB.
+

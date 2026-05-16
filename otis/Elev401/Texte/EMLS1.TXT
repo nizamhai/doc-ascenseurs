@@ -1,0 +1,95 @@
+----------------
+Symptômes
+----------------
+
+1.0	La Led 10 (EMLS1) est allumée.	
+
+-------------------------
+Causes Probables
+--------------------------
+
+1.0	La tension de manoeuvre est incorrecte
+
+2.0	Le contacteur MFS est collé avant de recevoir son ordre
+	de collage.
+
+3.0	Le contacteur MFS ou la carte RELAY I/O ou CF I/O est 
+	défectueux
+
+-------------
+Remèdes
+-------------
+	  
+Nota:	Le système contrôle la séquence suivante:
+	
+	- Le contacteur MFS doit être retombé (/MFS=1) quand il
+	  n'y a pas d'autorisation de collage (MFSE=0).	
+
+	- Le contacteur doit collé (/MFS=0) après l'ordre de 
+	  collage (MFSE=1).
+
+	Lors du passage en MLS1, une temporisation (TS1) est 
+	remise à 0. Si les deux conditions décrites ci-dessus ne
+	sont pas atteintes avant le temps maximal (TS1MAX est
+	égal à 50 Hex # 8 sec) alors le défaut EMSL1 est actif.
+
+1.0	Vérifier:
+
+	1.1	La tension de manoeuvre sur la borne A8 TB1-56
+		doit être de 110 vdc:
+		
+		1.1.1	Sonner le fusible F12.
+
+		1.1.2	Tester le pont redresseur RF1.
+
+		1.1.3	Vérifier le condensateur C1.
+
+	Nota:	Pour tous les EMLS(x), la tension de manoeuvre
+		peut être la cause du défaut si elle descend sous
+		les 100 vdc aux bornes des contacteurs MFS, H
+		et BPS.
+
+2.0	Le contacteur MFS doit retombé lors d'un Reset (POR).
+
+	2.1	Rechercher une masse éventuelle.
+
+	2.2	Vérifier BPS 13/14 et ESC 4/7.
+
+	2.3	Vérifier s'il existe un dur mécanique (pare-flamme)
+		ou si un contact est soudé.
+
+	2.4	Vérifier si le relais n'est pas rémanent.
+
+	2.5	Contacteur retombé, le signal /MFS à l'adresse 
+		@ F3F8 doit être égal à 1 (contact à rupture).
+
+	2.6	La tension en A6 TB1-68 doit être de 110 vdc.
+
+		2.5.1	Vérifier le contact MFS 7/8.
+
+		2.5.2	Remplacer la carte CF I/O si la tension 
+			est correcte.
+
+3.0	Quand le signal MFSE à l'adresse @ F3FA passe 
+	correctement à 1:
+
+	3.1	Le contacteur MFS ne colle pas.
+
+		3.1.1	Tester la bobine (attention à la diode de 
+			roue libre).
+
+		3.1.2	Hors tension, vérifier manuellement le 
+			collage.
+
+		3.1.3	Remplacer la carte Relay I/O.
+
+	3.2	Le contacteur MFS colle.
+
+		3.2.1	La tension en A6 TB1-68 doit être nulle.
+
+			3.2.1.1	Vérifier le contact MFS 7/8.
+
+			3.2.1.2	Remplacer la carte CF I/O si la
+				tension est correcte.
+
+	

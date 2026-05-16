@@ -1,0 +1,37 @@
+----------------
+Symptômes
+----------------
+
+1.0	Le moteur ne fonctionne pas.
+
+2.0	La Led OVERTEMP est allumée et ne peut être Resetée.
+
+--------------------------
+Causes Probables
+--------------------------
+
+1.0	Les sondes de température du Rack ou du Transformateur
+	de puissance sont déclenchées.
+
+2.0	Carte ECPCB défectueuse.
+
+-------------
+Remèdes
+-------------
+	  
+1.0	Vérifier la tension continue entre 5TB11 & 5TB12 sur l'ECPCB.
+	Si une tension est présente, une ou les deux sondes sont 
+	déclenchées provoquant la rupture de la continuité.
+	
+	Les causes possibles sont:
+
+	1.1	Panne de climatisation.
+
+	1.2.	Connexion(s) défectueuse(s).
+
+	1.3.	Surchauffe du Rack / Transformateur.
+
+	1.4.	Sonde(s) hors service.
+
+2.0	Si la tension entre 5TB11 et 5TB12 sur l'ECPCB est nulle,
+	remplacer la carte ECPCB.
