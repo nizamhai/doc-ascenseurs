@@ -53,8 +53,12 @@ export default function DocumentCard({ doc, index }) {
     )
   }
 
+  // Prepend Vite base URL for absolute paths (/docs/..., /logos/...) so they work under GitHub Pages base
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+  const href = doc.href && doc.href.startsWith('/') ? `${base}${doc.href}` : (doc.href || '#')
+
   return (
-    <a href={doc.href || '#'} target="_blank" rel="noopener noreferrer" className={className} style={style}>
+    <a href={href} target="_blank" rel="noopener noreferrer" className={className} style={style}>
       <CardContent doc={doc} config={config} />
     </a>
   )
